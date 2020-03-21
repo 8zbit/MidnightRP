@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SInteriorOrderData>
+  <startFrom value="2000" />
+  <filePathHash value="0" />
+  <proxies>
+    <Item>hei_kt1_11_interior_v_gun2_milo_</Item>
+	<Item>brown_gunshop_milo_
+	<Item>brown_vetclinic_milo_
+	<Item>brown_office_milo_</Item>
+	<Item>brown_office_milo_2</Item>
+	<Item>brown_office_milo_3</Item>
+	<Item>brown_office_milo_4</Item>
+	<Item>brown_office_milo_5</Item>
+	<Item>lr_cs6_03_interior_v_carmod10_milo_</Item>
+	<Item>brown_jail_milo_</Item>
+	<Item>brown_groove_milo_</Item>
+	<Item>brown_court_milo_</Item>
+	<Item>brown_beachmotel_milo_</Item>
+	<Item>brown_beachmotel_milo1_</Item>
+	<Item>brown_beachmotel_milo2_</Item>
+	<Item>brown_beachmotel_milo3_</Item>
+	<Item>brown_beachmotel_milo4_</Item>
+	<Item>brown_beachmotel_milo5_</Item>
+	<Item>brown_beachmotel_milo6_</Item>
+	<Item>brown_beachmotel_milo7_</Item>
+	<Item>brown_beachmotel_milo8_</Item>
+	<Item>brown_beachmotel_milo9_</Item>
+	<Item>brown_beachmotel_milo10_</Item>
+	<Item>brown_beachmotel_milo11_</Item>
+	<Item>brown_beachmotel_milo12_</Item>
+	<Item>brown_beachmotel_milo13_</Item>
+	<Item>brown_beachmotel_milo14_</Item>
+	<Item>brown_beachmotel_milo15_</Item>
+	<Item>brown_beachmotel_milo16_</Item>
+	<Item>brown_beachmotel_milo17_</Item>
+	<Item>brown_beachmotel_milo18_</Item>
+	<Item>brown_beachmotel_milo19_</Item>
+	<Item>brown_beachmotel_milo20_</Item>
+	<Item>brown_beachmotel_milo21_</Item>
+	<Item>brown_beachmotel_milo22_</Item>
+	<Item>brown_beachmotel_milo23_</Item>
+	<Item>brown_beachmotel_milo24_</Item>
+	<Item>brown_beachmotel_milo25_</Item>
+	<Item>brown_beachmotel_milo26_</Item>
+	<Item>brown_beachmotel_milo27_</Item>
+	<Item>brown_beachmotel_milo28_</Item>
+	<Item>brown_beachmotel_milo29_</Item>
+	<Item>brown_beachmotel_milo30_</Item>
+	<Item>brown_beachmotel_milo31_</Item>
+	<Item>brown_beachmotel_milo32_</Item>
+	<Item>brown_beachmotel_milo33_</Item>
+	<Item>brown_beachmotel_milo34_</Item>
+	<Item>brown_beachmotel_milo35_</Item>
+	<Item>brown_beachmotel_milo36_</Item>
+	<Item>brown_beachmotel_milo37_</Item>
+	<Item>brown_church_milo_</Item>
+	<Item>brown_motel_milo2_</Item>
+	<Item>brown_motel_milo3_</Item>
+	<Item>brown_motel_milo4_</Item>
+	<Item>brown_motel_milo5_</Item>
+	<Item>brown_motel_milo6_</Item>
+	<Item>brown_motel_milo7_</Item>
+	<Item>brown_motel_milo10_</Item>
+	<Item>brown_motel_milo13_</Item>
+	<Item>brown_motel_milo15_</Item>
+	<Item>brown_motel_milo16_</Item>
+	<Item>brown_motel_milo17_</Item>
+	<Item>brown_motel_milo19_</Item>
+	<Item>brown_motel_milo20_</Item>
+	<Item>brown_motel_milo21_</Item>
+	<Item>brown_motel_milo22_</Item>
+	<Item>brown_motel_milo23_</Item>
+	<Item>brown_motel_milo24_</Item>
+	<Item>brown_motel_milo25_</Item>
+	<Item>brown_motel_milo26_</Item>
+	<Item>brown_motel_milo27_</Item>
+	<Item>brown_motel_milo28_</Item>
+	<Item>brown_motel_milo29_</Item>
+	<Item>brown_motel_milo30_</Item>
+	<Item>brown_mafia_milo_</Item>
+	<Item>brown_fightclub_milo_</Item>
+	<Item>brown_amfsted_milo_</Item>
+	<Item>brown_prison_milo_</Item>
+	<Item>brown_casinoclub_milo_</Item>
+	<Item>brown_paletomedical_milo_</Item>
+	<Item>brown_amfsted_milo_</Item>
+	<Item>brown_amfsted2_milo_</Item>
+	<Item>brown_amfsted3_milo_</Item>
+	<Item>brown_amfsted4_milo_</Item>
+	<Item>brown_diner_milo_</Item>
+	<Item>brown_diner2_milo_</Item>
+	<Item>brown_cluckingbell_milo_</Item>
+	<Item>brown_cluckingbell2_milo_</Item>
+	<Item>brown_cluckingbell3_milo_</Item>
+	<Item>brown_mainpd_milo_</Item>
+	<Item>ballas2_milo_</Item>
+	<Item>int_vesp_01_1_milo_</Item>
+	<Item>int_vesp_01_2_milo_</Item>
+	<Item>int_vesp_1_1_milo_</Item>
+	<Item>int_vesp_1_2_milo_</Item>
+	<Item>int_vesp_02_1_milo_</Item>
+	<Item>int_vesp_02_2_milo_</Item>
+	<Item>int_vesp_03_1_milo_</Item>
+	<Item>int_vesp_3_1_milo_</Item>
+	<Item>int_vesp_3_2_milo_</Item>
+	<Item>int_vesp_4_2_milo_</Item>
+	<Item>int_vesp_5_2_milo_</Item>
+	<Item>int_vesp_big_lift_milo_</Item>
+	<Item>int_vesp_big_stair_milo_</Item>
+	<Item>int_vesp_slift_milo_</Item>
+	<Item>int_vesp_smole_stair_milo_</Item>
+	<Item>int_bin_milo_</Item>
+	<Item>bowl</Item>
+	<Item>bowlingdoors</Item>
+	<Item>int_cityhall_milo_</Item>
+	<Item>int_standup_milo_</Item>
+	<Item>brown_paletomedical_milo_</Item>
+	<Item>gabz_pillbox_milo_</Item>
+	<Item>dons_stulo_1a_milo_</Item>
+	<Item>int_vagos_milo_</Item>
+	<Item>retssal_bobo_milo_</Item>
+	<Item>vw_casino_main</Item>
+	<Item>int_italy2_milo_</Item>
+	<Item>gabz_biker_milo_</Item>
+	<Item>vw_int_placement_vw</Item>
+	<Item>vw_casino_penthouse</Item>
+	<Item>sherifinterior</Item>
+	<Item>sherifbat</Item>
+	<Item>hei_dt1_occl_05</Item>
+	<Item>hei_dt1_19_strm_0</Item>
+	<Item>hei_dt1_19_interior_0_heist_police_dlc_milo_</Item>
+	<Item>hei_dt1_19_critical_0</Item>
+	<Item>bar_milo_</Item>
+	<Item>ribfirst</Item>
+	<Item>wilson</Item>
+	<Item>davetest</Item>
+	<Item>davetest3</Item>
+	<Item>NIKKO</Item>
+	<Item>nikko2</Item>
+	<Item>spiceden</Item>
+	<Item>nightclub_rockford_milo_</Item>
+	<Item>int_luxury_milo_</Item>
+	<Item>int_autoscool_milo_</Item>
+	<Item>hei_dt1_rd1_critical_0</Item>
+	<Item>hei_dt1_22_strm_0</Item>
+	<Item>2floor</Item>
+	<Item>slb2k11_bountyoffice</Item>
+	<Item>slb2k11_sheriff_davis</Item>
+	<Item>lr_sc1_occl_03</Item>
+	<Item>hei_sc1_occl_03</Item>
+	<Item>armaf_milo_</Item>
+	<Item>ch2_06_strm_2</Item>
+	<Item>int_mafc_milo_</Item>
+	<Item>hei_bh1_rd_critical_1</Item>
+	<Item>bh1_occl_01</Item>
+	<Item>gabz_diner_milo_</Item>
+	<Item>rm_milo_</Item>
+	<Item>int_vagos_gang_milo_</Item>	
+	<Item>v_cinemavine_milo_</Item>		
+	<Item>int_vinewood_police_milo_</Item>	
+	<Item>int_shosp_milo_</Item>	
+	<Item>lr_cs4_14_interior_v_hicksbar_milo_</Item>	
+	<Item>gabz_imp_impexp_interior_placement_interior_1_impexp_intwaremed_milo_</Item>
+	<Item>gqprops</Item>
+	<Item>finalfantasy</Item>
+	<Item>ffparty</Item>
+	<Item>restauracja_milo_</Item>
+	
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+  </proxies>
+</SInteriorOrderData>
