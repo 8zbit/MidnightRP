@@ -1,0 +1,5 @@
+AddEventHandler("playerSpawned", function(spawn)
+TriggerEvent("chatMessage", "", { 255, 0, 0 }, "Welcome to The Midnight Roleplay")
+TriggerEvent("chatMessage", "", { 255, 0, 0 }, "Join our discord ! https://discord.gg/xwa9TH9")
+TriggerEvent("chatMessage", "", { 255, 0, 0 }, "STAY IN CHARACTER AT ALL TIMES/ RDM= instaban/ newlife rule applies")
+end)
