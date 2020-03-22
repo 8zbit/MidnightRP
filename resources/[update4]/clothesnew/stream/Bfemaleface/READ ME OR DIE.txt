@@ -1,0 +1,25 @@
+[RETEX] New MP Female Head Texture 0.8 BETA
+
+RETEXTURE TUTORIAL
+------------------
+
+Now here's the tricky part
+
+1. Create mod file using OPENIV (duplicate of the original GTA V files).
+   This is to ensure updates won't remove your mods.
+   (http://gtaforums.com/topic/798272-tut-use-openiv-mods-folder-keep-your-original-gta-v-folder/) <--- Click on this link if you have no clue.
+
+2. Extract and paste "head_033_r.ydd" and "head_040_r.ydd" into
+
+   mods/update/x64/dlcpacks/mppatcheng/dlc.rpf/x64/models/cdimages/mppatches.rpf/mp_f_freemode_01
+
+   and
+   
+   mods/update/x64/dlcpacks/patchday4ng/dlc.rpf/x64/models/cdimages/patchday4ng.rpf/mp_f_freemode_01
+
+3. Extract and paste "head_diff_033_a_whi" and "head_diff_040_a_chi" ONLY into
+
+   mods/update/x64/dlcpacks/mppatcheng/dlc.rpf/x64/models/cdimages/mppatches.rpf/mp_f_freemode_01
+
+
+That's it enjoy the new retex of your MP Female ped!
