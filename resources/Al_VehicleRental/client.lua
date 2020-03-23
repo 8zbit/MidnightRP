@@ -1,4 +1,5 @@
 -- Script Made By Aljunier | Made For ESX Framework --
+-- Barb is an a asshole
 
 ESX                           = nil
 local PlayerData              = {}
