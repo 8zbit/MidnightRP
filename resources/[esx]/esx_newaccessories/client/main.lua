@@ -7,6 +7,7 @@ local CurrentActionData			= {}
 local isDead					= false
 local accesorio = nil
 local hasPaid = false
+local glassesOn = true
 
 Citizen.CreateThread(function()
 	while ESX == nil do
@@ -32,7 +33,7 @@ function OpenAccessoryMenu()
 		}
 	}, function(data, menu)
 		menu.close()
-		if data.current.value ~= 'Helmet' and data.current.value ~= 'Ears' and data.current.value ~= 'Mask' and data.current.value ~= 'Glasses' then
+		if data.current.value ~= 'Helmet' and data.current.value ~= 'Ears' and data.current.value ~= 'Mask' --[[ and data.current.value ~= 'Glasses' ]] then
 			if data.current.value == 'restore' then			
 				ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin)
 					TriggerEvent('skinchanger:loadSkin', skin)
@@ -46,10 +47,10 @@ function OpenAccessoryMenu()
 				ESX.UI.Menu.CloseAll()	
 			elseif data.current.value == 'shoes' then
 				TriggerEvent('esx_newaccessories:shoes')
-				ESX.UI.Menu.CloseAll()	
-			--elseif data.current.value == 'Glasses' then
-				--TriggerEvent('esx_newaccessories:glasses')
-				--ESX.UI.Menu.CloseAll()	
+				ESX.UI.Menu.CloseAll()
+			elseif data.current.value == 'Glasses' then
+				TriggerEvent('esx_newaccessories:glasses')
+				ESX.UI.Menu.CloseAll()
 			end
 		else
 			SetUnsetAccessory(data.current.value)
@@ -97,8 +98,8 @@ RegisterCommand('hat', function(source, args, raw)
 	SetUnsetAccessory('Helmet')
 end)
 RegisterCommand('glasses', function(source, args, raw)
-	--TriggerEvent('esx_newaccessories:glasses')
-	SetUnsetAccessory('Glasses')
+	--SetUnsetAccessory('Glasses')
+	TriggerEvent('esx_newaccessories:glasses')
 end)
 
 
@@ -145,8 +146,6 @@ AddEventHandler('esx_newaccessories:shoes', function()
 	end)
 end)
 
-
-
 RegisterNetEvent('esx_newaccessories:glasses')
 AddEventHandler('esx_newaccessories:glasses', function()
 	TriggerEvent('skinchanger:getSkin', function(skin)
@@ -154,16 +153,32 @@ AddEventHandler('esx_newaccessories:glasses', function()
 			['shoes_1'] = 34, ['shoes_2'] = 0
 		}
 		TriggerEvent('skinchanger:loadClothes', skin, clothesSkin)--]]
-		if(skin.sex == 0) then
-			local clothesSkin = {
-				['glasses_1'] = 0, ['glasses_2'] = 0
-			}
-			TriggerEvent('skinchanger:loadClothes', skin, clothesSkin)
+		
+		if glassesOn then
+			TriggerEvent('glasses', false)
+			Wait(500)
+			if(skin.sex == 0) then
+				local clothesSkin = {
+					['glasses_1'] = 0, ['glasses_2'] = 0
+				}
+				TriggerEvent('skinchanger:loadClothes', skin, clothesSkin)
+			else
+				local clothesSkin = {
+					['glasses_1'] = 5, ['glasses_2'] = 0
+				}
+				TriggerEvent('skinchanger:loadClothes', skin, clothesSkin)
+			end
+			glassesOn = false
 		else
-			local clothesSkin = {
-				['glasses_1'] = 5, ['glasses_2'] = 0
-			}
-			TriggerEvent('skinchanger:loadClothes', skin, clothesSkin)
+			TriggerEvent('glasses', true)
+			Wait(500)
+			ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin)
+				local clothesSkin = {
+					['glasses_1'] = skin.glasses_1, ['glasses_2'] = skin.glasses_2
+				}
+				TriggerEvent('skinchanger:loadClothes', skin, clothesSkin)
+			end)
+			glassesOn = true
 		end
 	end)
 end)
@@ -177,7 +192,7 @@ function SetUnsetAccessory(accessory)
 				local mAccessory = -1
 				local mColor = 0
 
-				if _accessory == "mask" or _accessory == "glasses" then
+				if _accessory == "mask" then
 					mAccessory = 0
 				end
 
@@ -367,6 +382,7 @@ end)
 
 AddEventHandler('playerSpawned', function()
 	isDead = false
+	glassesOn = true
 end)
 
 AddEventHandler('esx:onPlayerDeath', function()
