@@ -582,8 +582,21 @@ files {
   'f40_data/carvariations.meta',
   'f40_data/carcols.meta',
   'f40_data/handling.meta',
+
+
+  'volks_data/vehicles.meta',
+  'volks_data/carvariations.meta',
+  'volks_data/carcols.meta',
+  'volks_data/handling.meta',
+  'volks_data/vehiclelayouts.meta',
 }
 
+
+data_file 'HANDLING_FILE' 'volks_data/handling.meta'
+data_file 'VEHICLE_METADATA_FILE' 'volks_data/vehicles.meta'
+data_file 'CARCOLS_FILE' 'volks_data/carcols.meta'
+data_file 'VEHICLE_VARIATION_FILE' 'volks_data/carvariations.meta'
+data_file 'VEHICLE_LAYOUTS_FILE' 'volks_data/vehiclelayouts.meta'
 
 data_file 'HANDLING_FILE' 'f40_data/handling.meta'
 data_file 'VEHICLE_METADATA_FILE' 'f40_data/vehicles.meta'
