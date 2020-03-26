@@ -40,7 +40,7 @@ end)
 -- server side for cooldown timer
 RegisterServerEvent("esx_goldCurrency:GoldJobCooldown")
 AddEventHandler("esx_goldCurrency:GoldJobCooldown",function(source)
-	table.insert(GoldJobTimer,{GoldJobTimer = GetPlayerIdentifier(source), timeGoldJob = (2 * 60000)}) -- cooldown timer for doing missions
+	table.insert(GoldJobTimer,{GoldJobTimer = GetPlayerIdentifier(source), timeGoldJob = (Config.JobCooldownTime * 60000)}) -- cooldown timer for doing missions
 end)
 
 -- thread for syncing the cooldown timer
@@ -223,17 +223,17 @@ AddEventHandler('esx_goldCurrency:goldExchange', function()
 	local _source = source
 	
 	if not CheckIfExchanging(GetPlayerIdentifier(source)) then
-		if xPlayer.getInventoryItem("goldbar").count >= 1 then
+		if xPlayer.getInventoryItem("goldbar").count >= 50 then
 			TriggerEvent("esx_goldCurrency:ExhangeCooldown",source)
 						
-			xPlayer.removeInventoryItem("goldbar",1)
+			xPlayer.removeInventoryItem("goldbar",50)
 			
 			TriggerClientEvent("GoldBarToCash",source)
 			Citizen.Wait((Config.ExchangeTime * 1000))
 			
-			xPlayer.addAccountMoney('black_money', 2000)
+			xPlayer.addAccountMoney('black_money', 100000)
 		else
-			TriggerClientEvent("esx:showNotification",source,"You need ~r~at least~s~ 1x ~y~Gold Bars~s~")
+			TriggerClientEvent("esx:showNotification",source,"You need ~r~at least~s~ 50x ~y~Gold Bars~s~")
 		end
 	else
 		TriggerClientEvent("esx:showNotification",source,string.format("You can ~y~exchange gold~s~ again in: ~b~%s minutes~s~",GetTimeForExchange(GetPlayerIdentifier(source))))

@@ -63,11 +63,7 @@ Config.PetShop = {
 		price = 50000
 	},
 
-	{
-		pet = 'chop',
-		label = _U('chop'),
-		price = 12000
-	}
+
 }
 
 Config.Zones = {

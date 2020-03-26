@@ -26,64 +26,47 @@ Config.MafiaStations = {
 
     AuthorizedWeapons = {
       { name = 'WEAPON_COMBATPISTOL',     price = 4000 },
-      { name = 'WEAPON_ASSAULTSMG',       price = 50000 },
-      { name = 'WEAPON_ASSAULTRIFLE',     price = 80000 },
-      { name = 'WEAPON_PUMPSHOTGUN',      price = 18000 },
-      { name = 'WEAPON_STUNGUN',          price = 250 },
-      { name = 'WEAPON_FLASHLIGHT',       price = 50 },
-      { name = 'WEAPON_FIREEXTINGUISHER', price = 50 },
-      { name = 'WEAPON_FLAREGUN',         price = 3000 },
-      { name = 'GADGET_PARACHUTE',        price = 2000 },
-      { name = 'WEAPON_SNIPERRIFLE',      price = 150000 },
-      { name = 'WEAPON_SMOKEGRENADE',     price = 8000 },
-      { name = 'WEAPON_APPISTOL',         price = 12000 },
-      { name = 'WEAPON_FLARE',            price = 8000 },
-      { name = 'WEAPON_SWITCHBLADE',      price = 500 },
-	  { name = 'WEAPON_POOLCUE',          price = 100 },
+      
 	  
     },
 
 	  AuthorizedVehicles = {
-		  { name = 'schafter3',  label = 'Véhicule Civil' },
-		  { name = 'btype',      label = 'Roosevelt' },
-		  { name = 'sandking',   label = '4X4' },
-		  { name = 'mule3',      label = 'Camion de Transport' },
-		  { name = 'guardian',   label = 'Grand 4x4' },
-		  { name = 'burrito3',   label = 'Fourgonnette' },
-		  { name = 'mesa',       label = 'Tout-Terrain' },
+		  { name = 'denali16',  label = 'denali16' },
+      { name = 'superd',  label = 'Bentley' }
+      
 	  },
 
     Cloakrooms = {
-      { x = 9.283, y = 528.914, z = 169.635 },
+      { x = -1631.63, y = 105.79, z = -48.97 },
     },
 
     Armories = {
-      { x = 1.550, y = 527.397, z = 169.617 },
+      { x = -1519.72, y = 110.05, z = -49.97 },
     },
 
     Vehicles = {
       {
-        Spawner    = { x = 13.40, y = 549.1, z = 175.187 },
-        SpawnPoint = { x = 8.237, y = 556.963, z = 175.266 },
-        Heading    = 90.0,
+        Spawner    = { x = -1534.65, y = 137.86, z = 55.67 },
+        SpawnPoint = { x = -1563.41, y = 120.86, z = 57.25 },
+        Heading    = 80.42,
       }
     },
 	
 	Helicopters = {
       {
-        Spawner    = { x = 20.312, y = 535.667, z = 173.627 },
+        Spawner    = { x = -1563.52, y = 120.86, z = -49.74 },
         SpawnPoint = { x = 3.40, y = 525.56, z = 177.919 },
         Heading    = 0.0,
       }
     },
 
     VehicleDeleters = {
-      { x = 22.74, y = 545.9, z = 175.027 },
-      { x = 21.35, y = 543.3, z = 175.027 },
+      { x = -1527.47, y = 85.53, z = 56.6 },
+      
     },
 
     BossActions = {
-      { x = 4.113, y = 526.897, z = 173.628 }
+      { x = -1496.1, y = 125.69, z = 55.3 }
     },
 
   },

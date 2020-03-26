@@ -33,21 +33,14 @@ Config.SOAStations = {
     },
 
 	  AuthorizedVehicles1 = {
-		  { name = 'zombiea',  label = 'Zombie Bobber' },
-      { name = 'zombieb',      label = 'Zombie Chopper' },
-    { name = 'gburrito',      label = 'SOA Van' },
-    { name = 'kcc_kingz_knight',      label = 'knight' },
-    { name = 'kcc_queens_warrior',      label = 'queen' },
-    { name = 'kcc_kingz_horse',      label = 'kings horse' },
-    { name = 'nightblade',      label = 'nightblade' },
-    { name = 'gargoyle',      label = 'gargoyle' },
-    { name = 'wolfsbane',      label = 'wolfsbane' },
-      { name = 'daemon2',  label = 'Daemon' }
+		  { name = 'ram2500',  label = 'Ram2500' },
+      { name = 'gargoyle',      label = 'gargoyle' }
+   
 	  },
 
-    Cloakrooms = {
-      { x = 972.173, y = -99.218, z = 73.847 },
-    },
+     Cloakrooms = {
+      { x = 972.173, y = -99.218, z = -73.847 },
+    }, 
 
     Armories = {
       { x = 1015.31, y = -122.24, z = 42.35 },

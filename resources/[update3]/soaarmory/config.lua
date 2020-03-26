@@ -13,9 +13,10 @@ Config.ArmoryPed = { ["x"] = 987.88, ["y"] = -95.18, ["z"] = 74.85, ["h"] = 219.
 -- This is the available weapons you can pick out.
 Config.ArmoryWeapons = {
 	--{ ["hash"] = "weapon_assaultsmg", ["type"] = "rifle" },
-	
-	{ ["hash"] = "WEAPON_MICROSMG", ["type"] = "pistol" },
-	{ ["hash"] = "WEAPON_CombatPistol", ["type"] = "pistol" },
+
+	{ ["hash"] = "WEAPON_HEAVYPISTOL", ["type"] = "pistol" },
+	{ ["hash"] = "WEAPON_BAT", ["type"] = "pistol" },
+	{ ["hash"] = "WEAPON_SAWNOFFSHOTGUN", ["type"] = "pistol" },
 	{ ["hash"] = "WEAPON_SWITCHBLADE", ["type"] = "pistol" }
 
 }

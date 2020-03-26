@@ -7,10 +7,10 @@
       <colors>
         <Item>
           <indices content="char_array">
+            12
+            12
+            12
             134
-            134
-            0
-            0
           </indices>
           <liveries>
             <Item value="true" />

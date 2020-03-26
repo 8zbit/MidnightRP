@@ -126,21 +126,22 @@ AddEventHandler('esx_society:washMoney', function(society, amount)
   local xPlayer = ESX.GetPlayerFromId(source)
   local account = xPlayer.getAccount('black_money')
 
-  if amount and amount > 0 and account.money >= amount then
-		local howlong	= 1
-		local xtime 	= 1 -- if 1 = then number above will be in SECONDS. if 60 = in MINUTES
-		local minorsec	= ''
-		if xtime == 1 then
-		 minorsec = ' secondes'
-		elseif xtime == 60 then
-		minorsec = ' minutes'
-		end
-		
-		xPlayer.removeAccountMoney('black_money', amount)
-		TriggerClientEvent('esx:showNotification', xPlayer.source, ('You have ~g~$' .. ESX.Math.GroupDigits(amount) .. '~s~ waiting in ~y~money laundering~s~ (' .. howlong .. minorsec .. ').'))
-		Citizen.Wait(1000 * xtime * howlong)
-		xPlayer.addMoney(amount)
-		TriggerClientEvent('esx:showNotification', xPlayer.source, ('money laundering done. ~g~$' .. ESX.Math.GroupDigits(amount) .. '~s~ added to your ~y~society~s~'))
+  if amount > 0 and account.money >= amount then
+
+    xPlayer.removeAccountMoney('black_money', amount)
+
+      MySQL.Async.execute(
+        'INSERT INTO society_moneywash (identifier, society, amount) VALUES (@identifier, @society, @amount)',
+        {
+          ['@identifier'] = xPlayer.identifier,
+          ['@society']    = society,
+          ['@amount']     = amount
+        },
+        function(rowsChanged)
+          TriggerClientEvent('esx:showNotification', xPlayer.source, _U('you_have', amount))
+        end
+      )
+
   else
     TriggerClientEvent('esx:showNotification', xPlayer.source, _U('invalid_amount'))
   end

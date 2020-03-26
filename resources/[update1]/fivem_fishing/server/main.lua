@@ -110,7 +110,7 @@ AddEventHandler('strandatt_fishing:sellFish', function()
 	if foundFish then
 		Wait(100)
 		Player.addMoney(cash)
-		TriggerClientEvent('esx:showNotification', src, 'You sold all your fish for '..cash..'kr')
+		TriggerClientEvent('esx:showNotification', src, 'You sold all your fish for '..cash..'$')
 	else
 		TriggerClientEvent('esx:showNotification', src, 'You have no fish to sell')
 	end

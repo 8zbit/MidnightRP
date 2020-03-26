@@ -55,11 +55,11 @@ AddEventHandler("esx_drugs:activate_coke",function()
     local playerPed = PlayerId()
 	if not IsPedInAnyVehicle(GetPlayerPed(-1)) then
 		TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_SMOKING_POT", 0, true)
-		exports['progressBars']:startUI(10000, " COCAINE")
+		exports['progressBars']:startUI(10000, "SMOKING CRACK COCAINE")
 		Citizen.Wait(10000)
 		ClearPedTasks(PlayerPedId())
 	else
-		exports['progressBars']:startUI(10000, " COCAINE")
+		exports['progressBars']:startUI(10000, "SMOKING CRACK COCAINE")
 		Citizen.Wait(10000)
 	end
 	local timer = 0

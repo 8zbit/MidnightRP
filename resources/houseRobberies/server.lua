@@ -1,8 +1,8 @@
 local ESX = nil
 local robbableItems = {
- [1] = {chance = 1, id = 0, name = 'Cash', quantity = math.random(500, 1000)}, -- really common
+ [1] = {chance = 1, id = 0, name = 'Cash', quantity = math.random(100, 500)}, -- really common
  [2] = {chance = 50, id = 'WEAPON_PISTOL', name = 'Pistol', isWeapon = true}, -- rare
- [3] = {chance = 5, id = 'highgradefert', name = 'High-Grade Fertilizer', quantity = 1},
+ [3] = {chance = 21, id = 'highgradefert', name = 'High-Grade Fertilizer', quantity = 1},
  [4] = {chance = 25, id = 'armor', name = 'Armour', quantity =  math.random(1, 2)}, -- common
  [5] = {chance = 4, id = 'bandage', name = 'Bandage', quantity = math.random(1, 25)}, -- common
  [6] = {chance = 5, id = 'beer', name = 'beer', quantity = math.random(1, 2)}, -- common
@@ -15,9 +15,9 @@ local robbableItems = {
  [13] = {chance = 15, id = 'clip', name = 'Weapon Clip', quantity = 1}, -- rare
  [14] = {chance = 6, id = 'coke', name = 'Cocaine', quantity = 2}, -- common
  [15] = {chance = 5, id = 'goldNecklace', name = 'Gold Necklace', quantity = 1}, -- rare
- [16] = {chance = 15, id = 'handcuffs', name = 'handcuffs', quantity = 1}, -- rare
+ [16] = {chance = 25, id = 'handcuffs', name = 'handcuffs', quantity = 1}, -- rare
  [17] = {chance = 4, id = 'highradio', name = 'Aftermarket Radio', quantity = 1}, -- rare
- [18] = {chance = 15, id = 'jewels', name = 'Jewels', quantity = math.random(1, 5)}, -- rare
+ [18] = {chance = 25, id = 'jewels', name = 'Jewels', quantity = math.random(1, 5)}, -- rare
  [19] = {chance = 4, id = 'laptop', name = 'Laptop', quantity = 1}, -- rare
  [20] = {chance = 1, id = 'lotteryticket', name = 'Lottery Ticket', quantity = math.random(1, 5)}, -- common
  [21] = {chance = 3, id = 'lowradio', name = 'Stock Radio', quantity = 2},
@@ -33,11 +33,15 @@ local robbableItems = {
  [31] = {chance = 1, id = 'vodka', name = 'Vodka', quantity = 1},
  [32] = {chance = 5, id = 'WEAPON_KNIFE', name = 'Combat knife', quantity = 1},
  [33] = {chance = 15, id = 'WEAPON_PIPEBOMB', name = 'Homemade bomb', quantity = math.random(1, 5)},
- [34] = {chance = 5, id = 'highgradefemaleseed', name = 'Female Dope Seed+', quantity = 1},
- [35] = {chance = 2, id = 'lowgradefemaleseed', name = 'Female Dope Seed', quantity = 1},
- [36] = {chance = 15, id = 'highgrademaleseed', name = 'Male Dope Seed+', quantity = 1},
- [37] = {chance = 10, id = 'lowgrademaleseed', name = 'Male Dope Seed', quantity = 1},
- [38] = {chance = 10, id = 'drugItem', name = 'Black USB-C', quantity = 1}
+ [34] = {chance = 13, id = 'highgradefemaleseed', name = 'Female Dope Seed+', quantity = 1},
+ [35] = {chance = 8, id = 'lowgradefemaleseed', name = 'Female Dope Seed', quantity = 1},
+ [36] = {chance = 25, id = 'highgrademaleseed', name = 'Male Dope Seed+', quantity = 1},
+ [37] = {chance = 20, id = 'lowgrademaleseed', name = 'Male Dope Seed', quantity = 1},
+ [38] = {chance = 35, id = 'drugItem', name = 'Black USB-C', quantity = 1},
+ [39] = {chance = 50, id = 'tuning_laptop', name = 'tunning laptop', quantity = 1},
+ [40] = {chance = 20, id = 'goldbar', name = 'gold bar ', quantity = 1}
+ 
+ 
 }
 
 --[[chance = 1 is very common, the higher the value the less the chance]]--
@@ -65,7 +69,7 @@ RegisterServerEvent('houseRobberies:giveMoney')
 AddEventHandler('houseRobberies:giveMoney', function()
  local source = tonumber(source)
  local xPlayer = ESX.GetPlayerFromId(source)
- local cash = math.random(1000, 3000)
+ local cash = math.random(1000, 1500)
  xPlayer.addMoney(cash)
  --TriggerClientEvent('chatMessage', source, '^4You have found $'..cash)
  TriggerClientEvent('notification', source, 'You found $'..cash)

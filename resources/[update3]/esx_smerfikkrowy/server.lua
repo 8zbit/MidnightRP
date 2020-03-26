@@ -89,7 +89,7 @@ AddEventHandler('smerfikcraft:skup22', function()
     if xPlayer.job.name == 'milkman' then
     if jabka >= 1 then 
         TriggerClientEvent('odlacz:propa3', _source)
-        local cena = 8
+        local cena = 6
         xPlayer.removeInventoryItem('mleko', ESX.Math.Round(jabka / 4))
         TriggerClientEvent('sprzedawanie:jablekanim22', _source)
         Citizen.Wait(3000)

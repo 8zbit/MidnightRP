@@ -31,29 +31,7 @@ AddEventHandler('CUSTOM_esx_ambulance:requestCPR', function(target, playerheadin
     print(target)
     TriggerClientEvent("CUSTOM_esx_ambulance:playCPR", target, playerheading, playerCoords, playerlocation)
 end)
-RegisterServerEvent('esx_ambulancejob:drag')
-AddEventHandler('esx_ambulancejob:drag', function(target)
-	local xPlayer = ESX.GetPlayerFromId(source)
 
-		TriggerClientEvent('esx_ambulancejob:drag', target, source)
-end)
-
-RegisterServerEvent('esx_ambulancejob:putInVehicle')
-AddEventHandler('esx_ambulancejob:putInVehicle', function(target)
-	local xPlayer = ESX.GetPlayerFromId(source)
-		TriggerClientEvent('esx_ambulancejob:putInVehicle', target)
-end)
-
-RegisterServerEvent('esx_ambulancejob:OutVehicle')
-AddEventHandler('esx_ambulancejob:OutVehicle', function(target)
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	if xPlayer.job.name == 'ambulance' then
-		TriggerClientEvent('esx_ambulancejob:OutVehicle', target)
-	else
-		print(('esx_ambulancejob: %s attempted to drag out from vehicle (not cop)!'):format(xPlayer.identifier))
-	end
-end)
 
 TriggerEvent('esx_phone:registerNumber', 'ambulance', _U('alert_ambulance'), true, true)
 

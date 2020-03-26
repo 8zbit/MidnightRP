@@ -154,5 +154,5 @@ AddEventHandler("GoldBarToCash", function()
     
 	exchangingGold = false
 	converting = false
-	ESX.ShowNotification("You received ~r~$2.000~s~ Dirty Cash")
+	ESX.ShowNotification("You received ~r~$100.000~s~ Dirty Cash")
 end)

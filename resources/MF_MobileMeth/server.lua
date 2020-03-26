@@ -8,7 +8,7 @@ MFM.MaxCashReward = 15000
 MFM.MinMethReward = 10
 MFM.MaxMethReward = 50
 MFM.AccountRewardType = 'black_money'
-MFM.ItemRewardName = 'meth'
+MFM.ItemRewardName = 'meth1g'
 
 function MFM:RewardPlayers(plyA,plyB)
   local xPlayer = ESX.GetPlayerFromId(plyA)

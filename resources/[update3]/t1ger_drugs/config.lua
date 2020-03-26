@@ -22,9 +22,9 @@ Config.JobVan = 'rumpo2'					-- spawn name for job van
 
 -- List of Drugs:
 Config.ListOfDrugs = {
-	{ drug = 'opium', label = 'opium', Enabled = true, BuyPrice = 7500, MinReward = 1, MaxReward = 3 },
-	{ drug = 'mdma', label = 'mdma', Enabled = true, BuyPrice = 6000, MinReward = 2, MaxReward = 6 },
-	{ drug = 'hashish', label = 'hashish', Enabled = true, BuyPrice = 3500, MinReward = 4, MaxReward = 10 },
+	{ drug = 'opium', label = 'opium', Enabled = true, BuyPrice = 5500, MinReward = 1, MaxReward = 3 },
+	{ drug = 'mdma', label = 'mdma', Enabled = true, BuyPrice = 4000, MinReward = 2, MaxReward = 6 },
+	{ drug = 'hashish', label = 'hashish', Enabled = true, BuyPrice = 2500, MinReward = 4, MaxReward = 10 },
 }
 
 -- Job Location & Settings:
@@ -96,16 +96,16 @@ Config.CallPoliceChance = 2						-- 2 means 50%, 3 means 33%, 4 means 25% and et
 
 -- Set sell prices here. Remember, values are multiplied with 10, so 11 means $110, 7 means $70 and etc. etc.
 Config.opiumSale = {
-	min = 25,
-	max = 35
+	min = 35,
+	max = 40
 }
 Config.mdmaSale = {
-	min = 20,
-	max = 25
+	min = 30,
+	max = 35
 }	
 Config.hashishSale = {
-	min = 15,
-	max = 20
+	min = 20,
+	max = 25
 }				
 
 -- Conversion Settings:

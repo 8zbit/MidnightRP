@@ -1458,7 +1458,7 @@ Citizen.CreateThread(function()
 end)
 
 -- Create blips
-Citizen.CreateThread(function()
+--[[ Citizen.CreateThread(function()
 
   for k,v in pairs(Config.SOAStations) do
 
@@ -1476,7 +1476,7 @@ Citizen.CreateThread(function()
 
   end
 
-end)
+end) ]]
 
 -- Display markers
 Citizen.CreateThread(function()

@@ -27,11 +27,15 @@ Config.DrugDealerItems = {  -- add any item here to be sold
 	meth1g = 90,
 	coke1g = 70,
 	spice = 60,
-	marijuana = 20,
+	marijuana = 30,
 	coke = 50,
 	opium1g = 120,
 	mdma1g = 100,
 	hashish4g = 60,
+	goldbar = 600,
+	
+	
+	
 }
 
 --[[	]]

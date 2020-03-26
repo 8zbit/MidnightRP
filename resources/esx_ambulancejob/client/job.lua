@@ -1,8 +1,8 @@
-local CurrentAction, CurrentActionMsg, dragStatus, CurrentActionData = nil, '', {}
+local CurrentAction, CurrentActionMsg, CurrentActionData = nil, '', {}
 local HasAlreadyEnteredMarker, LastHospital, LastPart, LastPartNum
 local IsBusy = false
 local spawnedVehicles, isInShopMenu = {}, false
-dragStatus.isDragged = false
+
 
 local lib1_char_a, lib2_char_a, lib1_char_b, lib2_char_b, anim_start, anim_pump, anim_success = 'mini@cpr@char_a@cpr_def', 'mini@cpr@char_a@cpr_str', 'mini@cpr@char_b@cpr_def', 'mini@cpr@char_b@cpr_str', 'cpr_intro', 'cpr_pumpchest', 'cpr_success'
 
@@ -112,9 +112,7 @@ function OpenMobileAmbulanceActionsMenu()
 					{label = _U('ems_menu_revive'), value = 'revive'},
 					{label = _U('ems_menu_small'), value = 'small'},
 					{label = _U('ems_menu_big'), value = 'big'},
-					--{label = _U('drag'), value = 'drag'},
-					--{label = _U('put_in_vehicle'), value = 'put_in_vehicle'},
-					--{label = _U('out_the_vehicle'), value = 'out_the_vehicle'},
+			
 				}
 			}, function(data, menu)
 				if IsBusy then return end
@@ -246,14 +244,6 @@ function OpenMobileAmbulanceActionsMenu()
 							end
 						end, 'medikit')
 
-					elseif action == 'drag' then
-						TriggerServerEvent('esx_ambulancejob:drag', GetPlayerServerId(closestPlayer))
-
-
-					elseif action == 'put_in_vehicle' then
-						TriggerServerEvent('esx_ambulancejob:putInVehicle', GetPlayerServerId(closestPlayer))
-					elseif action == 'out_the_vehicle' then
-						TriggerServerEvent('esx_ambulancejob:OutVehicle', GetPlayerServerId(closestPlayer))
 
 					end
 				end
@@ -482,30 +472,6 @@ Citizen.CreateThread(function()
 	end
 end)
 
-RegisterNetEvent('esx_ambulancejob:putInVehicle')
-AddEventHandler('esx_ambulancejob:putInVehicle', function()
-	local playerPed = PlayerPedId()
-	local coords    = GetEntityCoords(playerPed)
-
-	if IsAnyVehicleNearPoint(coords, 5.0) then
-		local vehicle = GetClosestVehicle(coords, 5.0, 0, 71)
-
-		if DoesEntityExist(vehicle) then
-			local maxSeats, freeSeat = GetVehicleMaxNumberOfPassengers(vehicle)
-
-			for i=maxSeats - 1, 0, -1 do
-				if IsVehicleSeatFree(vehicle, i) then
-					freeSeat = i
-					break
-				end
-			end
-
-			if freeSeat then
-				TaskWarpPedIntoVehicle(playerPed, vehicle, freeSeat)
-			end
-		end
-	end
-end)
 
 function OpenCloakroomMenu()
 	ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'cloakroom',
@@ -1025,80 +991,3 @@ AddEventHandler('esx_ambulancejob:heal', function(healType)
 end)
 
 
-
-RegisterNetEvent('esx_ambulancejob:drag')
-AddEventHandler('esx_ambulancejob:drag', function(copId)
-	
-	dragStatus.isDragged = not dragStatus.isDragged
-	dragStatus.CopId = copId
-end)
-
-Citizen.CreateThread(function()
-	local playerPed
-	local targetPed
-
-	while true do
-		Citizen.Wait(1)
-
-		
-			if dragStatus.isDragged then
-				targetPed = GetPlayerPed(GetPlayerFromServerId(dragStatus.CopId))
-
-				-- undrag if target is in an vehicle
-				if not IsPedSittingInAnyVehicle(targetPed) then
-					AttachEntityToEntity(playerPed, targetPed, 11816, 0.54, 0.54, 0.0, 0.0, 0.0, 0.0, false, false, false, false, 2, true)
-				else
-					dragStatus.isDragged = false
-					DetachEntity(playerPed, true, false)
-				end
-
-				if IsPedDeadOrDying(targetPed, true) then
-					dragStatus.isDragged = false
-					DetachEntity(playerPed, true, false)
-				end
-
-			else
-				DetachEntity(playerPed, true, false)
-			end
-		
-	end
-end)
-
-RegisterNetEvent('esx_ambulancejob:putInVehicle')
-AddEventHandler('esx_ambulancejob:putInVehicle', function()
-	local playerPed = PlayerPedId()
-	local coords = GetEntityCoords(playerPed)
-
-	
-	if IsAnyVehicleNearPoint(coords, 5.0) then
-		local vehicle = GetClosestVehicle(coords, 5.0, 0, 71)
-
-		if DoesEntityExist(vehicle) then
-			local maxSeats, freeSeat = GetVehicleMaxNumberOfPassengers(vehicle)
-
-			for i=maxSeats - 1, 0, -1 do
-				if IsVehicleSeatFree(vehicle, i) then
-					freeSeat = i
-					break
-				end
-			end
-
-			if freeSeat then
-				TaskWarpPedIntoVehicle(playerPed, vehicle, freeSeat)
-				dragStatus.isDragged = false
-			end
-		end
-	end
-end)
-
-RegisterNetEvent('esx_ambulancejob:OutVehicle')
-AddEventHandler('esx_ambulancejob:OutVehicle', function()
-	local playerPed = PlayerPedId()
-
-	if not IsPedSittingInAnyVehicle(playerPed) then
-		return
-	end
-
-	local vehicle = GetVehiclePedIsIn(playerPed, false)
-	TaskLeaveVehicle(playerPed, vehicle, 16)
-end)

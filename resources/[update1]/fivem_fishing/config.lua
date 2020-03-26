@@ -3,72 +3,72 @@ Config.EnableMeatSell = false --if using fivem_hunting set to true
 Config.Fishes = {
 	['salmon'] = { 
 		['name'] = 'salmon',
-		['label'] = 'lax',
-		['price'] = 500,
-		['value'] = 60/1000,
+		['label'] = 'salmon',
+		['price'] = 100,
+		['value'] = 600/1000,
 		['weight'] = {18000, 42000},
 	},
 	['trout'] = { 
 		['name'] = 'trout',
-		['label'] = 'öring',
-		['price'] = 400,
-		['value'] = 75/1000,
+		['label'] = 'trout',
+		['price'] = 100,
+		['value'] = 750/1000,
 		['weight'] = {1400, 2100},
 	},
 	['char'] = { 
 		['name'] = 'char',
-		['label'] = 'rödling',
-		['price'] = 400,
-		['value'] = 75/1000,
+		['label'] = 'char',
+		['price'] = 100,
+		['value'] = 750/1000,
 		['weight'] = {800,1200},
 	},
 	['pike'] = { 
 		['name'] = 'pike',
-		['label'] = 'gädda',
-		['price'] = 300,
-		['value'] = 80/1000,
+		['label'] = 'pike',
+		['price'] = 100,
+		['value'] = 800/1000,
 		['weight'] = {1500,5000},
 	},
 	['goldfish'] = {
 		['name'] = 'goldfish',
-		['label'] = 'förrymd guldfisk från arkens zoo',
-		['price'] = 10000,
-		['value'] = 50/1000,
+		['label'] = 'goldfish',
+		['price'] = 200,
+		['value'] = 500/1000,
 		['weight'] = {150, 400},
 	},
 	['whitefish'] = { 
 		['name'] = 'whitefish',
-		['label'] = 'sik',
-		['price'] = 150,
-		['value'] = 90/1000,
+		['label'] = 'whitefish',
+		['price'] = 250,
+		['value'] = 900/1000,
 		['weight'] = {4000,5500},
 	},
 	['roach'] = { 
 		['name'] = 'roach',
-		['label'] = 'mört',
-		['price'] = 100,
-		['value'] = 99/1000,
+		['label'] = 'roach',
+		['price'] = 300,
+		['value'] = 990/1000,
 		['weight'] = {200, 700},
 	},
 	['mackerel'] = { 
 		['name'] = 'mackerel',
-		['label'] = 'makrill',
-		['price'] = 100,
-		['value'] = 99/1000,
+		['label'] = 'mackerel',
+		['price'] = 350,
+		['value'] = 990/1000,
 		['weight'] = {750,1250},
 	},
 	['lobster'] = { 
 		['name'] = 'lobster',
-		['label'] = 'hummer',
-		['price'] = 1000,
-		['value'] = 60/1000,
+		['label'] = 'lobster',
+		['price'] = 800,
+		['value'] = 600/1000,
 		['weight'] = {500,1200},
 	},
 	['crawfish'] = { 
 		['name'] = 'crawfish',
-		['label'] = 'sötvattens kräfta',
-		['price'] = 300,
-		['value'] = 70/1000,
+		['label'] = 'crawfish',
+		['price'] = 700,
+		['value'] = 700/1000,
 		['weight'] = {150,450},
 	},
 }
@@ -123,9 +123,17 @@ Config.Locations = {
 	{ ["x"] = 1297.3391113281, ["y"] = 4220.041015625, ["z"] = 33.908641815186, ["h"] = 85.019096374512, ['position'] = 'alamo_sea_pier', ['fishes'] = {'mackerel', 'roach', 'whitefish', 'goldfish', 'trout', 'pike' }},
 	--train_passage
 	{ ["x"] = -508.62612915039, ["y"] = 4423.892578125, ["z"] = 89.636611938477, ["h"] = 286.16461181641, ['position'] = 'train_passage', ['fishes'] = {'salmon', 'goldfish'}},--klar
+	---the pearls
+	{ ["x"] = -2290.54, ["y"] = -623.25, ["z"] = 10.29, ["h"] = 90.36, ['position'] = 'pearls', ['fishes'] = {'goldfish', 'lobster', 'crawfish', 'salmon', 'char','trout' }},--klar
+	{ ["x"] = -2290.48, ["y"] = -626.08, ["z"] = 10.29, ["h"] = 91.28, ['position'] = 'pearls', ['fishes'] = {'goldfish', 'lobster', 'crawfish', 'salmon', 'char','trout' }},--klar
+	{ ["x"] = -2290.57, ["y"] = -629.77, ["z"] = 10.29, ["h"] = 90.88, ['position'] = 'pearls', ['fishes'] = {'goldfish', 'lobster', 'crawfish', 'salmon', 'char','trout' }},--klar
+	{ ["x"] = -2290.36, ["y"] = -632.65, ["z"] = 10.29, ["h"] = 94.9, ['position'] = 'pearls', ['fishes'] = {'goldfish', 'lobster', 'crawfish', 'salmon', 'char','trout' }},--klar
+
+	
+	
 	--mountain_river
 	{ ["x"] = -860.48669433594, ["y"] = 4437.5122070313, ["z"] = 15.219162940979, ["h"] = 228.95330810547, ['position'] = 'mountain_river', ['fishes'] = {'goldfish', 'lobster', 'crawfish' }},--klar
 	{ ["x"] = -858.78533935547, ["y"] = 4422.0859375, ["z"] = 15.249315261841, ["h"] = 342.44134521484, ['position'] = 'mountain_river', ['fishes'] = {'goldfish', 'lobster', 'crawfish' }},--klar
 	{ ["x"] = -809.44799804688, ["y"] = 4434.94140625, ["z"] = 15.266304016113, ["h"] = 339.81692504883, ['position'] = 'mountain_river', ['fishes'] = {'goldfish', 'lobster', 'crawfish' }},--klar
-	{ ["x"] = 949.06500244141, ["y"] = -1733.3645019531, ["z"] = 31.641366958618, ["h"] = 102.24913787842,  ['position'] = 'sell' },
+	{ ["x"] = -2270.18, ["y"] = -623.18, ["z"] = 14.81, ["h"] = 272.58,  ['position'] = 'sell' },
 }

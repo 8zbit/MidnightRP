@@ -5,7 +5,7 @@
 Config = {}
 
 -- Police Settings:
-Config.RequiredPoliceOnline = 0		-- required police online for players to do missions
+Config.RequiredPoliceOnline = 0			-- required police online for players to do missions
 Config.PoliceDatabaseName = "police"	-- set the exact name from your jobs database for police
 Config.PoliceNotfiyEnabled = true		-- police notification upon truck robbery enabled (true) or disabled (false)
 Config.PoliceBlipShow = true			-- enable or disable blip on map on police notify
@@ -15,6 +15,7 @@ Config.PoliceBlipAlpha = 250			-- set alpha of the blip
 Config.PoliceBlipColor = 5				-- set blip color
 
 -- ## MISSION NPC PART ## --
+
 
 -- Location where get mission from NPC:
 Config.MissionNPC = {
@@ -29,7 +30,7 @@ Config.MissionNPC = {
 Config.EnableGoldJobBlip = false
 
 -- Mission NPC Blip Settings:
-Config.EnableMapBlip = true							-- set between true/false
+Config.EnableMapBlip = false						-- set between true/false
 Config.BlipNameOnMap = "Gold Job NPC"				-- set name of the blip
 Config.BlipSprite = 280								-- set blip sprite, lists of sprite ids are here: https://docs.fivem.net/game-references/blips/
 Config.BlipDisplay = 4								-- set blip display behaviour, find list of types here: https://runtime.fivem.net/doc/natives/#_0x9029B2F3DA924928
@@ -244,9 +245,10 @@ Config.MissionPosition =
 	}
 }
 
+
 -- Gold Job Delivery Locations:
 Config.DeliveryPoints = {
-	vector3(3333.92,5161.19,18.31),
+	vector3(44.68,3685.19,39.73),
 }
 
 -- Gold Job Delivery Marker Setting:
@@ -262,20 +264,20 @@ Config.EnableCustomNotification = true
 Config.UseBlackMoneyAsMissionCost = true
 
 -- Set amount of money that mission should cost.
-Config.MissionCost = 499
+Config.MissionCost = 500
 
 -- Set cooldown for doing gold jobs in minutes:
-Config.JobCooldownTime = 120
+Config.JobCooldownTime = 60
 
 -- Reward Settings:
 Config.ItemName1 = "goldwatch"				-- exact name of your item1
-Config.ItemMinAmount1 = 2					-- set minimum reward amount of item1 (this value is multiplied with x100)
+Config.ItemMinAmount1 = 3					-- set minimum reward amount of item1 (this value is multiplied with x100)
 Config.ItemMaxAmount1 = 6					-- set maximum reward amount of item1 (this value is multiplied with x100)
-Config.EnableSecondItemReward = true		-- add another item as reward but this has only 50% chance 
+Config.EnableSecondItemReward = false		-- add another item as reward but this has only 50% chance 
 Config.ItemName2 = "goldbar"				-- exact name of your item2
-Config.ItemMinAmount2 = 1					-- set minimum reward amount of item2
+Config.ItemMinAmount2 = 2					-- set minimum reward amount of item2
 Config.ItemMaxAmount2 = 4					-- set maximum reward amount of item2
-Config.RandomChance = 4						-- Set chance, 1/2 is default, which is 50% chance. If u e.g. change value to 4, then 1/4 equals 25% chance.
+Config.RandomChance = 2				-- Set chance, 1/2 is default, which is 50% chance. If u e.g. change value to 4, then 1/4 equals 25% chance.
 
 -- ## SMELTERY PART ## --
 
@@ -313,6 +315,6 @@ Config.ExchangeTime = 10
 Config.EnableExchangeBlip = false
 
 -- Set cooldown for doing gold exchanges in minutes:
-Config.ExchangeCooldown = 0
+Config.ExchangeCooldown = 10
 
 

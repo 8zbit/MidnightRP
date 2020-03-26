@@ -19,7 +19,7 @@ Config.BleedoutTimer              = 30 * minute -- Time til the player bleeds ou
 Config.EnablePlayerManagement     = true
 Config.EnableSocietyOwnedVehicles = false
 
-Config.RemoveWeaponsAfterRPDeath  = true
+Config.RemoveWeaponsAfterRPDeath  = false
 Config.RemoveCashAfterRPDeath     = false
 Config.RemoveItemsAfterRPDeath    = false
 
@@ -86,42 +86,50 @@ Config.Hospitals = {
 Config.AuthorizedVehicles = {
 
     ambulance = {
+		{ model = 'ambo', label = 'New Ambulance2', price = 40 },
 		{ model = 'ambulance', label = 'Ambulance', price = 40 },
-		--{ model = 'ambulance2', label = 'Ambulance 2', price = 40 },
+		{ model = 'ambulance2', label = 'New Ambulance', price = 40 },
 		{ model = 'emscar', label = 'EMS Car', price = 40 },
 		{ model = 'emscar2', label = 'Car 2', price = 40 },
 		{ model = 'emsvan', label = 'VAN', price = 40 },
 		{ model = 'sheriff2', label = 'Raptor', price = 40 },
-		{ model = 'emssuv', label = 'SUV', price = 40 }
+		{ model = 'emssuv', label = 'SUV', price = 40 },
+		
     },
 
 	doctor = {
+		{ model = 'ambo', label = 'New Ambulance2', price = 40 },
 		{ model = 'ambulance', label = 'Ambulance', price = 40 },
-		--{ model = 'ambulance2', label = 'Ambulance 2', price = 40 },
+		{ model = 'ambulance2', label = 'New Ambulance', price = 40 },
 		{ model = 'emscar', label = 'EMS Car', price = 40 },
 		{ model = 'emscar2', label = 'Car 2', price = 40 },
 		{ model = 'emsvan', label = 'VAN', price = 40 },
 		{ model = 'sheriff2', label = 'Raptor', price = 40 },
+		
 		{ model = 'emssuv', label = 'SUV', price = 40 }
 	},
 
 	chief_doctor = {
+		{ model = 'ambo', label = 'New Ambulance2', price = 40 },
 		{ model = 'ambulance', label = 'Ambulance', price = 40 },
-		--{ model = 'ambulance2', label = 'Ambulance 2', price = 40 },
+		{ model = 'ambulance2', label = 'New Ambulance', price = 40 },
 		{ model = 'emscar', label = 'EMS Car', price = 40 },
 		{ model = 'emscar2', label = 'Car 2', price = 40 },
 		{ model = 'emsvan', label = 'VAN', price = 40 },
 		{ model = 'sheriff2', label = 'Raptor', price = 40 },
+		
 		{ model = 'emssuv', label = 'SUV', price = 40 }
 	},
 
 	boss = {
+		{ model = 'ambo', label = 'New Ambulance2', price = 40 },
 		{ model = 'ambulance', label = 'Ambulance', price = 40 },
-		--{ model = 'ambulance2', label = 'Ambulance 2', price = 40 },
+		{ model = 'ambulance2', label = 'New Ambulance', price = 40 },
 		{ model = 'emscar', label = 'EMS Car', price = 40 },
 		{ model = 'emscar2', label = 'Car 2', price = 40 },
 		{ model = 'emsvan', label = 'VAN', price = 40 },
 		{ model = 'sheriff2', label = 'Raptor', price = 40 },
+		
 		{ model = 'emssuv', label = 'SUV', price = 40 }
 	},
 

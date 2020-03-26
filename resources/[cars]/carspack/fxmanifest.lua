@@ -553,7 +553,68 @@ files {
   'giulia_data/carcols.meta',
   'giulia_data/handling.meta',
 
+  'ambo_data/vehicles.meta',
+  'ambo_data/carvariations.meta',
+  'ambo_data/carcols.meta',
+
+  'mgt_data/vehicles.meta',
+  'mgt_data/carvariations.meta',
+  'mgt_data/carcols.meta',
+  'mgt_data/handling.meta',
+
+  'ems2_data/vehicles.meta',
+  'ems2_data/carvariations.meta',
+  'ems2_data/carcols.meta',
+  'ems2_data/handling.meta',
+
+  'soaram_data/vehicles.meta',
+  'soaram_data/carvariations.meta',
+  'soaram_data/carcols.meta',
+  'soaram_data/handling.meta',
+  'soaram_data/vehiclelayouts.meta',
+
+  '458spc_data/vehicles.meta',
+  '458spc_data/carvariations.meta',
+  '458spc_data/carcols.meta',
+  '458spc_data/handling.meta',
+
+  'f40_data/vehicles.meta',
+  'f40_data/carvariations.meta',
+  'f40_data/carcols.meta',
+  'f40_data/handling.meta',
 }
+
+
+data_file 'HANDLING_FILE' 'f40_data/handling.meta'
+data_file 'VEHICLE_METADATA_FILE' 'f40_data/vehicles.meta'
+data_file 'CARCOLS_FILE' 'f40_data/carcols.meta'
+data_file 'VEHICLE_VARIATION_FILE' 'f40_data/carvariations.meta'
+
+data_file 'HANDLING_FILE' '458spc_data/handling.meta'
+data_file 'VEHICLE_METADATA_FILE' '458spc_data/vehicles.meta'
+data_file 'CARCOLS_FILE' '458spc_data/carcols.meta'
+data_file 'VEHICLE_VARIATION_FILE' '458spc_data/carvariations.meta'
+
+data_file 'HANDLING_FILE' 'soaram_data/handling.meta'
+data_file 'VEHICLE_METADATA_FILE' 'soaram_data/vehicles.meta'
+data_file 'CARCOLS_FILE' 'soaram_data/carcols.meta'
+data_file 'VEHICLE_VARIATION_FILE' 'soaram_data/carvariations.meta'
+data_file 'VEHICLE_LAYOUTS_FILE' 'soaram_data/vehiclelayouts.meta'
+
+data_file 'HANDLING_FILE' 'ems2_data/handling.meta'
+data_file 'VEHICLE_METADATA_FILE' 'ems2_data/vehicles.meta'
+data_file 'CARCOLS_FILE' 'ems2_data/carcols.meta'
+data_file 'VEHICLE_VARIATION_FILE' 'ems2_data/carvariations.meta'
+
+data_file 'HANDLING_FILE' 'mgt_data/handling.meta'
+data_file 'VEHICLE_METADATA_FILE' 'mgt_data/vehicles.meta'
+data_file 'CARCOLS_FILE' 'mgt_data/carcols.meta'
+data_file 'VEHICLE_VARIATION_FILE' 'mgt_data/carvariations.meta'
+
+data_file 'VEHICLE_METADATA_FILE' 'ambo_data/vehicles.meta'
+data_file 'CARCOLS_FILE' 'ambo_data/carcols.meta'
+data_file 'VEHICLE_VARIATION_FILE' 'ambo_data/carvariations.meta'
+
 data_file 'HANDLING_FILE' 'giulia_data/handling.meta'
 data_file 'VEHICLE_METADATA_FILE' 'giulia_data/vehicles.meta'
 data_file 'CARCOLS_FILE' 'giulia_data/carcols.meta'

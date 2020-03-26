@@ -11,7 +11,7 @@ local background = {
 
 local entrance_points = {
     {name = "Factory 1", x = 1443.97, y = 1131.49, z = 114.33},
-    {name = "Laundromat", x = -1807.9, y = -2810.18, z = 13.94},
+    {name = "Laundromat", x = 661.32, y = 1282.26, z = 360.3},
     {name = "Factory 2", x = 116.99, y = -1989.56, z = 18.4},
     {name = "spiceden", x = 1147.58, y = -1008.22, z = 45.42},
     {name = "The Underground", x = 195.149, y = -3167.268, z = 5.79},
