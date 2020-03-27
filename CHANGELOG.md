@@ -24,6 +24,7 @@ All notable updates and changes to the Midnight RP server resources.
 - Business money laundering has been changed to 24 hours laundering period and then the money gets deposited in the society account
 - Money Laundering location changed ! raided by cops
 - Buffed butcher job
+- Reconfigured Zombies door to lock and unlock better
 ### Fixed
 - Fixed glasses on the K menu
 ### Removed
