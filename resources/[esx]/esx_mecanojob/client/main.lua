@@ -1151,7 +1151,7 @@ Citizen.CreateThread(function()
   end
 end)
 
--- Create Blips
+--[[ Create Blips
 Citizen.CreateThread(function()
   local blip = AddBlipForCoord(Config.Zones.MecanoActions.Pos.x, Config.Zones.MecanoActions.Pos.y, Config.Zones.MecanoActions.Pos.z)
   SetBlipSprite (blip, 446)
@@ -1162,7 +1162,7 @@ Citizen.CreateThread(function()
   BeginTextCommandSetBlipName("STRING")
   AddTextComponentString(_U('Zombies'))
   EndTextCommandSetBlipName(blip)
-end)
+end)]]
 
 -- Display markers
 Citizen.CreateThread(function()
