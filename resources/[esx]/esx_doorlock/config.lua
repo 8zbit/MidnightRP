@@ -791,7 +791,7 @@ Config.DoorList = {
 		textCoords = {x=-205.6828,y= -1310.683,z=31.29572},
 		authorizedJobs = { 'mecano' },
 		locked = true,
-		distance = 2,
+		distance = 2.5,
 		size = 1.7
 	},
 	
