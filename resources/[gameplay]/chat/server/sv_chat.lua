@@ -56,7 +56,7 @@ end
 
 AddEventHandler('chat:init', function()
 
-    TriggerClientEvent('chat:addMessage', -1, { template = '<div class="chat-message dweb"><b>Town {0} : </b> {1}</div>', args = { GetPlayerName(source), "Caught a bus in" } })
+  --  TriggerClientEvent('chat:addMessage', -1, { template = '<div class="chat-message dweb"><b>Town {0} : </b> {1}</div>', args = { GetPlayerName(source), "Caught a bus in" } })
 
    -- TriggerClientEvent('chatMessage', -1, '', { 255, 255, 255 }, '^2* ' .. GetPlayerName(source) .. ' joined.')
 end)
@@ -64,7 +64,7 @@ end)
 AddEventHandler('playerDropped', function(reason)
   --  TriggerClientEvent('chatMessage', -1, '', { 255, 255, 255 }, '^2* ' .. GetPlayerName(source) ..' left (' .. reason .. ')')
 
-    TriggerClientEvent('chat:addMessage', -1, { template = '<div class="chat-message server"><b>Town {0} : </b> {1}</div>', args = { GetPlayerName(source), "Caught a bus out" } })
+ --   TriggerClientEvent('chat:addMessage', -1, { template = '<div class="chat-message server"><b>Town {0} : </b> {1}</div>', args = { GetPlayerName(source), "Caught a bus out" } })
 end)
 
 RegisterCommand('say', function(source, args, rawCommand)

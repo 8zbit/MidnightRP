@@ -60,7 +60,7 @@ RegisterCommand('fbs', function(source, args, rawCommand)
     end
 end, false)
 
-RegisterCommand('grm', function(source, args, rawCommand)
+RegisterCommand('rp', function(source, args, rawCommand)
     local src = source
     local msg = rawCommand:sub(5)
     if player ~= false then
@@ -68,7 +68,7 @@ RegisterCommand('grm', function(source, args, rawCommand)
             local name = getIdentity(src)
 		        fal = name.firstname .. " " .. name.lastname
                 TriggerClientEvent('chat:addMessage', -1, {
-                template = '<div class="chat-message insta"><b>instagram : {0} : </b>{1}</div>',
+                template = '<div class="chat-message insta"><b>roleplay : {0} : </b>{1}</div>',
                 args = { fal, msg }
             })
         else
