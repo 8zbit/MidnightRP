@@ -5,6 +5,7 @@ All notable updates and changes to the Midnight RP server resources.
 
 ## [1.37] - 2020-03-28
 ### Added
+- Changed House interiors and added 3 new High end housing interiors. prices are still the same. you lose your furniture but your house shell just got upgraded. welcome to the high life baby.
 
 ### Changed
 - you can now move your camera around when downed (dead) 
