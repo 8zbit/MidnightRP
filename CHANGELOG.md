@@ -6,6 +6,7 @@ All notable updates and changes to the Midnight RP server resources.
 ## [1.37] - 2020-03-28
 ### Added
 - Changed House interiors and added 3 new High end housing interiors. prices are still the same. you lose your furniture but your house shell just got upgraded. welcome to the high life baby.
+-  new cad system press(,) to access tablet (files in update4 folder tab,cad_integration)
 
 ### Changed
 - you can now move your camera around when downed (dead) 
@@ -15,7 +16,7 @@ All notable updates and changes to the Midnight RP server resources.
 
 - fixed esx society money wash (testing by community required)
 ### Removed
-- 
+- old police cad
 
 ## [Released]
 
