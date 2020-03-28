@@ -68,23 +68,22 @@ AddEventHandler('esx_drugs:onLsd', function()
   local playerPed = GetPlayerPed(-1)
   local maxHealth = GetEntityMaxHealth(playerPed)
   
-    RequestAnimSet("move_m@drunk@moderatedrunk") 
-    while not HasAnimSetLoaded("move_m@drunk@moderatedrunk") do
+    RequestAnimSet("anim@move_m@grooving@") 
+    while not HasAnimSetLoaded("anim@move_m@grooving@") do
       Citizen.Wait(0)
 	end
-	
-	  SetTimecycleModifier("spectator5")
-	  SetTimecycleModifierStrength(0.65)
+--	spectator5
+    SetTimecycleModifier("spectator5")
+    SetTimecycleModifierStrength(1.15)
     SetPedMotionBlur(playerPed, true)
-    SetPedMovementClipset(playerPed, "move_m@drunk@moderatedrunk", true)
+    SetPedMovementClipset(playerPed, "anim@move_m@grooving@", true)
     SetPedIsDrunk(playerPed, true)
     
     --Efects
     local player = PlayerId()
     SetRunSprintMultiplierForPlayer(player, 1.2)
     SetSwimMultiplierForPlayer(player, 1.3)
-
-    Wait(45000)
+    Wait(300000)
     SetRunSprintMultiplierForPlayer(player, 1.0)
     SetSwimMultiplierForPlayer(player, 1.0)
 
@@ -124,7 +123,6 @@ AddEventHandler('esx_drugs:onSpice', function()
 	Citizen.Wait(5000)
 	ClearPedTasksImmediately(GetPlayerPed(-1))
 
-  TaskWanderStandard(playerPed, 10.0, 10)
   SetPedMovementClipset(playerPed, "move_m@drunk@moderatedrunk", true)
   SetTimecycleModifier("spectator4")
   SetTimecycleModifierStrength(0.89)

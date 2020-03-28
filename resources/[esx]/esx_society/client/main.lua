@@ -9,7 +9,7 @@ Citizen.CreateThread(function()
   end
 end)
 
---[[function EnableSocietyMoneyHUDElement()
+--[[function DisableSocietyMoneyHUDElement()
 
   local societyMoneyHUDElementTpl = '<div><img src="' .. base64MoneyIcon .. '" style="width:20px; height:20px; vertical-align:middle;">&nbsp;{{money}}</div>'
 
@@ -428,7 +428,7 @@ AddEventHandler('esx:playerLoaded', function(xPlayer)
 
   if PlayerData.job.grade_name == 'boss' then
     
-    EnableSocietyMoneyHUDElement()
+    DisableSocietyMoneyHUDElement()
   
     ESX.TriggerServerCallback('esx_society:getSocietyMoney', function(money)
       UpdateSocietyMoneyHUDElement(money)
@@ -447,7 +447,7 @@ AddEventHandler('esx:setJob', function(job)
 
   if PlayerData.job.grade_name == 'boss' then
     
-    EnableSocietyMoneyHUDElement()
+    DisableSocietyMoneyHUDElement()
   
     ESX.TriggerServerCallback('esx_society:getSocietyMoney', function(money)
       UpdateSocietyMoneyHUDElement(money)

@@ -2,15 +2,17 @@
 
 All notable updates and changes to the Midnight RP server resources.
 
-## [Unreleased]
 
-## [1.37] - Current Test
+## [1.37] - 2020-03-28
 ### Added
-- 
+
 ### Changed
-- 
+- you can now move your camera around when downed (dead) 
+- changed effects and duration of lsd (it lasts 10 minutes. heads up)
+- raised everyones alcohol tolarance party on my dudes.
 ### Fixed
-- 
+
+- fixed esx society money wash (testing by community required)
 ### Removed
 - 
 
@@ -25,13 +27,28 @@ All notable updates and changes to the Midnight RP server resources.
 - Money Laundering location changed ! raided by cops
 - Buffed butcher job
 - Reconfigured Zombies door to lock and unlock better
+- changed effects and duration of lsd (it lasts 10 minutes. heads up)
+- raised everyones alcohol tolarance party on my dudes.
 ### Fixed
 - Fixed glasses on the K menu
+-fixed esx society money wash
 ### Removed
 - 
 
 
+## [Unreleased]
 
+## [1.37] - Current Test
+### Added
+- 
+### Changed
+- 
+### Fixed
+- 
+### Removed
+- 
+
+## [Released]
 
 
 ## [Template]
