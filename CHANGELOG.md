@@ -42,7 +42,8 @@ All notable updates and changes to the Midnight RP server resources.
 ### Added
 - 
 ### Changed
-- 
+- Brinks changed to clock in and clock out instead of ped change
+- Updated Brinks en locale to reflect actual actions of menu
 ### Fixed
 - 
 ### Removed
