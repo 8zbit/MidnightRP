@@ -2,6 +2,19 @@
 
 All notable updates and changes to the Midnight RP server resources.
 
+## [Unreleased]
+
+## [ALPHA] - Current Test
+### Added
+- 
+### Changed
+- 
+### Fixed
+- 
+### Removed
+- 
+
+## [Released]
 
 ## [1.37] - 2020-03-28
 ### Added
@@ -18,8 +31,6 @@ All notable updates and changes to the Midnight RP server resources.
 ### Removed
 - old police cad
 
-## [Released]
-
 ## [1.36] - 2020-03-26
 ### Added
 - Added VW Beetle
@@ -34,33 +45,5 @@ All notable updates and changes to the Midnight RP server resources.
 ### Fixed
 - Fixed glasses on the K menu
 -fixed esx society money wash
-### Removed
-- 
-
-
-## [Unreleased]
-
-## [1.37] - Current Test
-### Added
-- 
-### Changed
-- 
-### Fixed
-- 
-### Removed
-- 
-
-## [Released]
-
-
-## [Template]
-
-## [ver] - YYYY-MM-DD
-### Added
-- 
-### Changed
-- 
-### Fixed
-- 
 ### Removed
 - 
