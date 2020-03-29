@@ -2,18 +2,6 @@
 
 All notable updates and changes to the Midnight RP server resources.
 
-## [Unreleased]
-
-## [ALPHA] - Current Test
-### Added
-- 
-### Changed
-- 
-### Fixed
-- 
-### Removed
-- 
-
 ## [Released]
 
 ## [1.37] - 2020-03-28
@@ -45,5 +33,17 @@ All notable updates and changes to the Midnight RP server resources.
 ### Fixed
 - Fixed glasses on the K menu
 -fixed esx society money wash
+### Removed
+- 
+
+## [Unreleased]
+
+## [ALPHA] - Current Test
+### Added
+- 
+### Changed
+- 
+### Fixed
+- 
 ### Removed
 - 
