@@ -1,27 +1,999 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Law</title>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Ruluko);
+    @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+    [class*="fontawesome-"]:before {
+      font-family: 'FontAwesome', sans-serif;
+    }
+
+    * {
+      font-size: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 100%;
+      height: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      background: #8C83FF;
+    }
+
+    body {
+      font-family: 'Ruluko', sans-serif;
+      font-size: 16px;
+      width: 100%;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+
+    body header {
+      top: 0;
+      margin: 0;
+      height: 4rem;
+      background: #00001A;
+      text-shadow: 0.5px 0.5px black;
+      box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+      -webkit-transition: all 0.7s ease;
+      transition: all 0.7s ease;
+      z-index: 1;
+    }
+
+    body header h1 {
+      margin-left: 1.5rem;
+      color: whitesmoke;
+      line-height: 1rem;
+    }
+
+    body header h1 span {
+      float: right;
+      margin-right: 2rem;
+      font-size: 3rem;
+      line-height: 2rem;
+      cursor: pointer;
+    }
+
+    body h2 {
+      font-size: 1.75em;
+    }
+
+    main {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+    }
+
+    main .sidebar {
+      background: #00001A;
+      min-width: 180px;
+      max-width: 300px;
+      margin-bottom: 0;
+      color: whitesmoke;
+      text-shadow: 1px 1px #0d0d0d;
+      overflow: auto;
+      height: 600px;
+    }
+
+    main .sidebar h2 {
+      text-align: center;
+      margin: 0;
+      padding: 1.2rem;
+      background: #323233;
+      color: #A6A5A4;
+      border-bottom: 2px solid #2F2F2F;
+    }
+
+    main .sidebar h2:after {
+      content: "The SideBar";
+    }
+
+    main .sidebar ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    main .sidebar li {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      display: block;
+      margin: 0;
+      padding: 0;
+      border-bottom: 2px solid #2F2F2F;
+    }
+
+    main .sidebar li:hover {
+      border-right: .5rem solid #FFFFFF;
+      box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.4);
+    }
+
+    main .sidebar a {
+      color: whitesmoke;
+      display: block;
+      padding: 1.5em .2em;
+      text-decoration: none;
+      text-align: center;
+      font-size: 1.2em;
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+
+    main .sidebar a:before {
+      content: "SideBar";
+    }
+
+    main .sidebar a:hover {
+      color: #8D8CFC;
+      margin-left: 1rem;
+    }
+
+    body>header {
+      height: 9rem;
+    }
+
+    body>header h1 {
+      line-height: 2rem;
+    }
+
+    body>header h1 span {
+      line-height: 8rem;
+    }
+
+    main {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+
+    main .sidebar {
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+    }
+
+    main .sidebar h2:after {
+      content: "The TopBar";
+      padding-left: .5rem;
+    }
+
+    main .sidebar ul li {
+      margin: 0;
+      list-style-type: none;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+
+    main .sidebar ul li:last-child {
+      border-bottom: none;
+    }
+
+    main li {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      margin: 0;
+      padding: 0;
+    }
+
+    main .sidebar a:before {
+      content: "";
+    }
+
+    #all-content {
+      flex: 1;
+    }
+
+    .info {
+      background-color: #00001A;
+      border-radius: 20px;
+      /* The border-radius gives rounded corners.*/
+      color: white;
+      padding: 10px;
+      margin: 10px auto;
+    }
+
+    h2 {
+      margin: 10px;
+    }
+
+    .info {
+      background-color: #FFFFFF;
+      padding: 4px;
+      margin: 10px;
+      border-radius: 4px;
+      color: black;
+    }
+
+    */ .info-title {
+      font-size: 3em;
+      margin: 8px;
+      text-align: center;
+      color: #294860;
+    }
+
+    .info-description {
+      font-weight: lighter;
+      /* this makes the font a bit less dark */
+      font-size: 1.3em;
+      margin: 6px;
+    }
+  </style>
 </head>
 
 <body>
-    <style>
-        body {
-            overflow: hidden;
-            margin: 0;
-        }
+  <header>
+    <h1>Criminal Code&nbsp;&nbsp;</h1>
+  </header>
+  <main>
+    <div class="sidebar">
+      <div class="TOC">
+        <h1>Table of Contents</h1>
+        <!-- Below this is a <ol> element. "ol" stands for "ordered list." -->
+        <ol>
+          <!-- <li> means "list item" -->
+          <li>
+            <a href="#info-1">PENAL CODE (1)-Title 1: Major Crime (Chapter)-01 to (Chapter)-07)</a>
+            <!-- Next I add an "unordered list" within the "list item" of my "ordered list" -->
+            <ul>
+              <li>
+                <a href="#info-1-1">Chapter 1: Murder</a>
+              </li>
+              <li>
+                <a href="#info-1-2">Chapter 2: Attempted murder</a>
+              </li>
+              <li>
+                <a href="#info-1-3">Chapter 3: Aggravated battery</a>
+              </li>
+              <li>
+                <a href="#info-1-4">Chapter 4: Kidnapping</a>
+              </li>
+              <li>
+                <a href="#info-1-5">Chapter 5: Assault</a>
+              </li>
+              <li>
+                <a href="#info-1-6">Chapter 6: Aiding and abetting a suspect</a>
+              </li>
+              <li>
+                <a href="#info-1-7">Chapter 7: Arson</a>
+              </li>
+            </ul>
+          </li>
+          <li class="TOC-info">
+            <a href="#info-2">PENAL CODE (2)-Title 2: Average Crime (Chapter)-01 to (Chapter)-20)</a>
+            <ul>
+              <li>
+                <a href="#info-2-1">Chapter 1: Fabrication of an illegal substance</a>
+              </li>
+              <li>
+                <a href="#info-2-2">Chapter 2: Impersonating an LEO</a>
+              </li>
+              <li>
+                <a href="#info-2-3">Chapter 3: Armed robbery</a>
+              </li>
+              <li>
+                <a href="#info-2-4">Chapter 4: Robbery</a>
+              </li>
+              <li>
+                <a href="#info-2-5">Chapter 5: Possession with the intent to distribute of an illegal weapon</a>
+              </li>
+              <li>
+                <a href="#info-2-6">Chapter 6: Possession with the intent to distribute of an illegal substance</a>
+              </li>
+              <li>
+                <a href="#info-2-7">Chapter 7: Terrorist threat</a>
+              </li>
+              <li>
+                <a href="#info-2-8">Chapter 8: Attempted armed robbery</a>
+              </li>
+              <li>
+                <a href="#info-2-9">Chapter 9: Possession of an illegal substance</a>
+              </li>
+              <li>
+                <a href="#info-2-10">Chapter 10: Grand Theft Auto</a>
+              </li>
+              <li>
+                <a href="#info-2-11">Chapter 11: Fleeing and Eluding</a>
+              </li>
+              <li>
+                <a href="#info-2-12">Chapter 12: Negligent discharge of a firearm</a>
+              </li>
+              <li>
+                <a href="#info-2-13">Chapter 13: Possession of an illegal weapon</a>
+              </li>
+              <li>
+                <a href="#info-2-14">Chapter 14: Possession of a stolen vehicle</a>
+              </li>
+              <li>
+                <a href="#info-2-15">Chapter 15: Hit and run</a>
+              </li>
+              <li>
+                <a href="#info-2-16">Chapter 16: Prostitution</a>
+              </li>
+              <li>
+                <a href="#info-2-17">Chapter 17: Stalking</a>
+              </li>
+              <li>
+                <a href="#info-2-18">Chapter 18: Fraud</a>
+              </li>
+              <li>
+                <a href="#info-2-19">Chapter 19: brandishing a deadly weapon in city limits</a>
+              </li>
+              <li>
+                <a href="#info-2-20">Chapter 20: possession of a legal weapon without a firearm license</a>
+              </li>
 
-        #opencad {
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-        }
-    </style>
-    <!-- ADD YOUR CAD/MDT SITE ADDRESS HERE -->
-    <iframe id="opencad" src="https://midnightroleplay.forumotion.com/t5-penal-code"></iframe>
+			  </ul>
+          </li>
+          <li class="TOC-info">
+            <a href="#info-3">PENAL CODE (3)-Title 3: Minor Crime (3)-01 to (3)-17)</a>
+            <ul>
+              <li>
+                <a href="#info-3-1">Chapter 1: Sexual harassment</a>
+              </li>
+              <li>
+                <a href="#info-3-2">Chapter 2: Resisting arrest, searches, detention</a>
+              </li>
+              <li>
+                <a href="#info-3-3">Chapter 3: Destruction of government property</a>
+              </li>
+              <li>
+                <a href="#info-3-4">Chapter 4: Obstruction of justice</a>
+              </li>
+              <li>
+                <a href="#info-3-5">Chapter 5: Trespassing on government property</a>
+              </li>
+              <li>
+                <a href="#info-3-6">Chapter 6: Trespassing on private property</a>
+              </li>
+              <li>
+                <a href="#info-3-7">Chapter 7: Bribery or Extortion </a>
+              </li>
+              <li>
+                <a href="#info-3-8">Chapter 8: Conspiracy</a>
+              </li>
+              <li>
+                <a href="#info-3-9">Chapter 9: Disorderly conduct</a>
+              </li>
+              <li>
+                <a href="#info-3-10">Chapter 10: Driving under the influence</a>
+              </li>
+              <li>
+                <a href="#info-3-11">Chapter 11: Violating a restraining order</a>
+              </li>
+              <li>
+                <a href="#info-3-12">Chapter 12: False imprisonment </a>
+              </li>
+              <li>
+                <a href="#info-3-13">Chapter 13: Public intoxication</a>
+              </li>
+              <li>
+                <a href="#info-3-14">Chapter 14: Failure to pay citations</a>
+              </li>
+              <li>
+                <a href="#info-3-15">Chapter 15: False statement to law enforcement</a>
+              </li>
+              <li>
+                <a href="#info-3-16">Chapter 16: Destruction of private property</a>
+              </li>
+              <li>
+                <a href="#info-3-17">Chapter 17: Destruction of public property</a>
+              </li>
+            </ul>
+          </li>
+          <li class="TOC-info">
+            <a href="#info-4">PENAL CODE (4)-Title 4: Traffic Violations (Chapter)-01 to (Chapter)-07)</a>
+            <ul>
+              <li>
+                <a href="#info-4-1">Chapter 1: Street Racing </a>
+              </li>
+              <li>
+                <a href="#info-4-2">Chapter 2: Driving with a suspended license</a>
+              </li>
+              <li>
+                <a href="#info-4-3">Chapter 3: Felony speeding 30+ </a>
+              </li>
+              <li>
+                <a href="#info-4-4">Chapter 4: Reckless driving</a>
+              </li>
+              <li>
+                <a href="#info-4-5">Chapter 5: Failure to obey traffic control device</a>
+              </li>
+              <li>
+                <a href="#info-4-6">Chapter 6: Illegally off-roading</a>
+              </li>
+              <li>
+                <a href="#info-4-7">Chapter 7: Driving without a license</a>
+              </li>
+ 			 </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div id="all-content">
+      <h1>San Andreas Criminal Code</h1>
+      <p>
+        The justice system works as follows: If you are caught committing a crime or driving violation the sentence will be 
+		decided by the arresting officer based
+        on the Criminal Code, situation and the offenders previous record. The accused has the option to fight the case by
+        a jury of their peers providing they have somewhat of a case. If the case is lost the accused will be sentenced to
+        double the time of the original sentence. This applies for criminal and driving offences. If you chose this route
+        you will be placed on bail providing you have the correct amount of money for bail. While on bail you may be subject
+        to conditions for your release (if your crime was driving related maybe you'll be banned from driving till your trial
+        date, if it booze related maybe you can't drink, curfew, etc.) In order for fair trial there must be six people willing
+        to sit and hear the case and evidence provided by the defendant and the officer on the case. The peers will make
+        their judgement and a judge will make the finally call on the sentence. If the peers feel you're not guilty then
+        your free to go. You are free to hire a lawyer at any point. If you accept the sentence at the time of arrest you
+        may pay your fine on the spot or serve your community service providing you've been
+        charged with an offence that doesn't require prison. If prison time is required you time is to be spent in the boiling
+        broke pen and your sentence time start after your admitted. Any sentence issued in the court will be served in the
+        prison as well. Jail break outs are permitted as long as there are minimum two guards on duty watching the jail/prison
+        in question. No road break outs are permitted. By failing roleplay by any order made by police or judge and not following
+        roleplay you will be subject to Midnight Role Play disciplinary process.
+
+      </p>
+      <div class="info">
+        <h2 id="info-1">PENAL CODE (1)-Title 1: Major Crime (Chapter)-01 to (Chapter)-07)</h2>
+        <div class="info" id="info-1-1">
+          <div class="info-title">
+            Chapter 1: Murder
+          </div>
+          <div class="info-description">
+            <p>
+            The unlawful killing of a human being with malice aforethought<br><br>
+			Sentence:<br><br>
+			First offense: Mandatory imprisonment of 30 months.<br>
+			Second offense: Mandatory imprisonment of 35 months.<br>
+			Third offense: Mandatory imprisonment of 40 months.<br>
+			Further offenses: Mandatory imprisonment of 50 months.<br>
+			Killing of an LEO warrants an extension of 10 months to the offense.<br>
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="info" id="info-1-2">
+        <div class="info-title">
+          Chapter 2: Attempted murder
+        </div>
+        <div class="info-description">
+          <p>
+            Demonstration of an intent to murder, meaning that the perpetrator either tried to murder and failed or took a substantial step towards committing a murder<br><br>
+			Sentence:<br><br>
+			First offense: Mandatory imprisonment of 20 months.<br>
+			Second offense: Mandatory imprisonment of 25 months.<br>
+			Third offense: Mandatory imprisonment of 30 months.<br>
+			Further offenses: Mandatory imprisonment of 40 months.<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-1-3">
+        <div class="info-title">
+          Chapter 3: Aggravated battery
+        </div>
+        <div class="info-description">
+          <p>
+            Intentionally touching or striking another person and, in doing so: Intentionally or knowingly caused great bodily harm, permanent disability, or permanent disfigurement to the victim.<br><br>
+			Sentence:<br><br>
+			First offense: Mandatory imprisonment of 10 months.<br>
+			Second offense: Mandatory imprisonment of 15 months.<br>
+			Third offense: Mandatory imprisonment of 20 months.<br>
+			Further offenses: Mandatory imprisonment of 25 months.<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-1-4">
+        <div class="info-title">
+          Chapter 4: Kidnapping
+        </div>
+        <div class="info-description">
+          <p>
+            Intentional or forcible abduction or confinement of an individual without their consent to: hold for ransom, use in the commission of another criminal act, use as hostage, assault, using a firearm as a tool to threat or attempt to force abduction.<br><br>
+			Sentence:<br><br>
+			First offense: Mandatory imprisonment of 15 months.<br>
+			Second offense: Mandatory imprisonment of 20 months.<br>
+			Third offense: Mandatory imprisonment of 25 months.<br>
+			Further offenses: Mandatory imprisonment of 30 months.<br>
+
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-1-5">
+        <div class="info-title">
+          Chapter 5: Assault
+        </div>
+        <div class="info-description">
+          <p>
+            Intentionally, knowingly or recklessly causing harm or bodily injury to another; or causing contact with another person and should reasonably know that the other will regard such contact as offensive or provocative<br><br>
+			Sentence:<br><br>
+			First offense: Mandatory imprisonment of 7 months.<br>
+			Second offense: Mandatory imprisonment of 10 months.<br>
+			Third offense: Mandatory imprisonment of 15 months.<br>
+			Further offenses: Mandatory imprisonment of 20 months.<br>
+			Assault of an LEO warrants and extension of 5 months to the offense.<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-1-6">
+        <div class="info-title">
+          Chapter 6: Aiding and abetting a suspect 
+        </div>
+        <div class="info-description">
+          <p>
+           Someone criminally responsible for the unlawful conduct of another person(s) or organization if aiding, promoting or is otherwise part of the criminal offense<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 7 months.<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-1-7">
+        <div class="info-title">
+          Chapter 7: Arson
+        </div>
+        <div class="info-description">
+          <p>
+           Deliberate destruction of property by means of fire, incendiary or explosive device.<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 7 months.<br>
+          </p>
+        </div>
+      </div>
+		<div class="info" id="info-2-1">
+        <h2 id="info-2">PENAL CODE (2)-Title 2: Average Crime (Chapter)-01 to (Chapter)-17)</h2>
+        <div class="info-title">
+          Chapter 1: Fabrication of an illegal substance
+        </div>
+        <div class="info-description">
+          <p>
+            Illegally facilitating the production or creation of an illegal substance<br><br>
+			Sentence:<br><br> Narcotics of any quality shall be ran through mandatory imprisonment of 20 months.<br>
+
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-2-2">
+        <div class="info-title">Chapter 2: Impersonating an LEO</div>
+        <div class="info-description">
+          <p>
+            Falsely presenting oneself as or acting in the capacity of a public servant, government official or attorney.<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 15 months.<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-2-3">
+        <div class="info-title">Chapter 3: Armed robbery</div>
+        <div class="info-description">
+          <p>
+            Theft and/or causing bodily injury using a deadly weapon during the commission of a crime.<br><br>
+			Sentence:<br><br>
+			First offense: Mandatory imprisonment of 15 months.<br>
+			Second offense: Mandatory imprisonment of 20 months.<br>
+			Third offense: Mandatory imprisonment of 25 months.<br>
+			Further offenses: Mandatory imprisonment of 30 months.<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-2-5">
+        <div class="info-title">Chapter 4: Robbery</div>
+        <div class="info-description">
+          <p>
+            Theft without the use of a deadly weapon.<br><br>
+			Sentence:<br><br>
+			First offense: Mandatory imprisonment of 7 months.<br>
+			Second offense: Mandatory imprisonment of 10 months.<br>
+			Third offense: Mandatory imprisonment of 15 months.<br>
+			Further offenses: Mandatory imprisonment of 20 months.<br>
+
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-2-6">
+        <div class="info-title">Chapter 5: Possession with the intent to distribute of an illegal weapon</div>
+        <div class="info-description">
+          <p>
+           Possession with the intent to distribute of an illegal weapon (firearm, melee or explosive)<br><br>
+			Sentence:<br><br>
+			First offense: Mandatory imprisonment of 15 months.<br>
+			Second offense: Mandatory imprisonment of 20 months.<br>
+			Third offense: Mandatory imprisonment of 25 months.<br>
+			Further offenses: Mandatory imprisonment of 30 months.<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-2-7">
+        <div class="info-title">Chapter 6: Possession with the intent to distribute of an illegal substance</div>
+        <div class="info-description">
+          <p>
+            Possession with the intent to distribute of an illegal substance of any kind<br><br>
+			Sentence:<br><br>
+			First offense: Mandatory imprisonment of 15 months.<br>
+			Second offense: Mandatory imprisonment of 20 months.<br>
+			Third offense: Mandatory imprisonment of 25 months.<br>
+			Further offenses: Mandatory imprisonment of 30 months.<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-2-8">
+        <div class="info-title">Chapter 7: Terrorist threat</div>
+        <div class="info-description">
+          <p>
+            Threatening violence to a person(s), organization(s) or property with the intent to provoke a reaction by impact, interrupt EMS/Fire or law enforcement, prevent the use of a building, incite fear in the public, influence the conduct of polices of the government or its entities.<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 15 months.<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-2-9">
+        <div class="info-title">Chapter 8: Attempted armed robbery</div>
+        <div class="info-description">
+          <p>
+            Attempt theft using a deadly weapon<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 10 months.<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-2-10">
+        <div class="info-title">Chapter 9: Possession of an illegal substance</div>
+        <div class="info-description">
+          <p>
+            Having possession of an illegal substance(s)<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 10 months.<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-2-11">
+        <div class="info-title">Chapter 10: Grand Theft Auto</div>
+        <div class="info-description">
+          <p>
+            Being witnessed stealing a vehicle which one does not own<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 10 months.<br>
+
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-2-12">
+        <div class="info-title">Chapter 11: Fleeing and Eluding</div>
+        <div class="info-description">
+          <p>
+            Fleeing or attempting to flee an LEO who is attempting to arrest or detain<br><br>
+			Sentence:<br><br>Mandatory imprisonment of 10 months.<br>
+
+          </p>
+        </div>
+      </div>
+	        <div class="info" id="info-2-13">
+        <div class="info-title">Chapter 12: Negligent discharge of a firearm</div>
+        <div class="info-description">
+          <p>
+            Discharging a firearm without any valid reason in doing so<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 7 months.<br>
+          </p>
+        </div>
+      </div>
+	        <div class="info" id="info-2-14">
+        <div class="info-title">Chapter 13: Possession of an illegal weapon</div>
+        <div class="info-description">
+          <p>
+			Having possession of an illegal weapon<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 7 months.<br>
+
+          </p>
+        </div>
+      </div>
+	        <div class="info" id="info-2-15">
+        <div class="info-title">Chapter 14: Possession of a stolen vehicle</div>
+        <div class="info-description">
+          <p>
+          Having possession of a stolen vehicle<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 7 months.<br>
+
+          </p>
+        </div>
+      </div>
+	        <div class="info" id="info-2-16">
+        <div class="info-title">Chapter 15: Hit and run</div>
+        <div class="info-description">
+          <p>
+            Failure to stop and remain at the scene of an accident after having caused it<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 7 months.<br>
+
+          </p>
+        </div>
+      </div>
+	        <div class="info" id="info-2-17">
+        <div class="info-title">Chapter 16: Prostitution</div>
+        <div class="info-description">
+          <p>
+           Exchange of a sexual act for money<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 7 months.<br>
+
+          </p>
+        </div>
+      </div>
+	        <div class="info" id="info-2-18">
+        <div class="info-title">Chapter 17: Stalking</div>
+        <div class="info-description">
+          <p>
+            Unwanted pursuit of another person<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 7 months.<br>
+
+          </p>
+        </div>
+      </div>
+	        <div class="info" id="info-2-19">
+        <div class="info-title">Chapter 18: Fraud</div>
+        <div class="info-description">
+          <p>
+            Individual involved in acts intended to swindle people<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 7 months.<br>
+
+          </p>
+        </div>
+      </div>
+	        <div class="info" id="info-2-20">
+        <div class="info-title">Chapter 19: brandishing a deadly weapon in city limits</div>
+        <div class="info-description">
+          <p>
+            Unlawful display or draw of a deadly weapon of any kind capable of producing bodily harm,<br><br>
+			Exception:<br><br> self-defense<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 3 months.<br>
+
+
+          </p>
+        </div>
+      </div>
+	        <div class="info" id="info-2-21">
+        <div class="info-title">Chapter 20: possession of a legal weapon without a firearm license</div>
+        <div class="info-description">
+          <p>
+            Having possession of a legal weapon without a firearms license<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 3 months.<br>
+          </p>
+        </div>
+      </div>
+
+      <div class="info" id="info-3-1">
+        <h2 id="info-3">PENAL CODE (3)-Title 3: Minor Crime (Chapter)-01 to (Chapter)-17)</h2>
+        <div class="info-title">Chapter 1: Sexual harassment</div>
+        <div class="info-description">
+          <p>
+			Unwelcome sexual advances, requests for sexual favors, and or other verbal or physical conduct of sexual nature constitute sexual harassment when submission to or rejection of this conduct explicitly or implicitly affects and individuals employment, unreasonably interferes with an individuals work performance or creates an intimidating hostile or offensive work environment.<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 10 months.<br>
+
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-3-2">
+        <div class="info-title">Chapter 2: Resisting arrest, searches, detention
+</div>
+        <div class="info-description">
+          <p>
+            Resisting arrest search or detention by an LEO officer<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 8 months.<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-3-3">
+        <div class="info-title">Chapter 3: Destruction of government property</div>
+        <div class="info-description">
+          <p>
+            One that pursues the destruction of government property such as buildings or vehicles.<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 7 months.<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-3-4">
+        <div class="info-title">Chapter 4: Obstruction of justice</div>
+        <div class="info-description">
+          <p>
+            Interference with the orderly administration of law and justice which includes the following: injuring an officer, obstruction of a criminal investigation, tampering with witnesses, victim or informant, retaliating against witnesses victims or informants.<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 7 months.<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-3-5">
+        <div class="info-title">Chapter 5: Trespassing on government property</div>
+        <div class="info-description">
+          <p>
+			Entering of government property without consent from government officials<br><br>
+			Sentence:<br><br>Mandatory imprisonment of 7 months.<br>
+
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-3-6">
+        <div class="info-title">Chapter 6: Trespassing on private property</div>
+        <div class="info-description">
+          <p>
+			Entering of government property without consent from landlord/ owner official<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 7 months.        <br>  
+		</p>
+        </div>
+      </div>
+      <div class="info" id="info-3-7">
+        <div class="info-title">Chapter 7: Bribery or Extortion</div>
+        <div class="info-description">
+          <p>
+			Influence or alter the actions of an individual<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 7 months.<br>
+
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-3-8">
+        <div class="info-title">Chapter 8: Conspiracy</div>
+        <div class="info-description">
+          <p>
+            Two or more individuals agree to commit an unlawful act taking action toward its completion<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 7 months.<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-3-9">
+        <div class="info-title">Chapter 9: Disorderly conduct</div>
+        <div class="info-description">
+          <p>
+			Disturbing the peace of an area by obnoxious or unruly conduct<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 7 months.         <br>
+		</p>
+        </div>
+      </div>
+      <div class="info" id="info-3-10">
+        <div class="info-title">Chapter 10: Driving under the influence</div>
+        <div class="info-description">
+          <p>
+			Operating of a motor vehicle while being intoxicated<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 7 months.<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-3-11">
+        <div class="info-title">Chapter 11: Violating a restraining order</div>
+        <div class="info-description">
+          <p>
+			Failing to obey a restraining order<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 7 months.<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-3-12">
+        <div class="info-title">Chapter 12: False imprisonment</div>
+        <div class="info-description">
+          <p>
+			Intentionally restraining another by physical force or by the threat of physical force without privilege or authority<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 7 months.<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-3-13">
+        <div class="info-title">Chapter 13: Public intoxication</div>
+        <div class="info-description">
+          <p>
+			Being drunk or under the influence of drugs in public<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 7 months.<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-3-14">
+        <div class="info-title">Chapter 14: Failure to pay citations</div>
+        <div class="info-description">
+          <p>
+			Failure to pay citation past the grace period of 3 days<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 7 months.<br>
+			10 or more citations become a bench warrant<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-3-15">
+        <div class="info-title">Chapter 15: False statement to law enforcement</div>
+        <div class="info-description">
+          <p>
+			Providing false statements or information to LEO with the knowledge of their falsehood<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 3 months.<br>
+			</p>
+        </div>
+      </div>
+      <div class="info" id="info-3-16">
+        <div class="info-title">Chapter 16: Destruction of private property</div>
+        <div class="info-description">
+          <p>
+			Destruction of property that is not owned by the individual<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 3 months.<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-3-17">
+        <div class="info-title">Chapter 17: Destruction of public property</div>
+        <div class="info-description">
+          <p>
+			Destruction of property that is owned by the public<br><br>
+			Sentence:<br><br> Mandatory imprisonment of 3 months.<br>
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-5-1">
+        <h2 id="info-5">PENAL CODE (4)-Title 4: Traffic Violations (Chapter)01 to (Chapter)-07)</h2>
+        <div class="info-title">Chapter 1: Street Racing</div>
+        <div class="info-description">
+          <p>
+			Racing a motor vehicle on a public road or a highway unless it’s a licensed event.
+			Sentence: Mandatory imprisonment of 8 months.
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-5-2">
+        <div class="info-title">Chapter 2: Driving with a suspended license </div>
+        <div class="info-description">
+          <p>
+			Being a driver with a suspended license
+			Sentence: Mandatory imprisonment of 7 months.
+
+          </p>
+        </div>
+      </div>
+      <div class="info" id="info-5-3">
+        <div class="info-title">Chapter 3: Felony speeding 30+</div>
+        <div class="info-description">
+          <p>
+			Speeding on a public road 30 MPH over the speed limit
+			Sentence: Mandatory imprisonment of 7 months.
+			</p>
+        </div>
+      </div>
+      <div class="info" id="info-5-4">
+        <div class="info-title">Chapter 4: Reckless driving</div>
+        <div class="info-description">
+          <p>
+			Operating a motor vehicle with the intention to disregard the safety of others or their property
+			Sentence: Mandatory imprisonment of 7 months. And can be obligated to pay for damages caused to others.
+			</p>
+        </div>
+      </div>
+      <div class="info" id="info-5-5">
+        <div class="info-title">Chapter 5: Failure to obey traffic control device</div>
+        <div class="info-description">
+          <p>
+			Pedestrian or driver of a motor vehicle that disregarded a traffic control device
+			Sentence: Mandatory imprisonment of 3 months.
+			</p>
+        </div>
+      </div>
+      <div class="info" id="info-5-6">
+        <div class="info-title">Chapter 6: Illegally off-roading</div>
+        <div class="info-description">
+          <p>
+			A driver operating a motor vehicle disregarded public property not meant for off-roading can be classified as disturbing the peace/disorderly conduct
+			Sentence: Mandatory imprisonment of 3 months. Discretion can be used.
+			</p>
+        </div>
+      </div>
+      <div class="info" id="info-5-7">
+        <div class="info-title">Chapter 7: Driving without a license</div>
+        <div class="info-description">
+          <p>
+			A driver that is operating a motor vehicle without a valid license
+			Sentence: Mandatory imprisonment of 3 months. Discretion can be used.
+			</p>
+        </div>
+      </div>
+ 
+     <!--  -->
+    </div>
+  </main>
 </body>
 
 </html>
