@@ -4,6 +4,25 @@ All notable updates and changes to the Midnight RP server resources.
 
 ## [Released]
 
+
+## [1.38] - 2020-03-31
+### Added
+- Supporter Vehicles April 2020.
+- Blacklist Empire gang vehicles.
+
+
+### Changed
+- added water to ems pharma.
+- Ability to unbind emotes. /emoteunbind (num4, num5, num6, num7, num8, num9) command.
+- slight buff to cobrajet supporter car
+### Fixed
+- fixed money laundering 24 hour waiting period. 
+### Removed
+- skelly
+- skelly items from shops and inventory.
+- /twt and /web from chat. use /drakad.
+
+
 ## [1.37] - 2020-03-28
 ### Added
 - Changed House interiors and added 3 new High end housing interiors. prices are still the same. you lose your furniture but your house shell just got upgraded. welcome to the high life baby.
@@ -40,11 +59,11 @@ All notable updates and changes to the Midnight RP server resources.
 
 ## [ALPHA] - Current Test
 ### Added
-- Added ability to unset emote keybinds with the /emoteunbind (num4, num5, num6, num7, num8, num9) command in DP Emotes
+
 ### Changed
 - Brinks changed to clock in and clock out instead of ped change
 - Updated Brinks en locale to reflect actual actions of menu
-- slight buff to cobrajet supporter car
+
 ### Fixed
 - 
 ### Removed
