@@ -32,7 +32,7 @@ All notable updates and changes to the Midnight RP server resources.
 - raised everyones alcohol tolarance party on my dudes.
 ### Fixed
 - Fixed glasses on the K menu
--fixed esx society money wash
+- Fixed esx society money wash
 ### Removed
 - 
 
