@@ -89,9 +89,12 @@ Config.Languages = {
         ['pee'] = "Hold ~y~G~w~ to pee.",
         ['spraychamp'] = "Hold ~y~G~w~ to spray champagne",
         ['bound'] = "Bound ",
+        ['unbound'] = "Unbound ",
         ['to'] = "to",
+        ['from'] = "from",
         ['currentlyboundemotes'] = " Currently bound emotes:",
         ['notvalidkey'] = "is not a valid key.",
+        ['nokeyspecified'] = "Please specify the keybind you wish to delete!",
         ['keybinds'] = "🔢 Keybinds",
         ['keybindsinfo'] = "Use"
   },

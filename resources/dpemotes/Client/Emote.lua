@@ -53,6 +53,7 @@ Citizen.CreateThread(function()
     if Config.SqlKeybinding then
       TriggerEvent('chat:addSuggestion', '/emotebind', 'Bind an emote', {{ name="key", help="num4, num5, num6, num7. num8, num9. Numpad 4-9!"}, { name="emotename", help="dance, camera, sit or any valid emote."}})
       TriggerEvent('chat:addSuggestion', '/emotebinds', 'Check your currently bound emotes.')
+      TriggerEvent('chat:addSuggestion', '/emoteunbind', 'Deletes a bound emote from your keybinds.',  {{name="key", help="num4, num5, num6, num7. num8, num9. Numpad 4-9!"}})
     end
     TriggerEvent('chat:addSuggestion', '/emotemenu', 'Open dpemotes menu (F3) by default.')
     TriggerEvent('chat:addSuggestion', '/emotes', 'List available emotes.')
@@ -65,6 +66,7 @@ RegisterCommand('emote', function(source, args, raw) EmoteCommandStart(source, a
 if Config.SqlKeybinding then
   RegisterCommand('emotebind', function(source, args, raw) EmoteBindStart(source, args, raw) end)
   RegisterCommand('emotebinds', function(source, args, raw) EmoteBindsStart(source, args, raw) end)
+  RegisterCommand('emoteunbind', function(source, args, raw) EmoteUnbind(source, args, raw) end)
 end
 RegisterCommand('emotemenu', function(source, args, raw) OpenEmoteMenu() end)
 RegisterCommand('emotes', function(source, args, raw) EmotesOnCommand() end)

@@ -74,6 +74,27 @@ if Config.SqlKeybinding then
 			MySQL.Async.execute("UPDATE dpkeybinds SET emote6=@emote WHERE id=@id", {id = myid, emote = emote}, function() TriggerClientEvent("dp:ClientKeybindGetOne", src, key, emote) end)
 		end
 	end)
+
+	RegisterServerEvent("dp:ServerKeybindDelete")
+	AddEventHandler("dp:ServerKeybindDelete", function(key)
+		local src = source
+		local emote = ""
+		local myid = GetPlayerIdentifier(source)
+		if key == "num4" then chosenk = "keybind1" elseif key == "num5" then chosenk = "keybind2" elseif key == "num6" then chosenk = "keybind3" elseif key == "num7" then chosenk = "keybind4" elseif key == "num8" then chosenk = "keybind5" elseif key == "num9" then chosenk = "keybind6" end
+		if chosenk == "keybind1" then
+			MySQL.Async.execute("UPDATE dpkeybinds SET emote1=@emote WHERE id=@id", {id = myid, emote = emote}, function() TriggerClientEvent("dp:ClientKeybindDelOne", src, key, emote) end)
+		elseif chosenk == "keybind2" then
+			MySQL.Async.execute("UPDATE dpkeybinds SET emote2=@emote WHERE id=@id", {id = myid, emote = emote}, function() TriggerClientEvent("dp:ClientKeybindDelOne", src, key, emote) end)
+		elseif chosenk == "keybind3" then
+			MySQL.Async.execute("UPDATE dpkeybinds SET emote3=@emote WHERE id=@id", {id = myid, emote = emote}, function() TriggerClientEvent("dp:ClientKeybindDelOne", src, key, emote) end)
+		elseif chosenk == "keybind4" then
+			MySQL.Async.execute("UPDATE dpkeybinds SET emote4=@emote WHERE id=@id", {id = myid, emote = emote}, function() TriggerClientEvent("dp:ClientKeybindDelOne", src, key, emote) end)
+		elseif chosenk == "keybind5" then
+			MySQL.Async.execute("UPDATE dpkeybinds SET emote5=@emote WHERE id=@id", {id = myid, emote = emote}, function() TriggerClientEvent("dp:ClientKeybindDelOne", src, key, emote) end)
+		elseif chosenk == "keybind6" then
+			MySQL.Async.execute("UPDATE dpkeybinds SET emote6=@emote WHERE id=@id", {id = myid, emote = emote}, function() TriggerClientEvent("dp:ClientKeybindDelOne", src, key, emote) end)
+		end
+	end)
   end)
 else
 	print("[dp] ^3Sql Keybinding^7 is turned ^1off^7, if you want to enable /emotebind, import dpkeybinding.sql and set ^3SqlKeybinding = ^2true^7 in config.lua.")
