@@ -11,7 +11,7 @@ AddEventHandler("chatMessage", function(source, color, message)
         })
     else
         TriggerClientEvent('chat:addMessage', src, {
-            template = '<div class="chat-message server"><b>SYSTEM:</b> use /ooc, /twt, /grm, /fbs, /web .</div>',
+            template = '<div class="chat-message server"><b>SYSTEM:</b> use /ooc or /twt .</div>',
             args = { message }
         })
     end

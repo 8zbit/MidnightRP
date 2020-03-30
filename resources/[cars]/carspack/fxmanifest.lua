@@ -589,8 +589,45 @@ files {
   'volks_data/carcols.meta',
   'volks_data/handling.meta',
   'volks_data/vehiclelayouts.meta',
+
+  'wrangler_data/vehicles.meta',
+  'wrangler_data/carvariations.meta',
+  'wrangler_data/carcols.meta',
+  'wrangler_data/handling.meta',
+  'wrangler_data/vehiclelayouts.meta',
+
+  'vader_data/vehicles.meta',
+  'vader_data/carvariations.meta',
+  'vader_data/carcols.meta',
+  'vader_data/handling.meta',
+  'vader_data/vehiclelayouts.meta',
+
+
+  'wraith_data/vehicles.meta',
+  'wraith_data/carvariations.meta',
+  'wraith_data/carcols.meta',
+  'wraith_data/handling.meta',
+  'wraith_data/vehiclelayouts.meta',
 }
 
+
+data_file 'HANDLING_FILE' 'wraith_data/handling.meta'
+data_file 'VEHICLE_METADATA_FILE' 'wraith_data/vehicles.meta'
+data_file 'CARCOLS_FILE' 'wraith_data/carcols.meta'
+data_file 'VEHICLE_VARIATION_FILE' 'wraith_data/carvariations.meta'
+data_file 'VEHICLE_LAYOUTS_FILE' 'wraith_data/vehiclelayouts.meta'
+
+data_file 'HANDLING_FILE' 'vader_data/handling.meta'
+data_file 'VEHICLE_METADATA_FILE' 'vader_data/vehicles.meta'
+data_file 'CARCOLS_FILE' 'vader_data/carcols.meta'
+data_file 'VEHICLE_VARIATION_FILE' 'vader_data/carvariations.meta'
+data_file 'VEHICLE_LAYOUTS_FILE' 'vader_data/vehiclelayouts.meta'
+
+data_file 'HANDLING_FILE' 'wrangler_data/handling.meta'
+data_file 'VEHICLE_METADATA_FILE' 'wrangler_data/vehicles.meta'
+data_file 'CARCOLS_FILE' 'wrangler_data/carcols.meta'
+data_file 'VEHICLE_VARIATION_FILE' 'wrangler_data/carvariations.meta'
+data_file 'VEHICLE_LAYOUTS_FILE' 'wrangler_data/vehiclelayouts.meta'
 
 data_file 'HANDLING_FILE' 'volks_data/handling.meta'
 data_file 'VEHICLE_METADATA_FILE' 'volks_data/vehicles.meta'

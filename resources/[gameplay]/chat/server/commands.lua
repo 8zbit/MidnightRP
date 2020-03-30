@@ -39,7 +39,7 @@ RegisterCommand('twt', function(source, args, rawCommand)
     end
 end, false)
 
-RegisterCommand('fbs', function(source, args, rawCommand)
+--[[RegisterCommand('fbs', function(source, args, rawCommand)
     local src = source
     local msg = rawCommand:sub(5)
     if player ~= false then
@@ -58,7 +58,7 @@ RegisterCommand('fbs', function(source, args, rawCommand)
             })
         end
     end
-end, false)
+end, false)]]
 
 RegisterCommand('rp', function(source, args, rawCommand)
     local src = source
@@ -81,7 +81,7 @@ RegisterCommand('rp', function(source, args, rawCommand)
     end
 end, false)
 
-RegisterCommand('web', function(source, args, rawCommand) 
+--[[RegisterCommand('web', function(source, args, rawCommand) 
     local src = source
     local msg = rawCommand:sub(5)
     if player ~= false then
@@ -99,7 +99,7 @@ RegisterCommand('web', function(source, args, rawCommand)
             })
         end
     end
-end, false)
+end, false)]]
 
 function getIdentity(source)
 	local identifier = GetPlayerIdentifiers(source)[1]

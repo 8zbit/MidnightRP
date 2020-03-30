@@ -937,11 +937,8 @@ function OpenPharmacyMenu()
 		align    = 'bottom-right',
 		elements = {
 			{label = _U('pharmacy_take', _U('medikit')), value = 'medikit'},
-			{label = _U('pharmacy_take', _U('bodybandage')), value = 'bodybandage'},
-			{label = _U('pharmacy_take', _U('legbrace')), value = 'legbrace'},
-			{label = _U('pharmacy_take', _U('armbrace')), value = 'armbrace'},
-			{label = _U('pharmacy_take', _U('neckbrace')), value = 'neckbrace'},
 			{label = _U('pharmacy_take', _U('jello')), value = 'jello'},
+			{label = _U('pharmacy_take', _U('water')), value = 'water'},
 			{label = _U('pharmacy_take', _U('bandage')), value = 'bandage'}
 		}
 	}, function(data, menu)
