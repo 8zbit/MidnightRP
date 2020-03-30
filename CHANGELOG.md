@@ -40,7 +40,7 @@ All notable updates and changes to the Midnight RP server resources.
 
 ## [ALPHA] - Current Test
 ### Added
-- Added ability to unset emote keybinds in DP Emotes
+- Added ability to unset emote keybinds with the /emoteunbind (num4, num5, num6, num7, num8, num9) command in DP Emotes
 ### Changed
 - Brinks changed to clock in and clock out instead of ped change
 - Updated Brinks en locale to reflect actual actions of menu
