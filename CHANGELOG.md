@@ -20,7 +20,7 @@ All notable updates and changes to the Midnight RP server resources.
 ### Removed
 - skelly
 - skelly items from shops and inventory.
-- /twt and /web from chat. use /drakad.
+- /fbs and /web from chat. use /drakad.
 
 
 ## [1.37] - 2020-03-28
