@@ -12,7 +12,7 @@ end)
 MFF.Version = '1.0.14'
 
 MFF.PoliceJobName = "police"
-MFF.MinPoliceOnline = 1
+MFF.MinPoliceOnline = 2
 
 MFF.InteractKey = "E"
 MFF.ResetTimer = 120 -- minutes?

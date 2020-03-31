@@ -1,6 +1,6 @@
 Config = {}
 
-Config.RequiredPolice = 2
+Config.RequiredPolice = 3
 Config.EnablePlayerMoneyBag = true
 
 Config.Yacht = {

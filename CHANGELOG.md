@@ -50,6 +50,7 @@ All notable updates and changes to the Midnight RP server resources.
 - Reconfigured Zombies door to lock and unlock better
 - changed effects and duration of lsd (it lasts 10 minutes. heads up)
 - raised everyones alcohol tolarance party on my dudes.
+- rebalanced cops needed for bank hiests.
 ### Fixed
 - Fixed glasses on the K menu
 - Fixed esx society money wash
