@@ -156,7 +156,7 @@ function OpenDressingMenu()
 	end)
 end
 
-Citizen.CreateThread(function()
+--[[ Citizen.CreateThread(function()
 	for k,v in ipairs(Config.Room) do
 		local blip = AddBlipForCoord(v)
 
@@ -169,4 +169,4 @@ Citizen.CreateThread(function()
 		AddTextComponentSubstringPlayerName('Changing Room')
 		EndTextCommandSetBlipName(blip)
 	end
-end)
+end) ]]
