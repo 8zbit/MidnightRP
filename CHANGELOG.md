@@ -66,6 +66,7 @@ All notable updates and changes to the Midnight RP server resources.
 - Updated Brinks en locale to reflect actual actions of menu
 - dubs dealership employees can access vehicle purchase. 
 - Repair kits have been nerfed so they don't give a full repair.
+- changed hide in trunk button from E to Z.
 
 ### Fixed
 - gcphone text msg limit.

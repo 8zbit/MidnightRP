@@ -9,7 +9,7 @@ Citizen.CreateThread(function()
             if DoesEntityExist(vehicle) or not IsPedDeadOrDying(PlayerPedId()) or not IsPedFatallyInjured(PlayerPedId()) then
                 local coords = GetWorldPositionOfEntityBone(vehicle, GetEntityBoneIndexByName(vehicle, 'boot'))
                 SetEntityCollision(PlayerPedId(), false, false)
-                DrawText3D(coords, '[E] Leave trunk')
+                DrawText3D(coords, '[Z] Leave trunk')
 
                 if GetVehicleDoorAngleRatio(vehicle, 5) < 0.9 then
                     SetEntityVisible(PlayerPedId(), false, false)
@@ -21,7 +21,7 @@ Citizen.CreateThread(function()
                         SetEntityVisible(PlayerPedId(), true, false)
                     end
                 end
-                if IsControlJustReleased(0, 38) and inTrunk then
+                if IsControlJustReleased(0, 20) and inTrunk then
                     SetCarBootOpen(vehicle)
                     SetEntityCollision(PlayerPedId(), true, true)
                     Wait(750)
@@ -56,13 +56,13 @@ Citizen.CreateThread(function()
                 if GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()), coords, true) <= 1.5 then
                     if not inTrunk then
                         if GetVehicleDoorAngleRatio(vehicle, 5) < 0.9 then
-                            DrawText3D(coords, '[E] Hide in trunk\n[H] Open trunk')
+                            DrawText3D(coords, '[Z] Hide in trunk\n[H] Open trunk')
                             if IsControlJustReleased(0, 74) then
                                 -- SetVehicleDoorOpen(vehicle, 5, false, false)
                                 SetCarBootOpen(vehicle)
                             end
                         else
-                            DrawText3D(coords, '[E] Hide in trunk\n[H] Close trunk')
+                            DrawText3D(coords, '[Z] Hide in trunk\n[H] Close trunk')
                             if IsControlJustReleased(0, 74) then
                                 SetVehicleDoorShut(vehicle, 5)
                             end
