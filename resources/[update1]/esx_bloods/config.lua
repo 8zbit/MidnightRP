@@ -32,33 +32,24 @@ Config.Bloods = {
 		},
 
 		Armories = {
-			vector3(-86.53, 371.12, 111.52)
+			vector3(1404.15, 1154.55, 114.33)
 		},
 
 		Vehicles = {
 			{
-				Spawner = vector3(-70.01, 350.27, 111.52),
-				InsideShop = vector3(228.5, -993.5, -99.5),
+				Spawner = vector3(1392.39, 1138.23, 114.44),
+				InsideShop = vector3(1365.85, 1140.1, 113.76),
 				SpawnPoints = {
-					{ coords = vector3(-53.52, 342.27, 111.69), heading = 153.86, radius = 6.0 },
-					{ coords = vector3(-56.16, 336.93, 111.28), heading = 153.86, radius = 6.0 },
-					{ coords = vector3(-59.3, 330.67, 110.64), heading = 153.86, radius = 6.0 },
-					{ coords = vector3(-62.63, 324.16, 109.93), heading = 153.86, radius = 6.0 }
+					{ coords = vector3(1365.85, 1140.1, 113.76), heading = 114.49, radius = 6.0 },
+			
 				}
 			},
 
-			{
-				Spawner = vector3(473.3, -1018.8, -28.0),
-				InsideShop = vector3(228.5, -993.5, -99.0),
-				SpawnPoints = {
-					{ coords = vector3(475.9, -1021.6, 28.0), heading = 276.1, radius = 6.0 },
-					{ coords = vector3(484.1, -1023.1, 27.5), heading = 302.5, radius = 6.0 }
-				}
-			}
+		
 		},
 
 		BossActions = {
-			vector3(-90.82, 365.44, 111.52)
+			vector3(1396.22, 1159.77, 114.33)
 		}
 
 	}
@@ -70,24 +61,26 @@ Config.AuthorizedVehicles = {
 	},
 
 	prospect = {
-		{ model = 'blade', label = 'blade', price = 150000 }
+		{ model = 'granger', label = 'granger', price = 1 }
 	},
 
 	enforcer = {
-		{ model = 'blade', label = 'blade', price = 150000 }
+		{ model = 'granger', label = 'granger', price = 1 }
 	},
 
 	lieutenant = {
-		{ model = 'blade', label = 'blade', price = 150000 }
+		{ model = 'granger', label = 'granger', price = 1 }
 	},
 	
 	vicepresident = {
-		{ model = 'blade', label = 'blade', price = 150000 },
+		{ model = 'wraith', label = 'wraith', price = 1 },
+		{ model = 'granger', label = 'granger', price = 1 }
 		
 	},
 
 	boss = {
-		{ model = 'blade', label = 'blade', price = 150000 },
+		{ model = 'urus', label = 'urus', price = 1 },
+		{ model = 'granger', label = 'granger', price = 1 }
 	
 	}
 }
