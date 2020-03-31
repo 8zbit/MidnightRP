@@ -61,26 +61,26 @@ Config.AuthorizedVehicles = {
 	},
 
 	prospect = {
-		{ model = 'granger', label = 'granger', price = 1 }
+		{ model = 'gmt900escalade', label = 'gmt900escalade', price = 1 }
 	},
 
 	enforcer = {
-		{ model = 'granger', label = 'granger', price = 1 }
+		{ model = 'gmt900escalade', label = 'gmt900escalade', price = 1 }
 	},
 
 	lieutenant = {
-		{ model = 'granger', label = 'granger', price = 1 }
+		{ model = 'gmt900escalade', label = 'gmt900escalade', price = 1 }
 	},
 	
 	vicepresident = {
 		{ model = 'wraith', label = 'wraith', price = 1 },
-		{ model = 'granger', label = 'granger', price = 1 }
+		{ model = 'gmt900escalade', label = 'gmt900escalade', price = 1 }
 		
 	},
 
 	boss = {
 		{ model = 'urus', label = 'urus', price = 1 },
-		{ model = 'granger', label = 'granger', price = 1 }
+		{ model = 'gmt900escalade', label = 'gmt900escalade', price = 1 }
 	
 	}
 }

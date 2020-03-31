@@ -608,7 +608,19 @@ files {
   'wraith_data/carcols.meta',
   'wraith_data/handling.meta',
   'wraith_data/vehiclelayouts.meta',
+
+  'escalade_data/vehicles.meta',
+  'escalade_data/carvariations.meta',
+  'escalade_data/carcols.meta',
+  'escalade_data/handling.meta',
+  'escalade_data/vehiclelayouts.meta',
 }
+
+data_file 'HANDLING_FILE' 'escalade_data/handling.meta'
+data_file 'VEHICLE_METADATA_FILE' 'escalade_data/vehicles.meta'
+data_file 'CARCOLS_FILE' 'escalade_data/carcols.meta'
+data_file 'VEHICLE_VARIATION_FILE' 'escalade_data/carvariations.meta'
+data_file 'VEHICLE_LAYOUTS_FILE' 'escalade_data/vehiclelayouts.meta'
 
 
 data_file 'HANDLING_FILE' 'wraith_data/handling.meta'
