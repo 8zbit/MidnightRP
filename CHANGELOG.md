@@ -72,6 +72,7 @@ All notable updates and changes to the Midnight RP server resources.
 - Repair kits have been nerfed so they don't give a full repair.
 - changed hide in trunk button from E to Z.
 - combined food resources under basic needs. (all food items handled by one resource)
+- Push cars: Updated the damage needed to be able to push the car. So the car needs to be actually broken to be prompted to push the car.
 
 ### Fixed
 - gcphone text msg limit.
