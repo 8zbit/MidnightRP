@@ -778,13 +778,13 @@ AddEventHandler('esx_cardealer2shop:hasEnteredMarker', function (zone)
 	if zone == 'ShopEntering' then
 
 		if Config.EnablePlayerManagement then
-			if ESX.PlayerData.job ~= nil and ESX.PlayerData.job.name == 'cardealer2' and ESX.PlayerData.job.grade_name == 'boss' then
+			if ESX.PlayerData.job ~= nil and ESX.PlayerData.job.name == 'cardealer2'  then
 				CurrentAction     = 'reseller_menu'
 				CurrentActionMsg  = _U('shop_menu')
 				CurrentActionData = {}
 			end
 		else
-			if ESX.PlayerData.job ~= nil and ESX.PlayerData.job.name == 'cardealer2' and ESX.PlayerData.job.grade_name == 'boss' then
+			if ESX.PlayerData.job ~= nil and ESX.PlayerData.job.name == 'cardealer2'  then
 				CurrentAction     = 'shop_menu'
 				CurrentActionMsg  = _U('shop_menu')
 				CurrentActionData = {}
