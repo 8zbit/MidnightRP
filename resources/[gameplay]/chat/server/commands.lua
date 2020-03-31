@@ -18,7 +18,7 @@ RegisterCommand('ooc', function(source, args, rawCommand)
     end
 end, false)
 
-RegisterCommand('twt', function(source, args, rawCommand)
+--[[ RegisterCommand('twt', function(source, args, rawCommand)
     local src = source
     local msg = rawCommand:sub(5)
     if player ~= false then
@@ -37,7 +37,7 @@ RegisterCommand('twt', function(source, args, rawCommand)
             })
         end
     end
-end, false)
+end, false) ]]
 
 --[[RegisterCommand('fbs', function(source, args, rawCommand)
     local src = source
@@ -60,7 +60,7 @@ end, false)
     end
 end, false)]]
 
-RegisterCommand('rp', function(source, args, rawCommand)
+--[[ RegisterCommand('rp', function(source, args, rawCommand)
     local src = source
     local msg = rawCommand:sub(5)
     if player ~= false then
@@ -79,7 +79,7 @@ RegisterCommand('rp', function(source, args, rawCommand)
             })
         end
     end
-end, false)
+end, false) ]]
 
 --[[RegisterCommand('web', function(source, args, rawCommand) 
     local src = source
