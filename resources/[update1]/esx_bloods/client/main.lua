@@ -810,7 +810,7 @@ function OpenBloodsActionsMenu()
 				elements = {
 					{label = _U('cone'),		value = 'prop_roadcone02a'},
 					{label = _U('barrier'),		value = 'prop_barrier_work05'},
-					--{label = _U('spikestrips'),	value = 'p_ld_stinger_s'},
+					{label = _U('spikestrips'),	value = 'p_ld_stinger_s'},
 					{label = _U('box'),			value = 'prop_boxpile_07d'},
 					{label = _U('cash'),		value = 'hei_prop_cash_crate_half_full'}
 				}

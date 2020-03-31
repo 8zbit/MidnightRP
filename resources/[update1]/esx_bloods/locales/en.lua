@@ -2,7 +2,7 @@ Locales['en'] = {
   -- Cloakroom
   ['cloakroom'] = 'Locker Room',
   ['citizen_wear'] = 'Civilian Outfit',
-  ['bloods_wear'] = 'Bloods Outfit',
+  ['bloods_wear'] = 'Blacklist Outfit',
   ['gilet_wear'] = 'Orange Reflective Jacket',
   ['bullet_wear'] = 'Bulletproof Vest',
   ['no_outfit'] = 'There\'s No Uniform That Fit You!',
@@ -80,7 +80,7 @@ Locales['en'] = {
   ['license_revoked'] = 'Your ~b~%s~s~ Has Been ~y~Revoked~s~!',
   ['licence_you_revoked'] = 'You Revoked A ~b~%s~s~ Which Belonged To ~y~%s~s~',
   ['no_players_nearby'] = 'There Is No Player(s) Nearby!',
-  ['being_searched'] = 'You Are Being ~y~Searched~s~ By The ~b~Bloods~s~',
+  ['being_searched'] = 'You Are Being ~y~Searched~s~ By The ~b~Blacklist~s~',
   -- Vehicle interaction
   ['vehicle_info'] = 'Vehicle Info',
   ['pick_lock'] = 'Lockpick Vehicle',
@@ -144,12 +144,12 @@ Locales['en'] = {
   ['have_deposited'] = 'You Have Deposited ~y~%sx~s~ ~b~%s~s~',
   ['quantity'] = 'Quantity',
   ['inventory'] = 'Inventory',
-  ['bloods_stock'] = 'Bloods Stock',
+  ['bloods_stock'] = 'Blacklist Stock',
   -- Misc
   ['remove_prop'] = 'Press ~INPUT_CONTEXT~ To Delete The Object',
-  ['map_blip'] = 'Bloods',
+  ['map_blip'] = 'Blacklist',
   ['unrestrained_timer'] = 'You Feel Your Handcuffs Slowly Losing Grip And Fading Away.',
   -- Notifications
-  ['alert_bloods'] = 'Bloods Alert',
-  ['phone_bloods'] = 'Bloods',
+  ['alert_bloods'] = 'Blacklist Alert',
+  ['phone_bloods'] = 'Blacklist',
 }

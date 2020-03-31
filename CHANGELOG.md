@@ -62,15 +62,26 @@ All notable updates and changes to the Midnight RP server resources.
 ## [ALPHA] - Current Test
 ### Added
 - updated GCphone, twitter, working phone model.
+- blacklist gang armory. 
+- added blacklist changing rooms.
+- added mafia and blacklist personal storage units.
+- blacklist empire gang script.
 ### Changed
 - Brinks changed to clock in and clock out instead of ped change
 - Updated Brinks en locale to reflect actual actions of menu
 - dubs dealership employees can access vehicle purchase. 
 - Repair kits have been nerfed so they don't give a full repair.
 - changed hide in trunk button from E to Z.
+- combined food resources under basic needs. (all food items handled by one resource)
+- Push cars: Updated the damage needed to be able to push the car. So the car needs to be actually broken to be prompted to push the car.
 
 ### Fixed
 - gcphone text msg limit.
 - Mechanic Job - Engine repair only repairs the engine and not the body too anymore
 ### Removed
-- 
+- electric-skateboard
+- old ad system, new one was already there.
+- f3 animation menu, = animation menu is better. no need for 2 
+- unused gang scripts.
+- unused job scripts.
+

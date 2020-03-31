@@ -93,6 +93,24 @@ Config.Coords = {
             StorageMenu(storagePlace, storageData) -- DO NOT TOUCH THESE!
         end -- DO NOT TOUCH THESE!
     },
+
+    ["blacklistVault"] = {
+        ["pos"] = vector3(1391.45,1159.0,114.33),
+        ["cost"] = 55,
+        ["callback"] = function(storagePlace, storageData) -- DO NOT TOUCH THESE!
+            StorageMenu(storagePlace, storageData) -- DO NOT TOUCH THESE!
+        end -- DO NOT TOUCH THESE!
+    },
+
+    ["mafiaVault"] = {
+        ["pos"] = vector3(-1522.12,117,50.05),
+        ["cost"] = 55,
+        ["callback"] = function(storagePlace, storageData) -- DO NOT TOUCH THESE!
+            StorageMenu(storagePlace, storageData) -- DO NOT TOUCH THESE!
+        end -- DO NOT TOUCH THESE!
+    },
+
+
     ["airVault"] = {
         ["pos"] = vector3(-1240.92,-3008.12,-43.89),
         ["cost"] = 55,
