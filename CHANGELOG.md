@@ -65,8 +65,10 @@ All notable updates and changes to the Midnight RP server resources.
 - Brinks changed to clock in and clock out instead of ped change
 - Updated Brinks en locale to reflect actual actions of menu
 - dubs dealership employees can access vehicle purchase. 
+- Repair kits have been nerfed so they don't give a full repair.
 
 ### Fixed
 - gcphone text msg limit.
+- Mechanic Job - Engine repair only repairs the engine and not the body too anymore
 ### Removed
 - 
