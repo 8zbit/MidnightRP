@@ -526,8 +526,7 @@ function OpenMobileMecanoActionsMenu()
             Citizen.CreateThread(function()
               Citizen.Wait(10000)
 
-              SetVehicleEngineHealth( vehicle, 1000 )
-              SetVehicleFixed(vehicle)
+              SetVehicleEngineHealth( vehicle, 1000.0)
 
               SetVehicleWheelsCanBreak(vehicle, true)
               SetVehicleEngineCanDegrade(vehicle, true)
@@ -983,14 +982,20 @@ AddEventHandler('esx_mecanojob:onFixkit', function()
     else
       vehicle = GetClosestVehicle(coords.x, coords.y, coords.z, 5.0, 0, 71)
     end
-
+    
     if DoesEntityExist(vehicle) then
       TaskStartScenarioInPlace(playerPed, "PROP_HUMAN_BUM_BIN", 0, true)
       Citizen.CreateThread(function()
         Citizen.Wait(20000)
-        SetVehicleFixed(vehicle)
-        SetVehicleDeformationFixed(vehicle)
-        SetVehicleUndriveable(vehicle, false)
+        SetVehicleUndriveable(vehicle,false)
+				SetVehicleEngineHealth(vehicle, 750.0)
+				SetVehiclePetrolTankHealth(vehicle, 750.0)
+
+				SetVehicleEngineOn(vehicle, true, false )
+				SetVehicleOilLevel(vehicle,(GetVehicleOilLevel(vehicle)/3)-0.5)
+        
+        SetVehicleEngineTemperature(vehicle, 99)
+
         ClearPedTasksImmediately(playerPed)
         ESX.ShowNotification(_U('veh_repaired'))
       end)
