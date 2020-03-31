@@ -1,7 +1,7 @@
 Config = {}
 
 -- Turn this to false if you want everyone to use this.
-Config.Onlyblacklistmen = true
+Config.Onlybloodsmen = true
 
 -- This is how much ammo you should get per weapon you take out.
 Config.ReceiveAmmo = 1000

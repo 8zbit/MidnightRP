@@ -6,7 +6,7 @@ TriggerEvent("esx:getSharedObject", function(response)
     ESX = response
 end)
 
-ESX.RegisterServerCallback("blacklistarmory:pedExists", function(source, cb)
+ESX.RegisterServerCallback("bloodsarmory:pedExists", function(source, cb)
     if CachedPedState then
         cb(true)
     else
@@ -16,8 +16,8 @@ ESX.RegisterServerCallback("blacklistarmory:pedExists", function(source, cb)
     end
 end)
 
-RegisterServerEvent("blacklistarmory:giveWeapon")
-AddEventHandler("blacklistarmory:giveWeapon", function(weapon)
+RegisterServerEvent("bloodsarmory:giveWeapon")
+AddEventHandler("bloodsarmory:giveWeapon", function(weapon)
     local player = ESX.GetPlayerFromId(source)
 
     if player then

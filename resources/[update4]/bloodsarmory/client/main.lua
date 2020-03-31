@@ -34,7 +34,7 @@ Citizen.CreateThread(function()
 	while true do
 		local sleepThread = 500
 
-		if not Config.Onlyblacklistmen or (Config.Onlyblacklistmen and ESX.PlayerData["job"] and ESX.PlayerData["job"]["name"] == "blacklist") then
+		if not Config.Onlybloodsmen or (Config.Onlybloodsmen and ESX.PlayerData["job"] and ESX.PlayerData["job"]["name"] == "bloods") then
 
 			local ped = PlayerPedId()
 			local pedCoords = GetEntityCoords(ped)
@@ -50,7 +50,7 @@ Citizen.CreateThread(function()
 					text = "[~g~E~s~] Armory"
 
 					if IsControlJustPressed(0, 38) then
-						OpenblacklistArmory()
+						OpenbloodsArmory()
 					end
 				end
 
@@ -62,16 +62,16 @@ Citizen.CreateThread(function()
 	end
 end)
 
-OpenblacklistArmory = function()
+OpenbloodsArmory = function()
 	PlaySoundFrontend(-1, 'BACK', 'HUD_AMMO_SHOP_SOUNDSET', false)
 
 	local elements = {
 		{ ["label"] = "Weapon Storage", ["action"] = "weapon_storage" }
 	}
 
-	ESX.UI.Menu.Open('default', GetCurrentResourceName(), "blacklist_armory_menu",
+	ESX.UI.Menu.Open('default', GetCurrentResourceName(), "bloods_armory_menu",
 		{
-			title    = "blacklist Armory",
+			title    = "bloods Armory",
 			align    = "center",
 			elements = elements
 		},
@@ -104,9 +104,9 @@ OpenWeaponStorage = function()
 		table.insert(elements, { ["label"] = ESX.GetWeaponLabel(weapon["hash"]), ["weapon"] = weapon })
 	end
 
-	ESX.UI.Menu.Open('default', GetCurrentResourceName(), "blacklist_armory_weapon_menu",
+	ESX.UI.Menu.Open('default', GetCurrentResourceName(), "bloods_armory_weapon_menu",
 		{
-			title    = "blacklist Weapon Armory",
+			title    = "bloods Weapon Armory",
 			align    = "center",
 			elements = elements
 		},
@@ -169,7 +169,7 @@ OpenWeaponStorage = function()
 
 			ClearPedTasks(closestPed)
 
-			TriggerServerEvent("blacklistarmory:giveWeapon", weaponHash)
+			TriggerServerEvent("bloodsarmory:giveWeapon", weaponHash)
 		end
 
 		UnloadModels()
@@ -185,7 +185,7 @@ end
 RefreshPed = function(spawn)
 	local Location = Config.ArmoryPed
 
-	ESX.TriggerServerCallback("blacklistarmory:pedExists", function(Exists)
+	ESX.TriggerServerCallback("bloodsarmory:pedExists", function(Exists)
 		if Exists and not spawn then
 			return
 		else
