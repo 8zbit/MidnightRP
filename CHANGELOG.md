@@ -92,6 +92,7 @@ All notable updates and changes to the Midnight RP server resources.
 
 ### Fixed
 - press Z to hide in trunk
+- esx_bloods fixed the F6 menu
 ### Removed
 
 

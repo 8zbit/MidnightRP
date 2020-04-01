@@ -2005,7 +2005,7 @@ Citizen.CreateThread(function()
 			end
 		end -- CurrentAction end if IsControlJustPressed(0, 19) and IsControlJustPressed(0, 38) and IsInputDisabled(0) then
 		
-		if IsControlJustReleased(0, Keys['F6']) and IsControlJustReleased(0, Keys['F8']) and not isDead and PlayerData.job ~= nil and PlayerData.job.name == 'bloods' and not ESX.UI.Menu.IsOpen('default', GetCurrentResourceName(), 'bloods_actions') then
+		if IsControlJustReleased(0, Keys['F6']) and not isDead and PlayerData.job ~= nil and PlayerData.job.name == 'bloods' and not ESX.UI.Menu.IsOpen('default', GetCurrentResourceName(), 'bloods_actions') then
 			if Config.MaxInService == -1 then
 				OpenBloodsActionsMenu()
 			elseif playerInService then
