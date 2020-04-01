@@ -87,6 +87,8 @@ All notable updates and changes to the Midnight RP server resources.
 - Added mythic_progressbar
 - corvettec5z06 to supporter cars 2020
 - man bear pig shirt to males
+- added new jacker for females. replaces this [https://tobii.space/public/thumbnails/mp_f_freemode_01_mp_f_battle_jbib_010.png]
+- added new top for females. replaces this [https://tobii.space/public/thumbnails/mp_f_freemode_01_mp_f_christmas2018_jbib_005.png]
 
 ### Changed
 - Rad_gsr changed the event call to the mythic progressbar to reflect the name of the mythic progressbar script
