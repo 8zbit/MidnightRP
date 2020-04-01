@@ -484,11 +484,6 @@ files {
   'RB13_data/handling.meta',
   'RB13_data/vehiclelayouts.meta',
 
-  'grsupra_data/vehicles.meta',
-  'grsupra_data/carvariations.meta',
-  'grsupra_data/carcols.meta',
-  'grsupra_data/handling.meta',
-  'grsupra_data/vehiclelayouts.meta',
 
   'elcamino70_data/vehicles.meta',
   'elcamino70_data/carvariations.meta',
@@ -614,7 +609,19 @@ files {
   'escalade_data/carcols.meta',
   'escalade_data/handling.meta',
   'escalade_data/vehiclelayouts.meta',
+
+  'corvettec5z06_data/vehicles.meta',
+  'corvettec5z06_data/carvariations.meta',
+  'corvettec5z06_data/carcols.meta',
+  'corvettec5z06_data/handling.meta',
+  'corvettec5z06_data/vehiclelayouts.meta',
 }
+
+data_file 'HANDLING_FILE' 'corvettec5z06_data/handling.meta'
+data_file 'VEHICLE_METADATA_FILE' 'corvettec5z06_data/vehicles.meta'
+data_file 'CARCOLS_FILE' 'corvettec5z06_data/carcols.meta'
+data_file 'VEHICLE_VARIATION_FILE' 'corvettec5z06_data/carvariations.meta'
+data_file 'VEHICLE_LAYOUTS_FILE' 'corvettec5z06_data/vehiclelayouts.meta'
 
 data_file 'HANDLING_FILE' 'escalade_data/handling.meta'
 data_file 'VEHICLE_METADATA_FILE' 'escalade_data/vehicles.meta'
@@ -740,11 +747,6 @@ data_file 'CARCOLS_FILE' 'elcamino70_data/carcols.meta'
 data_file 'VEHICLE_VARIATION_FILE' 'elcamino70_data/carvariations.meta'
 data_file 'VEHICLE_LAYOUTS_FILE' 'elcamino70_data/vehiclelayouts.meta'
 
-data_file 'HANDLING_FILE' 'grsupra_data/handling.meta'
-data_file 'VEHICLE_METADATA_FILE' 'grsupra_data/vehicles.meta'
-data_file 'CARCOLS_FILE' 'grsupra_data/carcols.meta'
-data_file 'VEHICLE_VARIATION_FILE' 'grsupra_data/carvariations.meta'
-data_file 'VEHICLE_LAYOUTS_FILE' 'grsupra_data/vehiclelayouts.meta'
 
 data_file 'HANDLING_FILE' 'RB13_data/handling.meta'
 data_file 'VEHICLE_METADATA_FILE' 'RB13_data/vehicles.meta'
