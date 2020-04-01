@@ -91,6 +91,7 @@ All notable updates and changes to the Midnight RP server resources.
 - added new top for females. replaces this [https://tobii.space/public/thumbnails/mp_f_freemode_01_mp_f_christmas2018_jbib_005.png]
 - new restaurant near the theme park
 - new hat shop
+- new hats for both male and female
 
 ### Changed
 - Rad_gsr changed the event call to the mythic progressbar to reflect the name of the mythic progressbar script
