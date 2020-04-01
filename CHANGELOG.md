@@ -92,7 +92,8 @@ All notable updates and changes to the Midnight RP server resources.
 - Rad_gsr changed the event call to the mythic progressbar to reflect the name of the mythic progressbar script
 
 ### Fixed
-
+- press Z to hide in trunk
+- esx_bloods fixed the F6 menu
 ### Removed
 
 

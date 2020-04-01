@@ -68,7 +68,7 @@ Citizen.CreateThread(function()
                             end
                         end
                     end
-                    if IsControlJustReleased(0, 38) and not inTrunk then
+                    if IsControlJustReleased(0, 48) and not inTrunk then
                         local player = ESX.Game.GetClosestPlayer()
                         local playerPed = GetPlayerPed(player)
                         if DoesEntityExist(playerPed) then
