@@ -84,9 +84,10 @@ All notable updates and changes to the Midnight RP server resources.
 
 ## [ALPHA] - Current Test
 ### Added
+- Added mythic_progressbar
 
 ### Changed
-
+- Rad_gsr changed the event call to the mythic progressbar to reflect the name of the mythic progressbar script
 
 ### Fixed
 

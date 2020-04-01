@@ -45,8 +45,8 @@ Citizen.CreateThread(function()
             ped = PlayerPedId()
             if IsEntityInWater(ped) then
 				exports['mythic_notify']:SendAlert('inform', 'You begin cleaning off the Gunshot Residue... stay in the water', 5000)
-				Wait(100)
-				TriggerEvent("mythic_progbar:client:progress", {
+                Wait(100)
+				TriggerEvent("mythic_progressbar:client:progress", {
         			name = "washing_gsr",
         			duration = Config.waterCleanTime,
         			label = "Washing Off GSR",
