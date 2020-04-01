@@ -615,7 +615,17 @@ files {
   'corvettec5z06_data/carcols.meta',
   'corvettec5z06_data/handling.meta',
   'corvettec5z06_data/vehiclelayouts.meta',
+
+  'ap2_data/vehicles.meta',
+  'ap2_data/carvariations.meta',
+  'ap2_data/carcols.meta',
+  'ap2_data/handling.meta',
 }
+
+data_file 'HANDLING_FILE' 'ap2_data/handling.meta'
+data_file 'VEHICLE_METADATA_FILE' 'ap2_data/vehicles.meta'
+data_file 'CARCOLS_FILE' 'ap2_data/carcols.meta'
+data_file 'VEHICLE_VARIATION_FILE' 'ap2_data/carvariations.meta'
 
 data_file 'HANDLING_FILE' 'corvettec5z06_data/handling.meta'
 data_file 'VEHICLE_METADATA_FILE' 'corvettec5z06_data/vehicles.meta'
