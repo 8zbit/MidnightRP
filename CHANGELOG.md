@@ -95,6 +95,9 @@ All notable updates and changes to the Midnight RP server resources.
 
 ### Changed
 - Rad_gsr changed the event call to the mythic progressbar to reflect the name of the mythic progressbar script
+- updated blacklist rank titles to match sops
+- added shops to sell food and drink at new restaurant
+- added hat store to new hat shop
 
 ### Fixed
 - press Z to hide in trunk
