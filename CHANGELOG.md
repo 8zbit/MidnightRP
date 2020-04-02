@@ -114,29 +114,13 @@ All notable updates and changes to the Midnight RP server resources.
 
 ## [ALPHA] - Current Test
 ### Added
-- Added mythic_progressbar
-- corvettec5z06 to supporter cars 2020
-- man bear pig shirt to males
-- added new jacker for females. replaces this [https://tobii.space/public/thumbnails/mp_f_freemode_01_mp_f_battle_jbib_010.png]
-- added new top for females. replaces this [https://tobii.space/public/thumbnails/mp_f_freemode_01_mp_f_christmas2018_jbib_005.png]
-- new restaurant near the theme park
-- new hat shop
-- new hats for both male and female
-- New male jeans[https://tobii.space/public/thumbnails/mp_m_freemode_01_mp_m_importexport_01_lowr_005.png]
-- New male denim jacket [https://tobii.space/public/thumbnails/mp_m_freemode_01_mp_m_importexport_01_jbib_013.png]
-- New male masks [https://tobii.space/public/thumbnails/mp_m_freemode_01_mp_m_gunrunning_01_berd_001.png]
-- New Turtleneck [https://tobii.space/public/thumbnails/mp_m_freemode_01_mp_m_executive_01_accs_002.png]
-- New Midnight Club Racing jackets [https://tobii.space/public/thumbnails/mp_m_freemode_01_jbib_006.png]
+
 
 ### Changed
-- Rad_gsr changed the event call to the mythic progressbar to reflect the name of the mythic progressbar script
-- updated blacklist rank titles to match sops
-- added shops to sell food and drink at new restaurant
-- added hat store to new hat shop
+
 
 ### Fixed
-- press Z to hide in trunk
-- esx_bloods fixed the F6 menu
+
 ### Removed
 
 
