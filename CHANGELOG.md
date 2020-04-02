@@ -129,6 +129,7 @@ All notable updates and changes to the Midnight RP server resources.
 
 ### Fixed
 - functional-flatbed[WIP]: Built checks into functional-flatbed to address moto/bike bug
+- MNC jackets not working. Fixed by replacing folders with one folder of new clothing
 
 ### Removed
 - pv-tow [R]: Removed resource
