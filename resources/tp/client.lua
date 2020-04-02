@@ -19,6 +19,7 @@ local entrance_points = {
     {name = "church", x = -325.12, y = 2818.33, z = 59.45},
     {name = "bowling", x = -138.69, y = -250.8, z = 43.77},
     {name = "restaurant", x = 113.61, y = -1039.56, z = 29.31},
+    {name = "bahama", x = -1388.01, y = -586.71, z = 30.22},
     {name = "pillbox", x = 327.56, y = -603.49, z = 43.28}
 }
 
@@ -32,6 +33,7 @@ local exit_points = {
     {name = "church", x = -785.52, y = -14.05, z = -16.78},
     {name = "bowling", x = -143.37, y = -248.48, z = 44.05},
     {name = "restaurant", x = 114.01, y = -1042.71, z = 29.26},
+    {name = "bahama", x = -1390.94, y = -591.44, z = 30.32},
     {name = "pillbox", x = 339.54, y = -584.58, z = 74.17}
 }
 
