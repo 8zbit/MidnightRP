@@ -3,6 +3,7 @@
 All notable updates and changes to the Midnight RP server resources.
 
 ## [Released]
+
 ## [1.40] - 2020-04-2
 ### Added
 - Added mythic_progressbar
@@ -28,10 +29,9 @@ All notable updates and changes to the Midnight RP server resources.
 ### Fixed
 - press Z to hide in trunk
 - esx_bloods fixed the F6 menu
+
 ### Removed
-
-
-
+- 
 
 ## [1.39] - 2020-04-1
 
@@ -41,6 +41,7 @@ All notable updates and changes to the Midnight RP server resources.
 - added blacklist changing rooms.
 - added mafia and blacklist personal storage units.
 - blacklist empire gang script.
+
 ### Changed
 - dubs dealership employees can access vehicle purchase. 
 - Repair kits have been nerfed so they don't give a full repair.
@@ -51,6 +52,7 @@ All notable updates and changes to the Midnight RP server resources.
 ### Fixed
 - gcphone text msg limit.
 - Mechanic Job - Engine repair only repairs the engine and not the body too anymore
+
 ### Removed
 - electric-skateboard
 - old ad system, new one was already there.
@@ -62,20 +64,20 @@ All notable updates and changes to the Midnight RP server resources.
 ### Added
 - Supporter Vehicles April 2020.
 - Blacklist Empire gang vehicles.
-
+- added water to ems pharma.
 
 ### Changed
-- added water to ems pharma.
 - Ability to unbind emotes. /emoteunbind (num4, num5, num6, num7, num8, num9) command.
 - slight buff to cobrajet supporter car
+
 ### Fixed
-- fixed money laundering 24 hour waiting period. 
+- fixed money laundering 24 hour waiting period.
+
 ### Removed
 - skelly
 - skelly items from shops and inventory.
 - /fbs and /web from chat. use /drakad.
 - removed /twt.
-
 
 ## [1.37] - 2020-03-28
 ### Added
@@ -86,9 +88,10 @@ All notable updates and changes to the Midnight RP server resources.
 - you can now move your camera around when downed (dead) 
 - changed effects and duration of lsd (it lasts 10 minutes. heads up)
 - raised everyones alcohol tolarance party on my dudes.
-### Fixed
 
+### Fixed
 - fixed esx society money wash (testing by community required)
+
 ### Removed
 - old police cad
 
@@ -96,6 +99,7 @@ All notable updates and changes to the Midnight RP server resources.
 ### Added
 - Added VW Beetle
 - Added 
+
 ### Changed
 - Business money laundering has been changed to 24 hours laundering period and then the money gets deposited in the society account
 - Money Laundering location changed ! raided by cops
@@ -104,9 +108,11 @@ All notable updates and changes to the Midnight RP server resources.
 - changed effects and duration of lsd (it lasts 10 minutes. heads up)
 - raised everyones alcohol tolarance party on my dudes.
 - rebalanced cops needed for bank hiests.
+
 ### Fixed
 - Fixed glasses on the K menu
 - Fixed esx society money wash
+
 ### Removed
 - 
 
@@ -114,13 +120,16 @@ All notable updates and changes to the Midnight RP server resources.
 
 ## [ALPHA] - Current Test
 ### Added
-
+- functional-flatbed[WIP]: Added resource
 
 ### Changed
-
+- esx_mecanojob [C]: Zombies garage supplies flatbed for Mecano Menu
+- esx_mecanojob [C]: Zombies garage supplies flatbed3 for Fully Functional Flatbed
+- esx_mecanojob [C]: Zombies garage society vehicle spawn point moved to better location
 
 ### Fixed
+- functional-flatbed[WIP]: Built checks into functional-flatbed to address moto/bike bug
 
 ### Removed
-
-
+- pv-tow [R]: Removed resource
+- flatbed [R]: Removed resource ([cars]\flatbed)
