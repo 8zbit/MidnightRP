@@ -278,7 +278,7 @@ AddEventHandler('esx_goldCurrency:startTheEvent', function(num)
                 while ESX == nil do
                     Citizen.Wait(1)
                 end
-				ESX.Game.SpawnVehicle('rumpo', missionCoords, loc.Heading, function(vehicle)
+				ESX.Game.SpawnVehicle('gburrito', missionCoords, loc.Heading, function(vehicle)
 					SetEntityCoordsNoOffset(vehicle,loc.Location.x, loc.Location.y, loc.Location.z)
 					SetEntityHeading(vehicle,loc.Heading)
 					FreezeEntityPosition(vehicle, true)
@@ -359,7 +359,7 @@ AddEventHandler('esx_goldCurrency:startTheEvent', function(num)
 			if IsPedInAnyVehicle(GetPlayerPed(-1), true) and isVehicleLockPicked == true then
 				if GetDistanceBetweenCoords(coords, loc.Location.x, loc.Location.y, loc.Location.z, true) < 5 then
 					local vehicle = GetVehiclePedIsIn(GetPlayerPed(-1), false)
-					if GetEntityModel(vehicle) == GetHashKey('rumpo') then
+					if GetEntityModel(vehicle) == GetHashKey('gburrito') then
 						RemoveBlip(blip)
 						for k,v in pairs(Config.DeliveryPoints) do
 							if DeliveryBlipCreated == false then
@@ -388,7 +388,7 @@ AddEventHandler('esx_goldCurrency:startTheEvent', function(num)
 			if DeliveryInProgress == true then
                 local coords = GetEntityCoords(GetPlayerPed(-1))
                 local vehicle = GetVehiclePedIsIn(GetPlayerPed(-1), false)
-                if GetEntityModel(vehicle) == GetHashKey('rumpo') then
+                if GetEntityModel(vehicle) == GetHashKey('gburrito') then
                     InsideJobVan = true
                 else
                     InsideJobVan = false

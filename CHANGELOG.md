@@ -4,6 +4,22 @@ All notable updates and changes to the Midnight RP server resources.
 
 ## [Released]
 
+
+## [1.41] - 2020-04-3
+### Added
+- 
+
+
+### Changed
+- gold hiest. can sell 10 gold bars at a time instead of 50. all npcs are lost mc npcs and the truck used is not a lost mc van
+
+### Fixed
+- MNC jackets not working. Fixed by replacing folders with one folder of new clothing
+
+### Removed
+- 
+
+
 ## [1.40] - 2020-04-2
 ### Added
 - Added mythic_progressbar
@@ -129,7 +145,6 @@ All notable updates and changes to the Midnight RP server resources.
 
 ### Fixed
 - functional-flatbed[WIP]: Built checks into functional-flatbed to address moto/bike bug
-- MNC jackets not working. Fixed by replacing folders with one folder of new clothing
 
 ### Removed
 - pv-tow [R]: Removed resource
