@@ -93,6 +93,34 @@
       }]
     }
   ],
+  
+  {                                                              --you can put a label that you do not want too long
+      "display": "Mechanic",                       -- alias , label job here ''labelname",
+      "backgroundColor": "green",                         -- color job in gcphone red, blue, green....
+      "subMenu": [                                                --not all colors work
+        {
+          "title": "Send a message",
+          "eventName": "esx_addons_gcphone:call",
+          "type": {
+            "number": "mecano"                                -- Job name in ddb ,database                                            
+          }                                                             -- you have to have this job if not remove or replace
+        }                                
+      ]
+    },
+	
+	  {                                                              --you can put a label that you do not want too long
+      "display": "Taxi",                       -- alias , label job here ''labelname",
+      "backgroundColor": "yellow",                         -- color job in gcphone red, blue, green....
+      "subMenu": [                                                --not all colors work
+        {
+          "title": "Send a message",
+          "eventName": "esx_addons_gcphone:call",
+          "type": {
+            "number": "taxi"                                -- Job name in ddb ,database                                            
+          }                                                             -- you have to have this job if not remove or replace
+        }                                
+      ]
+    },
 
   "defaultContacts": [{
       "number": "ambulance",
