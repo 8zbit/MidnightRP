@@ -5,6 +5,24 @@ All notable updates and changes to the Midnight RP server resources.
 ## [Released]
 
 
+## [1.42] - 2020-04-4
+### Added
+- New male jacket added.
+
+
+### Changed
+- Coke processing has been raided. location changed.
+- Mechanic and taxi added to phone.
+- Changed name of The Pearls to Galdin Quay.
+
+### Fixed
+- 
+
+### Removed
+- 
+
+
+
 ## [1.41] - 2020-04-3
 ### Added
 - 
