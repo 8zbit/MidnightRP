@@ -7,7 +7,7 @@ All notable updates and changes to the Midnight RP server resources.
 
 ## [1.42] - 2020-04-4
 ### Added
-- New male jacket added.
+- 2 New male jacket added.
 
 
 ### Changed
