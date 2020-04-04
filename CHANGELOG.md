@@ -9,6 +9,7 @@ All notable updates and changes to the Midnight RP server resources.
 ### Added
 - 2 New male jacket added.
 - new ped skins. use Del menu. 
+- Using /report or /calladmin now shows for online admins in chat
 
 
 ### Changed

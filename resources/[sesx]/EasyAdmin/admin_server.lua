@@ -25,6 +25,10 @@ permissions = {
 MutedPlayers = {} 
 -- cached players, for offline banning
 CachedPlayers = {}
+OnlineAdmins = {}
+ChatReminders = {}
+
+
 Citizen.CreateThread(function()
 	while true do 
 		Wait(20000)
@@ -36,9 +40,61 @@ Citizen.CreateThread(function()
 	end
 end)
 
+
+-- Chat Reminder Code
+function sendRandomReminder()
+	reminderTime = GetConvarInt("ea_chatReminderTime", 0)
+	if reminderTime ~= 0 and #ChatReminders > 0 then
+		local reminder = ChatReminders[ math.random( #ChatReminders ) ] -- select random reminder from table
+		local adminNames = ""
+		local t = {}
+		for i,_ in pairs(OnlineAdmins) do
+			table.insert(t, getName(i))
+		end
+		for i,n in ipairs(t) do 
+			if i == 1 then
+				adminNames = n
+			elseif i == #t then
+				adminNames = adminNames.." "..n
+			else
+				adminNames = adminNames.." "..n..","
+			end
+		end
+		t=nil
+
+		if adminNames == "" then adminNames = "@admins" end -- if no admins are online just print @admins
+		reminder = string.gsub(reminder, "@admins", adminNames)
+
+		reminder = string.gsub(reminder, "@bancount", #blacklist)
+
+		reminder = string.gsub(reminder, "@time", os.date("%X", os.time()))
+		reminder = string.gsub(reminder, "@date", os.date("%x", os.time()))
+		TriggerClientEvent("chat:addMessage", -1, { args = { "EasyAdmin", reminder } })
+	end
+end
+
+Citizen.CreateThread(function()
+	--Wait(10000)
+	reminderTime = GetConvarInt("ea_chatReminderTime", 0)
+	if reminderTime ~= 0 then
+		while true do 
+			Wait(reminderTime*60000)
+			sendRandomReminder()
+		end
+	else
+		while true do
+			Wait(20000)
+			sendRandomReminder() -- check for changes in the convar
+		end
+	end
+end)
+
 AddEventHandler('playerDropped', function (reason)
 	if CachedPlayers[source] then
 		CachedPlayers[source].droppedTime = os.time()
+	end
+	if OnlineAdmins[source] then
+		OnlineAdmins[source] = nil
 	end
 end)
 
@@ -56,6 +112,42 @@ AddEventHandler('EasyAdmin:requestCachedPlayers', function(playerId)
 		PrintDebugMessage("Cached Players requested by "..getName(src,true))
 	end
 end)
+
+function DoesPlayerHavePermission(player, object)
+	local haspermission = false
+	if (player == 0 or player == "") then
+		return true
+	end-- Console. It's assumed this will be an admin with access. If not, why the fuck are they giving random people access?
+	
+	if IsPlayerAceAllowed(player,object) then -- check if the player has access to this permission
+		haspermission = true
+	else
+		haspermission = false
+	end
+	
+	if not haspermission then -- if not, check if they are admin using the legacy method.
+		local numIds = GetPlayerIdentifiers(player)
+		for i,admin in pairs(admins) do
+			for i,theId in pairs(numIds) do
+				if admin == theId then
+					haspermission = true
+				end
+			end
+		end
+	end
+	return haspermission
+end
+
+
+RegisterCommand("ea_addReminder", function(source, args, rawCommand)
+	if args[1] and DoesPlayerHavePermission(source,"easyadmin.manageserver") then
+		local text = string.gsub(rawCommand, "ea_addReminder ", "")
+		local text = string.gsub(text, '"', '')
+
+		PrintDebugMessage("added '"..text.."' as a Chat Reminder")
+		table.insert(ChatReminders, text)
+	end
+end, false)
 
 AnonymousAdmins = {}
 Citizen.CreateThread(function()
@@ -84,6 +176,9 @@ Citizen.CreateThread(function()
 			local thisPerm = DoesPlayerHavePermission(source,"easyadmin."..perm)
 			if perm == "screenshot" and not screenshots then
 				thisPerm = false
+			end
+			if thisPerm == true then
+				OnlineAdmins[source] = true 
 			end
 			TriggerClientEvent("EasyAdmin:adminresponse", source, perm,thisPerm)
 			PrintDebugMessage("Processed Perm "..perm.." for "..getName(source)..", result: "..tostring(thisPerm))
@@ -342,6 +437,9 @@ Citizen.CreateThread(function()
 	RegisterCommand("calladmin", function(source, args, rawCommand)
 		if GetConvar("ea_enableCallAdminCommand", "false") == "true" then
 			local reason = string.gsub(rawCommand, "calladmin ", "")
+			for i,_ in pairs(OnlineAdmins) do 
+				TriggerClientEvent('chatMessage', i, "^3!!EasyAdmin Admin Call!!^7\n"..string.format(string.gsub(GetLocalisedText("playercalledforadmin"), "```", ""), getName(source), source, reason))
+			end
 			SendWebhookMessage(moderationNotification,string.format(GetLocalisedText("playercalledforadmin"), getName(source), source, reason))
 			TriggerClientEvent('chatMessage', source, "^3EasyAdmin^7", {255,255,255}, GetLocalisedText("admincalled"))
 		end
@@ -386,6 +484,9 @@ Citizen.CreateThread(function()
 					table.insert(PlayerReports[id], {source = source, sourceName = GetPlayerName(source), reason = reason, time = os.time()})
 					SendWebhookMessage(moderationNotification,string.format(GetLocalisedText("playerreportedplayer"), getName(source), source, GetPlayerName(id), id, reason, #PlayerReports[id], minimumreports))
 					-- "playerreportedplayer":"```\nUser %s (ID: %a) reported a player!\n%s (%a), Reason: %s\nReport %a/%a\n```",
+					for i,_ in pairs(OnlineAdmins) do 
+						TriggerClientEvent('chatMessage', i, "^3!!EasyAdmin Report!!^7\n"..string.format(string.gsub(GetLocalisedText("playerreportedplayer"), "```", ""), getName(source), source, GetPlayerName(id), id, reason, #PlayerReports[id], minimumreports))
+					end
 					TriggerClientEvent('chatMessage', source, "^3EasyAdmin^7", {255,255,255}, GetLocalisedText("successfullyreported"))
 					if #PlayerReports[id] >= minimumreports then
 						TriggerEvent("EasyAdmin:banPlayer", id, string.format(GetLocalisedText("reportbantext"), minimumreports), os.time()+GetConvarInt("ea_ReportBanTime", 86400))
@@ -505,31 +606,7 @@ Citizen.CreateThread(function()
 			end
 		end
 	end)
-	
-	function DoesPlayerHavePermission(player, object)
-		local haspermission = false
-		if (player == 0 or player == "") then
-			return true
-		end-- Console. It's assumed this will be an admin with access. If not, why the fuck are they giving random people access?
-		
-		if IsPlayerAceAllowed(player,object) then -- check if the player has access to this permission
-			haspermission = true
-		else
-			haspermission = false
-		end
-		
-		if not haspermission then -- if not, check if they are admin using the legacy method.
-			local numIds = GetPlayerIdentifiers(player)
-			for i,admin in pairs(admins) do
-				for i,theId in pairs(numIds) do
-					if admin == theId then
-						haspermission = true
-					end
-				end
-			end
-		end
-		return haspermission
-	end
+
 	
 	blacklist = {}
 	
@@ -861,6 +938,7 @@ Citizen.CreateThread(function()
 	---------------------------------- USEFUL
 	
 	function SendWebhookMessage(webhook,message)
+		moderationNotification = GetConvar("ea_moderationNotification", "false")
 		if webhook ~= "false" then
 			PerformHttpRequest(webhook, function(err, text, headers) end, 'POST', json.encode({content = message}), { ['Content-Type'] = 'application/json' })
 		end
