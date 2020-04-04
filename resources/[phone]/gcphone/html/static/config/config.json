@@ -91,6 +91,29 @@
           "number": "ambulance"
         }
       }]
+    },
+
+    {
+      "display": "Mechanic",
+      "backgroundColor": "green",
+      "subMenu": [{
+        "title": "Send a message",
+        "eventName": "esx_addons_gcphone:call",
+        "type": {
+          "number": "mecano"
+        }
+      }]
+    },
+    {
+      "display": "Taxi",
+      "backgroundColor": "yellow",
+      "subMenu": [{
+        "title": "Send a message",
+        "eventName": "esx_addons_gcphone:call",
+        "type": {
+          "number": "taxi"
+        }
+      }]
     }
   ],
   
@@ -106,6 +129,18 @@
       "display": "Police",
       "backgroundColor": "blue",
       "letter": "P"
+    },
+    {
+      "number": "mecano",
+      "display": "Mechanic",
+      "backgroundColor": "blue",
+      "letter": "M"
+    },
+    {
+      "number": "taxi",
+      "display": "Taxi",
+      "backgroundColor": "yellow",
+      "letter": "T"
     }
   ],
 
