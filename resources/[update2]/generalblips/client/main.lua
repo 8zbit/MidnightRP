@@ -118,7 +118,7 @@ Citizen.CreateThread(function()
     SetBlipAsShortRange(blip, true)
 
     BeginTextCommandSetBlipName("STRING")
-    AddTextComponentString("The Pearls")
+    AddTextComponentString("The Galdin Quay")
     EndTextCommandSetBlipName(blip)
   end
 end)

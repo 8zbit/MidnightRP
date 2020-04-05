@@ -71,7 +71,7 @@ Citizen.CreateThread(function()
 		if _menuPool then
 			_menuPool:ProcessMenus()
 		end
-		if IsControlJustReleased(0, settings.button) and isAdmin == true then --M by default
+		if (IsControlJustReleased(0, settings.button) and GetLastInputMethod( 0 ) ) and isAdmin == true then --M by default
 			-- clear and re-create incase of permission change+player count change
 			
 			if strings then
@@ -624,7 +624,7 @@ function GenerateMenu() -- this is a big ass function
 	end
 	
 	if permissions.anon then
-		local thisItem = NativeUI.CreateCheckboxItem(GetLocalisedText("anonymous"), false, GetLocalisedText("anonymousguide"))
+		local thisItem = NativeUI.CreateCheckboxItem(GetLocalisedText("anonymous"), anonymous or false, GetLocalisedText("anonymousguide"))
 		settingsMenu:AddItem(thisItem)
 		settingsMenu.OnCheckboxChange = function(sender, item, checked_)
 			if item == thisItem then
