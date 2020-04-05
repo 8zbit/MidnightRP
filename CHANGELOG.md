@@ -4,6 +4,23 @@ All notable updates and changes to the Midnight RP server resources.
 
 ## [Released]
 
+## [1.42] - 2020-04-5
+### Added
+- 
+
+
+
+### Changed
+- Trunks will no longer allow you to store job items (chickens, fuel, planks, etc) it was never intended to have you grind those jobs, our main goal on the server is reward player engagemenet with the community and not to encourge grinding.
+
+
+### Fixed
+- 
+
+### Removed
+- 
+
+
 
 ## [1.42] - 2020-04-4
 ### Added
