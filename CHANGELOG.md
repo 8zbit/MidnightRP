@@ -6,12 +6,11 @@ All notable updates and changes to the Midnight RP server resources.
 
 ## [1.42] - 2020-04-5
 ### Added
-- 
-
-
 
 ### Changed
 - Trunks will no longer allow you to store job items (chickens, fuel, planks, etc) it was never intended to have you grind those jobs, our main goal on the server is reward player engagemenet with the community and not to encourge grinding.
+- lostmcextended [C]: Updated Art for Rogue MC (Ready to Deploy)
+- Sons_of_Anarchy [C]: Updated Art for Rogue MC (Ready to Deploy)
 
 
 ### Fixed
@@ -179,8 +178,7 @@ All notable updates and changes to the Midnight RP server resources.
 - esx_mecanojob [C]: Zombies garage supplies flatbed for Mecano Menu
 - esx_mecanojob [C]: Zombies garage supplies flatbed3 for Fully Functional Flatbed
 - esx_mecanojob [C]: Zombies garage society vehicle spawn point moved to better location
-- lostmcextended [C]: Updated Art for Rogue MC (Ready to Deploy)
-- Sons_of_Anarchy [C]: Updated Art for Rogue MC (Ready to Deploy)
+
 
 ### Fixed
 - functional-flatbed[WIP]: Built checks into functional-flatbed to address moto/bike bug
