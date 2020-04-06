@@ -17,9 +17,9 @@ RequestIpl("gabz_biker_milo_")
 	SetInteriorPropColor(interiorID, "lower_walls_default", 8)
 	EnableInteriorProp(interiorID, "mod_booth")
 	EnableInteriorProp(interiorID, "gun_locker")
-	EnableInteriorProp(interiorID, "cash_small")
-	EnableInteriorProp(interiorID, "id_small")
-	EnableInteriorProp(interiorID, "weed_small")
+	--EnableInteriorProp(interiorID, "cash_small")
+	--EnableInteriorProp(interiorID, "id_small")
+	--EnableInteriorProp(interiorID, "weed_small")
 	
 	RefreshInterior(interiorID)
 	

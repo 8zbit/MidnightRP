@@ -193,6 +193,7 @@ All notable updates and changes to the Midnight RP server resources.
 - esx_mecanojob [C]: Zombies garage society vehicle spawn point moved to better location
 - Sons_OF_Anarchy [C]: New Church Table
 - esx_doorlock [C]: Added locks to MC Clubhouse attached Garage
+- lostmcextended [C]: Cleaned up the drugs and money laying all over the place
 
 ### Fixed
 - functional-flatbed[WIP]: Built checks into functional-flatbed to address moto/bike bug
