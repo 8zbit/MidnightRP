@@ -6,7 +6,17 @@ All notable updates and changes to the Midnight RP server resources.
 
 ## [1.42] - 2020-04-5
 ### Added
-
+- new male top replaces :https://tobii.space/public/thumbnails/mp_m_freemode_01_mp_m_gunrunning_01_jbib_016.png
+- new male top replaces : https://tobii.space/public/thumbnails/mp_m_freemode_01_mp_m_gunrunning_01_jbib_000.png
+- new female top replaces :https://tobii.space/public/thumbnails/mp_f_freemode_01_mp_f_gunrunning_01_jbib_000.png
+- new female top replaces :https://tobii.space/public/thumbnails/mp_f_freemode_01_mp_f_gunrunning_01_jbib_001.png
+- new female top replaces :https://tobii.space/public/thumbnails/mp_f_freemode_01_mp_f_gunrunning_01_accs_006.png
+- new female top replaces :https://tobii.space/public/thumbnails/mp_f_freemode_01_mp_f_gunrunning_01_jbib_006.png
+- new female top replaces :https://tobii.space/public/thumbnails/mp_f_freemode_01_mp_f_luxe_02_jbib_002.png
+- new female top replaces :https://tobii.space/public/thumbnails/mp_f_freemode_01_mp_f_gunrunning_01_jbib_007.png
+- new female top replaces :https://tobii.space/public/thumbnails/mp_f_freemode_01_mp_f_gunrunning_01_accs_021.png
+- new female top replaces :https://tobii.space/public/thumbnails/mp_f_freemode_01_mp_f_gunrunning_01_jbib_005.png
+- new female top replaces :https://tobii.space/public/thumbnails/mp_f_freemode_01_mp_f_importexport_01_jbib_021.png 
 ### Changed
 - Trunks will no longer allow you to store job items (chickens, fuel, planks, etc) it was never intended to have you grind those jobs, our main goal on the server is reward player engagemenet with the community and not to encourge grinding.
 - lostmcextended [C]: Updated Art for Rogue MC (Ready to Deploy)
