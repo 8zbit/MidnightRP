@@ -179,6 +179,8 @@ All notable updates and changes to the Midnight RP server resources.
 - esx_mecanojob [C]: Zombies garage supplies flatbed for Mecano Menu
 - esx_mecanojob [C]: Zombies garage supplies flatbed3 for Fully Functional Flatbed
 - esx_mecanojob [C]: Zombies garage society vehicle spawn point moved to better location
+- lostmcextended [C]: Updated Art for Rogue MC (Ready to Deploy)
+- Sons_of_Anarchy [C]: Updated Art for Rogue MC (Ready to Deploy)
 
 ### Fixed
 - functional-flatbed[WIP]: Built checks into functional-flatbed to address moto/bike bug
