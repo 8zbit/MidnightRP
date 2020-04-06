@@ -185,12 +185,14 @@ All notable updates and changes to the Midnight RP server resources.
 ## [ALPHA] - Current Test
 ### Added
 - functional-flatbed[WIP]: Added resource
+- Sons_OF_Anarchy [C]: Added resource to change hanging cuts
 
 ### Changed
 - esx_mecanojob [C]: Zombies garage supplies flatbed for Mecano Menu
 - esx_mecanojob [C]: Zombies garage supplies flatbed3 for Fully Functional Flatbed
 - esx_mecanojob [C]: Zombies garage society vehicle spawn point moved to better location
-
+- Sons_OF_Anarchy [C]: New Church Table
+- esx_doorlock [C]: Added locks to MC Clubhouse attached Garage
 
 ### Fixed
 - functional-flatbed[WIP]: Built checks into functional-flatbed to address moto/bike bug

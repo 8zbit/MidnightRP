@@ -726,6 +726,8 @@ Config.DoorList = {
 		size = 0.7
 	},
 
+
+	-- Rogue MC Locks
 	{
 		objName = 'v_ilev_lostdoor',
 		objCoords  = {x = 981.745, y = -102.808, z = 74.849},
@@ -733,6 +735,26 @@ Config.DoorList = {
 		authorizedJobs = { 'lazy' },
 		locked = true,
 		distance = 1.4,
+		size = 0.5
+	},
+
+	{
+		objName = 'v_ilev_ss_door5_r',
+		objCoords  = {x = 959.0, y = -120.90, z = 75.01},
+		textCoords = {x = 959.0, y = -120.90, z = 75.01},
+		authorizedJobs = { 'lazy' },
+		locked = true,
+		distance = 4,
+		size = 0.5
+	},
+
+	{
+		objName = 'v_ilev_carmod3door',
+		objCoords  = {x = 968.74, y = -112.03, z = 74.36},
+		textCoords = {x = 968.74, y = -112.03, z = 74.36},
+		authorizedJobs = { 'lazy' },
+		locked = true,
+		distance = 8,
 		size = 0.5
 	},
 
