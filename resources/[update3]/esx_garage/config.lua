@@ -129,6 +129,12 @@ Config.CarGarages = {
 		SpawnPoint = { x = -2033.14, y = -479.37, z = 11.66, h = 314.87 },
 		DeletePoint = { x = -2021.11, y = -473.18, z = 11.42 }
 	},
+
+	Garage_arena = {
+		GaragePoint = { x = -371.55, y = -1872.29, z = 20.53 },
+		SpawnPoint = { x = -365.74, y = -1867.29, z = 20.53, h = 14.68 },
+		DeletePoint = { x = -377.07, y = -1872.97, z = 20.53 }
+	},
 	Garage_Sandy = {
 		GaragePoint = { x = 1737.59, y = 3710.2, z = 33.24 },
 		SpawnPoint = { x = 1737.84, y = 3719.28, z = 33.14, h = 21.22 },
@@ -208,6 +214,11 @@ Config.CarPounds = {
 	Pound_bennys = {
 		PoundPoint = { x = -193.52, y = -1290.23, z = 31.3 },
 		SpawnPoint = { x = -189.32, y = -1301.01, z = 31.3, h = 94.65 }
+	},
+
+	Pound_arena = {
+		PoundPoint = { x = -382.68, y = -1877.96, z = 20.53 },
+		SpawnPoint = { x = -382.32, y = -1868.52, z = 20.53, h = 287.34 }
 	},
 
 	Pound_cardealer = {
