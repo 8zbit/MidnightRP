@@ -1,6 +1,8 @@
 fr_skins = {'a_f_m_bevhills_01',
 'a_f_y_genhot_01',
 'a_f_y_business_02',
+'a_m_m_afriamer_01',
+'a_m_m_hillbilly_01',
 'a_m_m_acult_01',
 'a_m_y_musclbeac_02',
 's_f_y_scrubs_01',
