@@ -196,6 +196,11 @@ All notable updates and changes to the Midnight RP server resources.
 - esx_mecanojob [C]: Zombies garage supplies flatbed for Mecano Menu
 - esx_mecanojob [C]: Zombies garage supplies flatbed3 for Fully Functional Flatbed
 - esx_mecanojob [C]: Zombies garage society vehicle spawn point moved to better location
+- banner_anim images changed to local business ads
+- ribbench ad changed to Galdin Quay ad
+- pawn signs changed to art piece 
+- legionsign changed to "race" image 
+- Removed MCR jackets, re-added jackets, and deleted jackets old .ydd file
 
 
 
