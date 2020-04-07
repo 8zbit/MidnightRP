@@ -3,8 +3,20 @@
 All notable updates and changes to the Midnight RP server resources.
 
 ## [Released]
+## [1.44] - 2020-04-7
+### Added
 
-## [1.42] - 2020-04-5
+### Changed
+- banner_anim images changed to local business ads
+- ribbench ad changed to Galdin Quay ad
+- pawn signs changed to art piece 
+- legionsign changed to "race" image 
+- Removed MCR jackets, re-added jackets, and deleted jackets old .ydd file
+### Fixed
+
+### Removed
+
+## [1.43] - 2020-04-5
 ### Added
 - new male top replaces :https://tobii.space/public/thumbnails/mp_m_freemode_01_mp_m_gunrunning_01_jbib_016.png
 - new male top replaces : https://tobii.space/public/thumbnails/mp_m_freemode_01_mp_m_gunrunning_01_jbib_000.png
