@@ -211,8 +211,10 @@ All notable updates and changes to the Midnight RP server resources.
 - banner_anim images changed to local business ads
 - ribbench ad changed to Galdin Quay ad
 - pawn signs changed to art piece 
-- legionsign changed to "race" image 
 - Removed MCR jackets, re-added jackets, and deleted jackets old .ydd file
+- legionsign changed to "Drive Safe" image
+- banner_anim LSPD ad added
+- Added .ydd to MCR jacket file to hopefully fix jackets not streaming
 
 
 
