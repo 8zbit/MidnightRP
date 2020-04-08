@@ -46,4 +46,22 @@ Stores = {
 		nameofstore = "24/7. (Little Seoul)",
 		lastrobbed = 0
 	},
+	["innocence_twentyfourseven"] = {
+		position = { ['x'] = 28.39, ['y'] = -1339.97, ['z'] = 29.5 },
+		reward = math.random(1000,2500),
+		nameofstore = "24/7. (Innocence Blvd)",
+		lastrobbed = 0
+	},
+	["clintonave_twentyfourseven"] = {
+		position = { ['x'] = 378.36, ['y'] = 332.37, ['z'] = 103.57 },
+		reward = math.random(1000,2500),
+		nameofstore = "24/7. (Clinton Avenue)",
+		lastrobbed = 0
+	},
+	["prosperity_liquor"] = {
+		position = { ['x'] = -1483.12, ['y'] = -376.07, ['z'] = 40.16 },
+		reward = math.random(1000,2500),
+		nameofstore = "Robs Liquor. (Prosperity Street)",
+		lastrobbed = 0
+	},
 }

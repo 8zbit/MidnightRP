@@ -205,6 +205,7 @@ All notable updates and changes to the Midnight RP server resources.
 ## [ALPHA] - Current Test
 ### Added
 - functional-flatbed[WIP]: Added resource
+- esx_holdup[C]: Added 3 more stores that can be robbed
 
 
 ### Changed
@@ -218,11 +219,13 @@ All notable updates and changes to the Midnight RP server resources.
 - legionsign changed to "Drive Safe" image
 - banner_anim LSPD ad added
 - Added .ydd to MCR jacket file to hopefully fix jackets not streaming
-
-
+- esx_holdup[C]: Changed some of the text that was displayed before, during and after the robbery
 
 ### Fixed
 - functional-flatbed[WIP]: Built checks into functional-flatbed to address moto/bike bug
+- esx_holdup[C]: Fixed an issue with the store robberies where the timer would display 0 seconds remaining but the player wasn't paid.
+
+
 
 ### Removed
 - pv-tow [R]: Removed resource

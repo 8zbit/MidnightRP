@@ -75,7 +75,7 @@ AddEventHandler('esx_holdup:rob', function(robb)
 				Stores[robb].lastrobbed = os.time()
 				robbers[source] = robb
 				local savedSource = source
-				SetTimeout(300000, function()
+				SetTimeout(150000, function()
 
 					if(robbers[savedSource])then
 
