@@ -7,7 +7,8 @@ All notable updates and changes to the Midnight RP server resources.
 ### Added
 - 80s style bahama mamas with vice city music and dancing peds. full new design
 - added working cinema. 
-- added boombox. can be bought from 7/11
+- added boombox. can be bought from stores
+- esx_holdup[C]: Added 3 more stores that can be robbed
 
 ### Changed
 - banner_anim images changed to local business ads
@@ -15,8 +16,9 @@ All notable updates and changes to the Midnight RP server resources.
 - pawn signs changed to art piece 
 - legionsign changed to "race" image 
 - Removed MCR jackets, re-added jackets, and deleted jackets old .ydd file
+- esx_holdup[C]: Changed some of the text that was displayed before, during and after the robbery
 ### Fixed
-
+- esx_holdup[C]: Fixed an issue with the store robberies where the timer would display 0 seconds remaining but the player wasn't paid.
 ### Removed
 
 ## [1.43] - 2020-04-5
@@ -42,6 +44,7 @@ All notable updates and changes to the Midnight RP server resources.
 - lostmcextended [C]: Cleaned up the drugs and money laying all over the place
 - Sons_OF_Anarchy [C]: New Church Table
 - Sons_OF_Anarchy [C]: Added resource to change hanging cuts
+
 
 
 
@@ -205,7 +208,7 @@ All notable updates and changes to the Midnight RP server resources.
 ## [ALPHA] - Current Test
 ### Added
 - functional-flatbed[WIP]: Added resource
-- esx_holdup[C]: Added 3 more stores that can be robbed
+
 
 
 ### Changed
@@ -219,11 +222,10 @@ All notable updates and changes to the Midnight RP server resources.
 - legionsign changed to "Drive Safe" image
 - banner_anim LSPD ad added
 - Added .ydd to MCR jacket file to hopefully fix jackets not streaming
-- esx_holdup[C]: Changed some of the text that was displayed before, during and after the robbery
+
 
 ### Fixed
 - functional-flatbed[WIP]: Built checks into functional-flatbed to address moto/bike bug
-- esx_holdup[C]: Fixed an issue with the store robberies where the timer would display 0 seconds remaining but the player wasn't paid.
 
 
 
