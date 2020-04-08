@@ -20,7 +20,7 @@ All notable updates and changes to the Midnight RP server resources.
 ### Fixed
 - esx_holdup[C]: Fixed an issue with the store robberies where the timer would display 0 seconds remaining but the player wasn't paid.
 ### Removed
-
+- hide in trunk
 ## [1.43] - 2020-04-5
 ### Added
 - new male top replaces :https://tobii.space/public/thumbnails/mp_m_freemode_01_mp_m_gunrunning_01_jbib_016.png
