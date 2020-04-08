@@ -6,6 +6,8 @@ All notable updates and changes to the Midnight RP server resources.
 ## [1.44] - 2020-04-7
 ### Added
 - 80s style bahama mamas with vice city music and dancing peds. full new design
+- added working cinema. 
+- added boombox. can be bought from 7/11
 
 ### Changed
 - banner_anim images changed to local business ads
