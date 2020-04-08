@@ -122,7 +122,7 @@ Citizen.CreateThread(function()
     EndTextCommandSetBlipName(blip)
   end
 end)
---[[ Create blips fishing sale
+ Create blips fishing sale
 Citizen.CreateThread(function()
 
   for k,v in pairs(Config.DriftStations5) do
@@ -136,10 +136,10 @@ Citizen.CreateThread(function()
     SetBlipAsShortRange(blip, true)
 
     BeginTextCommandSetBlipName("STRING")
-    AddTextComponentString("Fish Sales")
+    AddTextComponentString("Cinema")
     EndTextCommandSetBlipName(blip)
   end
-end)]]
+end)
 
 
 Citizen.CreateThread(function()

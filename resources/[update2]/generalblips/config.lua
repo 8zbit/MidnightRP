@@ -70,20 +70,20 @@ Config.DriftStations4 = {
 
 
 
---[[Config.DriftStations5 = {
+Config.DriftStations5 = {
 
   Mafia = {
 
     Blip = {
-      Pos     = {x = 949.06500244141, y = -1733.3645019531, z = 31.641366958618 },
-      Sprite  = 68,
+      Pos     = {x = 340.81, y = 186.57, z = 103 },
+      Sprite  = 135,
       Display = 4,
       Scale   = 0.7,
       Colour  = 48,
     },
   },
 
-}]]
+}
 
 Config.DriftStations6 = {
 
