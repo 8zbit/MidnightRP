@@ -11,15 +11,20 @@ All notable updates and changes to the Midnight RP server resources.
 - new female heels
 - new male top monster energy jacket
 - 2 new vehicles at dubs dealer
+- B1g_Props [C]: Added /guncrate
 
 ### Changed
 - vehicles will take more damage before getting disabled
 - vehicle rental has been placed at arena and set to be go cart rental
 - location of hidden hacker shop. [raided]
+- Removed MCR jackets, re-added jackets, and deleted jackets old .ydd file
+- Added .ydd to MCR jacket file to hopefully fix jackets not streaming
+- B1g_Props [C]: Cleaned formatting
 ### Fixed
 - 
 ### Removed
 - broken female clothing textures
+- B1g_Props [C]: Removed unused/not working props
 ## [1.44] - 2020-04-7
 ### Added
 - 80s style bahama mamas with vice city music and dancing peds. full new design
@@ -225,20 +230,12 @@ All notable updates and changes to the Midnight RP server resources.
 ## [ALPHA] - Current Test
 ### Added
 - functional-flatbed[WIP]: Added resource
-- B1g_Props [C]: Added /guncrate
+
 
 ### Changed
 - esx_mecanojob [C]: Zombies garage supplies flatbed for Mecano Menu
 - esx_mecanojob [C]: Zombies garage supplies flatbed3 for Fully Functional Flatbed
 - esx_mecanojob [C]: Zombies garage society vehicle spawn point moved to better location
-- banner_anim images changed to local business ads
-- ribbench ad changed to Galdin Quay ad
-- pawn signs changed to art piece 
-- Removed MCR jackets, re-added jackets, and deleted jackets old .ydd file
-- legionsign changed to "Drive Safe" image
-- banner_anim LSPD ad added
-- Added .ydd to MCR jacket file to hopefully fix jackets not streaming
-- B1g_Props [C]: Cleaned formatting
 
 ### Fixed
 - functional-flatbed[WIP]: Built checks into functional-flatbed to address moto/bike bug
@@ -246,4 +243,3 @@ All notable updates and changes to the Midnight RP server resources.
 ### Removed
 - pv-tow [R]: Removed resource
 - flatbed [R]: Removed resource ([cars]\flatbed)
-- B1g_Props [C]: Removed unused/not working props
