@@ -10,7 +10,7 @@ All notable updates and changes to the Midnight RP server resources.
 - more textures to existing female top
 - new female heels
 - new male top monster energy jacket
-- 3 new vehicles at dubs dealer
+- 2 new vehicles at dubs dealer
 
 ### Changed
 - vehicles will take more damage before getting disabled
