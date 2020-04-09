@@ -627,12 +627,6 @@ files {
   'kart_data/handling.meta',
   'kart_data/vehiclelayouts.meta',
 
-  'nsi_data/vehicles.meta',
-  'nsi_data/carvariations.meta',
-  'nsi_data/carcols.meta',
-  'nsi_data/handling.meta',
-  'nsi_data/vehiclelayouts.meta',
-
   'shopping_data/vehicles.meta',
   'shopping_data/carvariations.meta',
   'shopping_data/carcols.meta',
@@ -645,12 +639,6 @@ data_file 'VEHICLE_METADATA_FILE' 'shopping_data/vehicles.meta'
 data_file 'CARCOLS_FILE' 'shopping_data/carcols.meta'
 data_file 'VEHICLE_VARIATION_FILE' 'shopping_data/carvariations.meta'
 data_file 'VEHICLE_LAYOUTS_FILE' 'shopping_data/vehiclelayouts.meta'
-
-data_file 'HANDLING_FILE' 'nsi_data/handling.meta'
-data_file 'VEHICLE_METADATA_FILE' 'nsi_data/vehicles.meta'
-data_file 'CARCOLS_FILE' 'nsi_data/carcols.meta'
-data_file 'VEHICLE_VARIATION_FILE' 'nsi_data/carvariations.meta'
-data_file 'VEHICLE_LAYOUTS_FILE' 'nsi_data/vehiclelayouts.meta'
 
 data_file 'HANDLING_FILE' 'kart_data/handling.meta'
 data_file 'VEHICLE_METADATA_FILE' 'kart_data/vehicles.meta'
