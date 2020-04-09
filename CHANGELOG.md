@@ -3,6 +3,19 @@
 All notable updates and changes to the Midnight RP server resources.
 
 ## [Released]
+
+## [1.45] - 2020-04-9
+### Added
+- new female top
+- more textures to existing female top
+- new female heels
+
+### Changed
+- 
+### Fixed
+- 
+### Removed
+- broken female clothing textures
 ## [1.44] - 2020-04-7
 ### Added
 - 80s style bahama mamas with vice city music and dancing peds. full new design
