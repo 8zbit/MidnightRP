@@ -15,6 +15,7 @@ All notable updates and changes to the Midnight RP server resources.
 ### Changed
 - vehicles will take more damage before getting disabled
 - vehicle rental has been placed at arena and set to be go cart rental
+- location of hidden hacker shop. [raided]
 ### Fixed
 - 
 ### Removed
