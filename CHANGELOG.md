@@ -225,8 +225,7 @@ All notable updates and changes to the Midnight RP server resources.
 ## [ALPHA] - Current Test
 ### Added
 - functional-flatbed[WIP]: Added resource
-
-
+- B1g_Props [C]: Added /guncrate
 
 ### Changed
 - esx_mecanojob [C]: Zombies garage supplies flatbed for Mecano Menu
@@ -239,13 +238,12 @@ All notable updates and changes to the Midnight RP server resources.
 - legionsign changed to "Drive Safe" image
 - banner_anim LSPD ad added
 - Added .ydd to MCR jacket file to hopefully fix jackets not streaming
-
+- B1g_Props [C]: Cleaned formatting
 
 ### Fixed
 - functional-flatbed[WIP]: Built checks into functional-flatbed to address moto/bike bug
 
-
-
 ### Removed
 - pv-tow [R]: Removed resource
 - flatbed [R]: Removed resource ([cars]\flatbed)
+- B1g_Props [C]: Removed unused/not working props

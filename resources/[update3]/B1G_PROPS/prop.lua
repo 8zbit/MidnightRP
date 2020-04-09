@@ -5,44 +5,36 @@ local closestEntity = 0
 
 -- Proplist, you can add as much as you want
 attachPropList = {
-	{["model"] = 'prop_roadcone02a',				["name"] = "cone", 		["bone"] = 28422, ["x"] = 0.6,	["y"] = -0.15,	["z"] = -0.1,	["xR"] = 315.0,	["yR"] = 288.0, ["zR"] = 0.0, 	["anim"] = 'pick' }, -- Done
-	{["model"] = 'prop_cs_trolley_01',				["name"] = "trolley", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.6,	["z"] = -0.8,	["xR"] = -180.0,["yR"] = -165.0,["zR"] = 90.0, 	["anim"] = 'hold' }, -- Done
-	{["model"] = 'v_med_bed2',				["name"] = "medbed", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -1.1,	["z"] = -1.1,	["xR"] = -200.0,["yR"] = -180.0,["zR"] = 180.0, 	["anim"] = 'hold' }, -- Done
-	{["model"] = 'prop_table_03',					["name"] = "table", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.8,	["z"] = -0.7,	["xR"] = -180.0,["yR"] = -165.0,["zR"] = 90.0, 	["anim"] = 'hold' }, -- Done
-	{["model"] = 'prop_tool_box_04',				["name"] = "toolbox", 	["bone"] = 28422, ["x"] = 0.4,	["y"] = -0.1,	["z"] = -0.1,	["xR"] = 315.0,	["yR"] = 288.0, ["zR"] = 0.0, 	["anim"] = 'pick' }, -- Done
-	{["model"] = "xm_prop_smug_crate_s_medical",			["name"] = "MedBox", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.1,	["z"] = -0.1,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0, 	["anim"] = 'hold' }, -- Done
+	{["model"] = 'prop_roadcone02a',					["name"] = "cone", 			["bone"] = 28422, ["x"] = 0.6,	["y"] = -0.15,	["z"] = -0.1,	["xR"] = 315.0,	["yR"] = 288.0, ["zR"] = 0.0, 	["anim"] = 'pick' }, -- Done
+	{["model"] = 'prop_cs_trolley_01',					["name"] = "trolley", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.6,	["z"] = -0.8,	["xR"] = -180.0,["yR"] = -165.0,["zR"] = 90.0, 	["anim"] = 'hold' }, -- Done
+	{["model"] = 'v_med_bed2',							["name"] = "medbed", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -1.1,	["z"] = -1.1,	["xR"] = -200.0,["yR"] = -180.0,["zR"] = 180.0, ["anim"] = 'hold' }, -- Done
+	{["model"] = 'prop_table_03',						["name"] = "table", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.8,	["z"] = -0.7,	["xR"] = -180.0,["yR"] = -165.0,["zR"] = 90.0, 	["anim"] = 'hold' }, -- Done
+	{["model"] = 'prop_tool_box_04',					["name"] = "toolbox", 		["bone"] = 28422, ["x"] = 0.4,	["y"] = -0.1,	["z"] = -0.1,	["xR"] = 315.0,	["yR"] = 288.0, ["zR"] = 0.0, 	["anim"] = 'pick' }, -- Done
+	{["model"] = "xm_prop_smug_crate_s_medical",		["name"] = "MedBox", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.1,	["z"] = -0.1,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0, 	["anim"] = 'hold' }, -- Done
 	{["model"] = 'xm_prop_x17_bag_med_01a',				["name"] = "MedBag", 		["bone"] = 28422, ["x"] = 0.4,	["y"] = -0.1,	["z"] = -0.1,	["xR"] = 315.0,	["yR"] = 298.0, ["zR"] = 0.0, 	["anim"] = 'pick' }, -- Done
-	{["model"] = "imp_prop_impexp_car_door_04a",			["name"] = "cardoor", 		["bone"] = 28422, ["x"] = -0.5,	["y"] = -0.15,	["z"] = 0.4,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 90.0 , ["anim"] = 'hold' }, -- Done
-	{["model"] = "imp_prop_impexp_front_bars_01a",			["name"] = "frontbars", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.25,	["z"] = -0.1,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0 , 	["anim"] = 'hold' }, -- Done
+	{["model"] = "imp_prop_impexp_car_door_04a",		["name"] = "cardoor", 		["bone"] = 28422, ["x"] = -0.5,	["y"] = -0.15,	["z"] = 0.4,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 90.0 , ["anim"] = 'hold' }, -- Done
+	{["model"] = "imp_prop_impexp_front_bars_01a",		["name"] = "frontbars", 	["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.25,	["z"] = -0.1,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0 , 	["anim"] = 'hold' }, -- Done
 	{["model"] = "imp_prop_impexp_bonnet_03a",			["name"] = "bonnet", 		["bone"] = 28422, ["x"] = 0.2,	["y"] = 0.2,	["z"] = -0.1,	["xR"] = -0.0,	["yR"] = 0.0, 	["zR"] = 180.0 ,["anim"] = 'hold' }, -- Done
-	{["model"] = "imp_prop_impexp_front_bumper_02a",		["name"] = "frontbumper", 	["bone"] = 28422, ["x"] = 0.0,	["y"] = 0.1,	["z"] = 0.05,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0 , 	["anim"] = 'hold' }, -- Done
-	{["model"] = "prop_car_battery_01",				["name"] = "battery", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.1,	["z"] = -0.05,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0 , 	["anim"] = 'hold' }, -- Done
-	{["model"] = "prop_wheel_tyre",					["name"] = "tire", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.1,	["z"] = -0.05,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0 , 	["anim"] = 'hold' }, -- Done
-	{["model"] = "prop_table_03_chr",				["name"] = "chair", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.2,	["z"] = -0.6,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0 , 	["anim"] = 'hold' }, -- Done
-	{["model"] = 'prop_engine_hoist',				["name"] = "hoist", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.5,	["z"] = -1.3,	["xR"] = -195.0,["yR"] = -180.0,["zR"] = 180.0, ["anim"] = 'hold' }, -- Done
-	{["model"] = "ex_office_swag_guns03",				["name"] = "guns", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = 0.0,	["z"] = -0.05,	["xR"] = 90.0,	["yR"] = 180.0, ["zR"] = 90.0 , ["anim"] = 'hold' }, -- Done
-	{["model"] = 'prop_cs_cardbox_01',				["name"] = "box", 		["bone"] = 28422, ["x"] = 0.01,	["y"] = 0.01,	["z"] = 0.0,	["xR"] = -255.0,["yR"] = -120.0,["zR"] = 40.0, 	["anim"] = 'hold' }, -- Done
+	{["model"] = "imp_prop_impexp_front_bumper_02a",	["name"] = "frontbumper", 	["bone"] = 28422, ["x"] = 0.0,	["y"] = 0.1,	["z"] = 0.05,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0 , 	["anim"] = 'hold' }, -- Done
+	{["model"] = "prop_car_battery_01",					["name"] = "battery", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.1,	["z"] = -0.05,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0 , 	["anim"] = 'hold' }, -- Done
+	{["model"] = "prop_wheel_tyre",						["name"] = "tire", 			["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.1,	["z"] = -0.05,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0 , 	["anim"] = 'hold' }, -- Done
+	{["model"] = "prop_table_03_chr",					["name"] = "chair", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.2,	["z"] = -0.6,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0 , 	["anim"] = 'hold' }, -- Done
+	{["model"] = 'prop_engine_hoist',					["name"] = "hoist", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.5,	["z"] = -1.3,	["xR"] = -195.0,["yR"] = -180.0,["zR"] = 180.0, ["anim"] = 'hold' }, -- Done
+	{["model"] = "ex_office_swag_guns03",				["name"] = "guns", 			["bone"] = 28422, ["x"] = 0.0,	["y"] = 0.0,	["z"] = -0.05,	["xR"] = 90.0,	["yR"] = 180.0, ["zR"] = 90.0 , ["anim"] = 'hold' }, -- Done
+	{["model"] = 'prop_cs_cardbox_01',					["name"] = "box", 			["bone"] = 28422, ["x"] = 0.01,	["y"] = 0.01,	["z"] = 0.0,	["xR"] = -255.0,["yR"] = -120.0,["zR"] = 40.0, 	["anim"] = 'hold' }, -- Done
+	{["model"] = 'gr_prop_gr_crate_pistol_02a',			["name"] = "guncrate", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = 0.0,	["z"] = -0.2,	["xR"] = 0.0,	["yR"] = -20.0,	["zR"] = 90.0, 	["anim"] = 'hold' }, -- Done
 	{["model"] = "imp_prop_impexp_lappy_01a",			["name"] = "laptop", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = 0.0,	["z"] = -0.15,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0 , 	["anim"] = 'hold' }, -- Done
-	{["model"] = 'xm_prop_x17_bag_01a',				["name"] = "bag", 		["bone"] = 28422, ["x"] = 0.4,	["y"] = -0.1,	["z"] = -0.1,	["xR"] = 315.0,	["yR"] = 298.0, ["zR"] = 0.0, 	["anim"] = 'pick' }, -- Done
-	{["model"] = "p_ld_soc_ball_01",				["name"] = "ball", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = 0.0,	["z"] = 0.0,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0 , 	["anim"] = 'hold' }, -- Done
-	{["model"] = "p_gcase_s",					["name"] = "gunbox", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.25,	["z"] = -0.1,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0 , 	["anim"] = 'hold' }, -- Done
+	{["model"] = 'xm_prop_x17_bag_01a',					["name"] = "bag", 			["bone"] = 28422, ["x"] = 0.4,	["y"] = -0.1,	["z"] = -0.1,	["xR"] = 315.0,	["yR"] = 298.0, ["zR"] = 0.0, 	["anim"] = 'pick' }, -- Done
+	{["model"] = "p_ld_soc_ball_01",					["name"] = "ball", 			["bone"] = 28422, ["x"] = 0.0,	["y"] = 0.0,	["z"] = 0.0,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0 , 	["anim"] = 'hold' }, -- Done
+	{["model"] = "p_gcase_s",							["name"] = "gunbox", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.25,	["z"] = -0.1,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0 , 	["anim"] = 'hold' }, -- Done
 	{["model"] = 'prop_cleaning_trolly',				["name"] = "cleantrolly",	["bone"] = 28422, ["x"] = -0.2,	["y"] = -0.4,	["z"] = -1.2,	["xR"] = -188.0,["yR"] = -178.0,["zR"] = 180.0, ["anim"] = 'hold' }, -- Done
-	{["model"] = "prop_mp_drug_package",				["name"] = "drugs", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.25,	["z"] = -0.05,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0 , 	["anim"] = 'hold' },
-	{["model"] = 'prop_premier_fence_02',				["name"] = "board",  	["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.6,	["z"] = -0.2,	["xR"] = -180.0,["yR"] = -165.0,["zR"] = 90.0, 	["anim"] = 'hold' }, -- Done
+	{["model"] = "prop_mp_drug_package",				["name"] = "drugs", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.25,	["z"] = -0.05,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0 , 	["anim"] = 'hold' }, -- Done
+	{["model"] = 'prop_premier_fence_02',				["name"] = "board",  		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.6,	["z"] = -0.2,	["xR"] = -180.0,["yR"] = -165.0,["zR"] = 90.0, 	["anim"] = 'hold' }, -- Done
 	{["model"] = 'prop_premier_fence_01',				["name"] = "fence", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.6,	["z"] = -0.8,	["xR"] = -180.0,["yR"] = -165.0,["zR"] = 90.0, 	["anim"] = 'hold' }, -- Done
-	{["model"] = 'prop_kino_light_02',				["name"] = "light", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.6,	["z"] = -0.8,	["xR"] = -180.0,["yR"] = -165.0,["zR"] = 90.0, 	["anim"] = 'hold' }, -- Done
-	{["model"] = "prop_cash_case_01",				["name"] = "cashcase", 	["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.1,	["z"] = -0.1,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0, 	["anim"] = 'hold' }, -- Done
-{["model"] = 'xm_prop_x17_bag_med_01a',				["name"] = "MedBag", 		["bone"] = 28422, ["x"] = 0.4,	["y"] = -0.1,	["z"] = -0.1,	["xR"] = 315.0,	["yR"] = 298.0, ["zR"] = 0.0, 	["anim"] = 'pick' }, -- Done	{["model"] = "prop_cs_dildo_01",				["name"] = "dildo", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.1,	["z"] = -0.1,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0, 	["anim"] = 'hold' } -- Done
-{["model"] = 'p_ld_heist_bag_01',				["name"] = "medbag2", 		["bone"] = 28422, ["x"] = 0.4,	["y"] = -0.1,	["z"] = -0.1,	["xR"] = 315.0,	["yR"] = 298.0, ["zR"] = 0.0, 	["anim"] = 'pick' }, -- Done
-{["model"] = 'prop_cs_shopping_bag',				["name"] = "medbag3", 		["bone"] = 28422, ["x"] = 0.4,	["y"] = -0.1,	["z"] = -0.1,	["xR"] = 315.0,	["yR"] = 298.0, ["zR"] = 0.0, 	["anim"] = 'pick' }, -- Done
-{["model"] = 'prop_ld_binbag_03',				["name"] = "medchair", 		["bone"] = 28422, ["x"] = 0.4,	["y"] = -0.1,	["z"] = -0.1,	["xR"] = 315.0,	["yR"] = 298.0, ["zR"] = 0.0, 	["anim"] = 'pick' }, -- Done
-{["model"] = 'prop_ld_binbag_04',				["name"] = "medbag6", 		["bone"] = 28422, ["x"] = 0.4,	["y"] = -0.1,	["z"] = -0.1,	["xR"] = 315.0,	["yR"] = 298.0, ["zR"] = 0.0, 	["anim"] = 'pick' }, -- Done
-{["model"] = 'prop_ld_case_01',				["name"] = "medbag7", 		["bone"] = 28422, ["x"] = 0.4,	["y"] = -0.1,	["z"] = -0.1,	["xR"] = 315.0,	["yR"] = 298.0, ["zR"] = 0.0, 	["anim"] = 'pick' }, -- Done
-{["model"] = 'prop_med_bag_01',				["name"] = "medbag8", 		["bone"] = 28422, ["x"] = 0.4,	["y"] = -0.1,	["z"] = -0.1,	["xR"] = 315.0,	["yR"] = 298.0, ["zR"] = 0.0, 	["anim"] = 'pick' }, -- Done
-{["model"] = 'prop_ld_binbag_01',				["name"] = "medbed2", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -1.1,	["z"] = -1.1,	["xR"] = -200.0,["yR"] = -180.0,["zR"] = 180.0, 	["anim"] = 'hold' }, -- Done
-
-
-
+	{["model"] = 'prop_kino_light_02',					["name"] = "light", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.6,	["z"] = -0.8,	["xR"] = -180.0,["yR"] = -165.0,["zR"] = 90.0, 	["anim"] = 'hold' }, -- Done
+	{["model"] = "prop_cash_case_01",					["name"] = "cashcase", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.1,	["z"] = -0.1,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0, 	["anim"] = 'hold' }, -- Done
+	{["model"] = 'prop_cs_shopping_bag',				["name"] = "medbag3", 		["bone"] = 28422, ["x"] = 0.4,	["y"] = -0.1,	["z"] = -0.1,	["xR"] = 315.0,	["yR"] = 298.0, ["zR"] = 0.0, 	["anim"] = 'pick' }, -- Done
+	--{["model"] = "prop_cs_dildo_01",				    ["name"] = "dildo", 		["bone"] = 28422, ["x"] = 0.0,	["y"] = -0.1,	["z"] = -0.1,	["xR"] = 0.0,	["yR"] = 0.0, 	["zR"] = 0.0, 	["anim"] = 'hold' }  -- Done
 }
 
 RegisterNetEvent('inrp_propsystem:attachProp')
