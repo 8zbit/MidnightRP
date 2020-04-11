@@ -33,7 +33,7 @@ Config.objects = {
 		[25] = {object="prop_chair_04a", verticalOffsetX=0.0, verticalOffsetY=-0.1, verticalOffsetZ=-0.0, direction=180.0, bed=false},
 		[26] = {object="prop_chair_04b", verticalOffsetX=-0.1, verticalOffsetY=0.05, verticalOffsetZ=-0.5, direction=180.0, bed=false},
 		[27] = {object="prop_chair_05", verticalOffsetX=0.0, verticalOffsetY=-0.1, verticalOffsetZ=-0.0, direction=180.0, bed=false},
-		[28] = {object="prop_chair_06", verticalOffsetX=0.0, verticalOffsetY=-0.1, verticalOffsetZ=-0.0, direction=180.0, bed=false},
+		[28] = {object="prop_chair_06", verticalOffsetX=0.0, verticalOffsetY=-0.1, verticalOffsetZ=-0.5, direction=180.0, bed=false},
 		[29] = {object="prop_chair_08", verticalOffsetX=0.0, verticalOffsetY=-0.1, verticalOffsetZ=-0.0, direction=180.0, bed=false},
 		[30] = {object="prop_chair_09", verticalOffsetX=0.0, verticalOffsetY=-0.1, verticalOffsetZ=-0.0, direction=180.0, bed=false},
 		[31] = {object="prop_chair_10", verticalOffsetX=0.0, verticalOffsetY=-0.1, verticalOffsetZ=-0.0, direction=180.0, bed=false},

@@ -35,7 +35,7 @@ Config.vehicle = {
 
 	keys = {
 		seatbelt 	= 'B',
-		cruiser		= 'CAPS',
+		cruiser		= ']',
 		signalLeft	= '1',
 		signalRight	= '2',
 		signalBoth	= '3',

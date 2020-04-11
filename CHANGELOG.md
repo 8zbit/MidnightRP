@@ -20,6 +20,7 @@ All notable updates and changes to the Midnight RP server resources.
 - Removed MCR jackets, re-added jackets, and deleted jackets old .ydd file
 - Added .ydd to MCR jacket file to hopefully fix jackets not streaming
 - B1g_Props [C]: Cleaned formatting
+- money laundering location raided
 ### Fixed
 - 
 ### Removed

@@ -42,19 +42,18 @@ Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait( 0 )
 		local ped = PlayerPedId()
-		if PlayerData.job ~= nil and PlayerData.job.name == "police" then
+		--if PlayerData.job ~= nil and PlayerData.job.name == "police" then
 			if DoesEntityExist( ped ) and not IsEntityDead( ped ) then
 				if not IsPauseMenuActive() then 
 					loadAnimDict( "random@arrests" )
-					if IsControlJustReleased( 0, 19 ) then -- INPUT_CHARACTER_WHEEL (LEFT ALT)
+					if IsControlJustReleased( 0, 137 ) then -- INPUT_CHARACTER_WHEEL (LEFT ALT)
 						TriggerServerEvent('InteractSound_SV:PlayOnSource', 'off', 0.1)
-						ClearPedTasks(ped)
-						
+						ClearPedTasks(ped)						
 					else
-						if IsControlJustPressed( 0, 19 ) and not IsPlayerFreeAiming(PlayerId()) then -- INPUT_CHARACTER_WHEEL (LEFT ALT)
+						if IsControlJustPressed( 0, 137 ) and not IsPlayerFreeAiming(PlayerId()) then -- INPUT_CHARACTER_WHEEL (LEFT ALT)
 							TriggerServerEvent('InteractSound_SV:PlayOnSource', 'on', 0.1)
 							TaskPlayAnim(ped, "random@arrests", "generic_radio_enter", 8.0, 2.0, -1, 50, 2.0, 0, 0, 0 )
-						elseif IsControlJustPressed( 0, 19 ) and IsPlayerFreeAiming(PlayerId()) then -- INPUT_CHARACTER_WHEEL (LEFT ALT)
+						elseif IsControlJustPressed( 0, 137 ) and IsPlayerFreeAiming(PlayerId()) then -- INPUT_CHARACTER_WHEEL (LEFT ALT)
 							TriggerServerEvent('InteractSound_SV:PlayOnSource', 'on', 0.1)
 							TaskPlayAnim(ped, "random@arrests", "radio_chatter", 8.0, 2.0, -1, 50, 2.0, 0, 0, 0 )
 						end 
@@ -64,9 +63,9 @@ Citizen.CreateThread(function()
 							DisableActions(ped)
 						end
 					end
-				end 
+				end
 			end
-		end 
+		--end 
 	end
 end )
 
@@ -78,14 +77,14 @@ Citizen.CreateThread( function()
 		local ped = PlayerPedId()
 		if PlayerData.job ~= nil and PlayerData.job.name == "police" then
 			if DoesEntityExist( ped ) and not IsEntityDead( ped ) and not IsPedInAnyVehicle(PlayerPedId(), true) then 
-				DisableControlAction( 0, 20, true ) -- INPUT_MULTIPLAYER_INFO (Z)
+				DisableControlAction( 0, 11, true ) -- INPUT_MULTIPLAYER_INFO (Z)
 				if not IsPauseMenuActive() then 
 					loadAnimDict( "reaction@intimidation@cop@unarmed" )		
-					if IsDisabledControlJustReleased( 0, 20 ) then -- INPUT_MULTIPLAYER_INFO (Z)
+					if IsDisabledControlJustReleased( 0, 11 ) then -- INPUT_MULTIPLAYER_INFO (Z)
 						ClearPedTasks(ped)
 						SetCurrentPedWeapon(ped, GetHashKey("WEAPON_UNARMED"), true)
 					else
-						if IsDisabledControlJustPressed( 0, 20 ) then -- INPUT_MULTIPLAYER_INFO (Z)
+						if IsDisabledControlJustPressed( 0, 11 ) then -- INPUT_MULTIPLAYER_INFO (Z)
 							SetCurrentPedWeapon(ped, GetHashKey("WEAPON_UNARMED"), true) 
 							TaskPlayAnim(ped, "reaction@intimidation@cop@unarmed", "intro", 8.0, 2.0, -1, 50, 2.0, 0, 0, 0 )
 						end
