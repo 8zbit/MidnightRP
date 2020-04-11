@@ -2,7 +2,7 @@
 
 All notable updates and changes to the Midnight RP server resources.
 
-## [Released]
+# [Released]
 
 ## [1.45] - 2020-04-9
 ### Added
@@ -25,6 +25,7 @@ All notable updates and changes to the Midnight RP server resources.
 ### Removed
 - broken female clothing textures
 - B1g_Props [C]: Removed unused/not working props
+
 ## [1.44] - 2020-04-7
 ### Added
 - 80s style bahama mamas with vice city music and dancing peds. full new design
@@ -43,6 +44,7 @@ All notable updates and changes to the Midnight RP server resources.
 - esx_holdup[C]: Fixed an issue with the store robberies where the timer would display 0 seconds remaining but the player wasn't paid.
 ### Removed
 - hide in trunk
+
 ## [1.43] - 2020-04-5
 ### Added
 - new male top replaces :https://tobii.space/public/thumbnails/mp_m_freemode_01_mp_m_gunrunning_01_jbib_016.png
@@ -225,12 +227,11 @@ All notable updates and changes to the Midnight RP server resources.
 ### Removed
 - 
 
-## [Unreleased]
+# [Unreleased]
 
 ## [ALPHA] - Current Test
 ### Added
-- functional-flatbed[WIP]: Added resource
-
+- 
 
 ### Changed
 - esx_mecanojob [C]: Zombies garage supplies flatbed for Mecano Menu
@@ -238,8 +239,8 @@ All notable updates and changes to the Midnight RP server resources.
 - esx_mecanojob [C]: Zombies garage society vehicle spawn point moved to better location
 
 ### Fixed
-- functional-flatbed[WIP]: Built checks into functional-flatbed to address moto/bike bug
+- 
 
 ### Removed
-- pv-tow [R]: Removed resource
-- flatbed [R]: Removed resource ([cars]\flatbed)
+- flatbed [R]: Removed resource ([cars]\flatbed) [Not 100% working so removed entirely]
+- functional-flatbed[X]: Cancelled pv-tow stays

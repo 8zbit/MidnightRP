@@ -162,19 +162,21 @@ function OpenMecanoActionsMenu()
           else
 
             local elements = {
-			        {label = _U('flat_bed'), value = 'towtruck'},
-              {label = ('Pickup'), value = '20trailboss'},
-             
-              
+              --{label = _U('flat_bed3'), value = 'flatbed3'},
+              {label = -U('tow_truck'), value = 'towtruck'},
+              {label = _U('flat_bed'), value = 'flatbed'},
+              --{label = _U('pickup'), value = '20trailboss'},
+              --{label = ('Small Towtruck'), value = 'towtruck2'},
             }
 
             if Config.EnablePlayerManagement and PlayerData.job ~= nil and
               (PlayerData.job.grade_name == 'boss' or PlayerData.job.grade_name == 'chef' or PlayerData.job.grade_name == 'experimente') then
-              table.insert(elements, {label = 'SlamVan', value = 'slamvan3'})
-              table.insert(elements, {label = 'Pickup', value = '20trailboss'})
-              table.insert(elements, {label = 'Small Trailer', value = 'trailersmall'})
-              table.insert(elements, {label = 'Hauler Lorry', value = 'hauler'})
-              table.insert(elements, {label = 'Transport Trailer', value = 'tr2'})
+              --table.insert(elements, {label = 'SlamVan', value = 'slamvan3'})
+              table.insert(elements, {label = _U('pickup'), value = '20trailboss'})
+              table.insert(elements, {label = ('Small Towtruck'), value = 'towtruck2'})
+              --table.insert(elements, {label = 'Small Trailer', value = 'trailersmall'})
+              --table.insert(elements, {label = 'Hauler Lorry', value = 'hauler'})
+              --table.insert(elements, {label = 'Transport Trailer', value = 'tr2'})
             end
 
             ESX.UI.Menu.CloseAll()

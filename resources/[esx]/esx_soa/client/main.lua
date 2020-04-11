@@ -447,7 +447,7 @@ function OpenMafiaActionsMenu()
   ESX.UI.Menu.Open(
     'default', GetCurrentResourceName(), 'mafia_actions',
     {
-      title    = 'Sons of Anarchy',
+      title    = 'Rogue MC',
       align    = 'right',
       elements = {
         {label = _U('citizen_interaction'), value = 'citizen_interaction'},
