@@ -6,16 +6,19 @@ All notable updates and changes to the Midnight RP server resources.
 
 ## [1.46] - 2020-04-11
 ### Added
-- 
+- TokoVoip Check guides on the forums.
 
 ### Changed
-- 
+- esx_mecanojob [C]: Zombies garage supplies flatbed for Mecano Menu
+- esx_mecanojob [C]: Zombies garage supplies flatbed3 for Fully Functional Flatbed
+- esx_mecanojob [C]: Zombies garage society vehicle spawn point moved to better location
 
 ### Fixed
-- 
+- trew_hud_ui [C]: Changed Keybind array for "]" from 40 to 42 to prevent controller steering from triggering Cruise (On controller it is now DPAD Up)
 
 ### Removed
-- 
+- flatbed [R]: Removed resource ([cars]\flatbed) [Not 100% working so removed entirely]
+- functional-flatbed[X]: Cancelled pv-tow stays
 
 ## [1.45] - 2020-04-09
 ### Added

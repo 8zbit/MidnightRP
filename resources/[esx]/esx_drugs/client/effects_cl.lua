@@ -74,7 +74,7 @@ AddEventHandler('esx_drugs:onLsd', function()
 	end
 --	spectator5
     SetTimecycleModifier("spectator5")
-    SetTimecycleModifierStrength(0.6)
+    SetTimecycleModifierStrength(0.9)
     SetPedMotionBlur(playerPed, true)
     SetPedMovementClipset(playerPed, "anim@move_m@grooving@", true)
     SetPedIsDrunk(playerPed, true)
