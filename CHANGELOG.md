@@ -4,7 +4,20 @@ All notable updates and changes to the Midnight RP server resources.
 
 # [Released]
 
-## [1.45] - 2020-04-9
+## [1.46] - 2020-04-11
+### Added
+- 
+
+### Changed
+- 
+
+### Fixed
+- 
+
+### Removed
+- 
+
+## [1.45] - 2020-04-09
 ### Added
 - new female top
 - more textures to existing female top
@@ -21,13 +34,14 @@ All notable updates and changes to the Midnight RP server resources.
 - Added .ydd to MCR jacket file to hopefully fix jackets not streaming
 - B1g_Props [C]: Cleaned formatting
 - money laundering location raided
+
 ### Fixed
 - 
 ### Removed
 - broken female clothing textures
 - B1g_Props [C]: Removed unused/not working props
 
-## [1.44] - 2020-04-7
+## [1.44] - 2020-04-07
 ### Added
 - 80s style bahama mamas with vice city music and dancing peds. full new design
 - added working cinema. 
@@ -41,12 +55,14 @@ All notable updates and changes to the Midnight RP server resources.
 - legionsign changed to "race" image 
 - Removed MCR jackets, re-added jackets, and deleted jackets old .ydd file
 - esx_holdup[C]: Changed some of the text that was displayed before, during and after the robbery
+
 ### Fixed
 - esx_holdup[C]: Fixed an issue with the store robberies where the timer would display 0 seconds remaining but the player wasn't paid.
+
 ### Removed
 - hide in trunk
 
-## [1.43] - 2020-04-5
+## [1.43] - 2020-04-05
 ### Added
 - new male top replaces :https://tobii.space/public/thumbnails/mp_m_freemode_01_mp_m_gunrunning_01_jbib_016.png
 - new male top replaces : https://tobii.space/public/thumbnails/mp_m_freemode_01_mp_m_gunrunning_01_jbib_000.png
@@ -60,7 +76,8 @@ All notable updates and changes to the Midnight RP server resources.
 - new female top replaces :https://tobii.space/public/thumbnails/mp_f_freemode_01_mp_f_gunrunning_01_jbib_005.png
 - new female top replaces :https://tobii.space/public/thumbnails/mp_f_freemode_01_mp_f_importexport_01_jbib_021.png 
 - added new race track at the arena
-- 2 new ped models 
+- 2 new ped models
+
 ### Changed
 - Trunks will no longer allow you to store job items (chickens, fuel, planks, etc) it was never intended to have you grind those jobs, our main goal on the server is reward player engagemenet with the community and not to encourge grinding.
 - lostmcextended [C]: Updated Art for Rogue MC (Ready to Deploy)
@@ -70,23 +87,17 @@ All notable updates and changes to the Midnight RP server resources.
 - Sons_OF_Anarchy [C]: New Church Table
 - Sons_OF_Anarchy [C]: Added resource to change hanging cuts
 
-
-
-
 ### Fixed
 - 
 
 ### Removed
 - 
 
-
-
-## [1.42] - 2020-04-4
+## [1.42] - 2020-04-04
 ### Added
 - 2 New male jacket added.
 - new ped skins. use Del menu. 
 - Using /report or /calladmin now shows for online admins in chat
-
 
 ### Changed
 - Coke processing has been raided. location changed.
@@ -99,12 +110,9 @@ All notable updates and changes to the Midnight RP server resources.
 ### Removed
 - 
 
-
-
 ## [1.41] - 2020-04-3
 ### Added
 - 
-
 
 ### Changed
 - gold hiest. can sell 10 gold bars at a time instead of 50. all npcs are lost mc npcs and the truck used is not a lost mc van
@@ -114,7 +122,6 @@ All notable updates and changes to the Midnight RP server resources.
 
 ### Removed
 - 
-
 
 ## [1.40] - 2020-04-2
 ### Added
@@ -240,7 +247,7 @@ All notable updates and changes to the Midnight RP server resources.
 - esx_mecanojob [C]: Zombies garage society vehicle spawn point moved to better location
 
 ### Fixed
-- 
+- trew_hud_ui [C]: Changed Keybind array for "]" from 40 to 42 to prevent controller steering from triggering Cruise (On controller it is now DPAD Up)
 
 ### Removed
 - flatbed [R]: Removed resource ([cars]\flatbed) [Not 100% working so removed entirely]
