@@ -654,7 +654,7 @@ Citizen.CreateThread(function()
 						chance = math.random(1,Config.CallPoliceChance)
 						if chance == 1 then
 							PoliceRobberyAlert()
-							ESX.ShowNotification("Your offer was ~r~rejected~s~ and ~b~Police~s~ were notified")
+							ESX.ShowNotification("Your offer was ~r~rejected~s~")
 						else
 							ESX.ShowNotification("Your offer was ~r~rejected~s~")	
 						end

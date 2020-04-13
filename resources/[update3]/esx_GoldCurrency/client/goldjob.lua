@@ -490,7 +490,7 @@ function LockpickVanDoor()
 	
 	if Config.PoliceNotfiyEnabled == true then
 		PoliceRobberyAlert()
-		ESX.ShowNotification("Someone saw you lockpicking the van ~b~Police~s~ were notified")
+		ESX.ShowNotification("Someone saw you lockpicking the van")
 	end
 	
 	SetCurrentPedWeapon(playerPed, GetHashKey("WEAPON_UNARMED"),true)
