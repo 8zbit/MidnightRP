@@ -24,7 +24,7 @@ All notable updates and changes to the Midnight RP server resources.
 
 ### Changed
 - esx_mecanojob [C]: Zombies garage supplies flatbed for Mecano Menu
-- esx_mecanojob [C]: Zombies garage supplies flatbed3 for Fully Functional Flatbed
+- esx_mecanojob [C]: Zombies garage supplies towtruck2 for small hook truck
 - esx_mecanojob [C]: Zombies garage society vehicle spawn point moved to better location
 
 ### Fixed
