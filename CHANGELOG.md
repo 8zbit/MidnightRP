@@ -4,7 +4,6 @@ All notable updates and changes to the Midnight RP server resources.
 
 # [Released]
 
-
 ## [1.47] - 2020-04-13
 ### Added
 - disc-dragme [c]: added ability for players to drag each other, put in car and take out of car using commands /drag /in /out
@@ -256,7 +255,7 @@ All notable updates and changes to the Midnight RP server resources.
 
 ## [ALPHA] - Current Test
 ### Added
-
+- mrp-stfu: Created the mrp-stfu script which forces in game voice to no work
 
 ### Changed
 
