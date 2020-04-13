@@ -5,6 +5,6 @@ Config.OnlyWhileDead = false
 Config.EnableCommands = true
 
 Config.Jobs = {
-    LimitJobs = true,
+    LimitJobs = false,
     AllowedJobs = { 'ambulance', 'police' }
 }

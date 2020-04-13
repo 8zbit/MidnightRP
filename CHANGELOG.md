@@ -7,7 +7,7 @@ All notable updates and changes to the Midnight RP server resources.
 
 ## [1.47] - 2020-04-13
 ### Added
-
+- disc-dragme [c]: added ability for players to drag each other, put in car and take out of car using commands /drag /in /out
 ### Changed
 - drugs can no longer be sold at the pawn shop.
 - home grown weed can be sold on the streets now.
@@ -256,16 +256,12 @@ All notable updates and changes to the Midnight RP server resources.
 
 ## [ALPHA] - Current Test
 ### Added
-- 
+
 
 ### Changed
-- esx_mecanojob [C]: Zombies garage supplies flatbed for Mecano Menu
-- esx_mecanojob [C]: Zombies garage supplies flatbed3 for Fully Functional Flatbed
-- esx_mecanojob [C]: Zombies garage society vehicle spawn point moved to better location
+
 
 ### Fixed
-- trew_hud_ui [C]: Changed Keybind array for "]" from 40 to 42 to prevent controller steering from triggering Cruise (On controller it is now DPAD Up)
+
 
 ### Removed
-- flatbed [R]: Removed resource ([cars]\flatbed) [Not 100% working so removed entirely]
-- functional-flatbed[X]: Cancelled pv-tow stays
