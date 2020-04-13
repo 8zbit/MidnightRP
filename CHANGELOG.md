@@ -6,7 +6,7 @@ All notable updates and changes to the Midnight RP server resources.
 
 ## [1.47] - 2020-04-13
 ### Added
-- disc-dragme [c]: added ability for players to drag each other, put in car and take out of car using commands /drag /in /out
+
 ### Changed
 - drugs can no longer be sold at the pawn shop.
 - home grown weed can be sold on the streets now.
@@ -16,7 +16,7 @@ All notable updates and changes to the Midnight RP server resources.
 ### Fixed
 - drug sales/ gold hiest now properly send police alerts
 ### Removed
-
+- disc-dragme [c]: added ability for players to drag each other, put in car and take out of car using commands /drag /in /out [causes too many problems]
 ## [1.46] - 2020-04-11
 ### Added
 - TokoVoip Check guides on the forums.
