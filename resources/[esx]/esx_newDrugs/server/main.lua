@@ -538,7 +538,7 @@ AddEventHandler("esx_newDrugs:sellDrugs", function()
 	local meth = xPlayer.getInventoryItem('meth1g').count
 	local coke = xPlayer.getInventoryItem('coke1g').count
 	local methbag = xPlayer.getInventoryItem('methbag').count
-	local gold_t = xPlayer.getInventoryItem('gold_t').count
+	local bagofdope = xPlayer.getInventoryItem('bagofdope').count
 	local lsd = xPlayer.getInventoryItem('lsd').count
 	local lsd_pooch = xPlayer.getInventoryItem('lsd_pooch').count
 	local spice = xPlayer.getInventoryItem('spice').count
@@ -592,13 +592,13 @@ AddEventHandler("esx_newDrugs:sellDrugs", function()
 			drugamount = math.random(1,3)
 		end
 
-	elseif gold_t > 0 then
-		drugType = 'gold_t'
-		if gold_t == 1 then
+	elseif bagofdope > 0 then
+		drugType = 'bagofdope'
+		if bagofdope == 1 then
 			drugamount = 1
-		elseif gold_t == 2 then
+		elseif bagofdope == 2 then
 			drugamount = math.random(1,2)
-		elseif gold_t >= 3 then	
+		elseif bagofdope >= 3 then	
 			drugamount = math.random(1,3)
 		end
 
@@ -674,8 +674,8 @@ AddEventHandler("esx_newDrugs:sellDrugs", function()
 		price = math.random(5,8) * 25 * drugamount
 	elseif drugType=='coke' then
 		price = math.random(6,8) * 25 * drugamount
-	elseif drugType=='gold_t' then
-		price = math.random(6,7) * 25 * drugamount
+	elseif drugType=='bagofdope' then
+		price = math.random(6,7) * 115 * drugamount
 	end
 	
 	if drugType ~= nil then
@@ -702,8 +702,8 @@ AddEventHandler("esx_newDrugs:sellDrugs", function()
 	TriggerClientEvent('esx:showNotification', _source, "You sold ~b~"..drugamount.."x~s~ ~y~marijuana (1G)~s~ for ~r~$" .. price)
 	elseif drugType=='coke' then
 	TriggerClientEvent('esx:showNotification', _source, "You sold ~b~"..drugamount.."x~s~ ~y~Cocaine (1G)~s~ for ~r~$" .. price)
-	elseif drugType=='gold_t' then
-	TriggerClientEvent('esx:showNotification', _source, "You sold ~b~"..drugamount.."x~s~ ~y~Cocaine (1G)~s~ for ~r~$" .. price)
+	elseif drugType=='bagofdope' then
+	TriggerClientEvent('esx:showNotification', _source, "You sold ~b~"..drugamount.."x~s~ ~y~bag of weed (1G)~s~ for ~r~$" .. price)
 	
 	end
 	
@@ -713,7 +713,7 @@ RegisterServerEvent("esx_newDrugs:canSellDrugs")
 AddEventHandler("esx_newDrugs:canSellDrugs", function()
 	local xPlayer = ESX.GetPlayerFromId(source)
 	if xPlayer ~= nil then
-		local soldAmount = (xPlayer.getInventoryItem("coke1g").count > 0 or xPlayer.getInventoryItem("meth1g").count > 0 or xPlayer.getInventoryItem("methbag").count > 0 or xPlayer.getInventoryItem("lsd").count > 0 or xPlayer.getInventoryItem("lsd_pooch").count > 0 or xPlayer.getInventoryItem("spice").count > 0 or xPlayer.getInventoryItem("marijuana").count > 0 or xPlayer.getInventoryItem("coke").count > 0 or xPlayer.getInventoryItem("gold_t").count > 0  or xPlayer.getInventoryItem("weed4g").count > 0) and CheckSoldAmount(xPlayer.getIdentifier()) < Config.maxCap
+		local soldAmount = (xPlayer.getInventoryItem("coke1g").count > 0 or xPlayer.getInventoryItem("meth1g").count > 0 or xPlayer.getInventoryItem("methbag").count > 0 or xPlayer.getInventoryItem("lsd").count > 0 or xPlayer.getInventoryItem("lsd_pooch").count > 0 or xPlayer.getInventoryItem("spice").count > 0 or xPlayer.getInventoryItem("marijuana").count > 0 or xPlayer.getInventoryItem("coke").count > 0 or xPlayer.getInventoryItem("bagofdope").count > 0  or xPlayer.getInventoryItem("weed4g").count > 0) and CheckSoldAmount(xPlayer.getIdentifier()) < Config.maxCap
 		TriggerClientEvent("esx_newDrugs:canSellDrugs",source,soldAmount)
 	end
 end)
@@ -722,7 +722,7 @@ RegisterServerEvent("esx_drugSale:canSellDrugs")
 AddEventHandler("esx_drugSale:canSellDrugs", function()
 	local xPlayer = ESX.GetPlayerFromId(source)
 	if xPlayer ~= nil then
-		local sell = (xPlayer.getInventoryItem("coke1g").count > 0 or xPlayer.getInventoryItem("meth1g").count > 0 or xPlayer.getInventoryItem("methbag").count > 0 or xPlayer.getInventoryItem("lsd").count > 0 or xPlayer.getInventoryItem("lsd_pooch").count > 0 or xPlayer.getInventoryItem("spice").count > 0 or xPlayer.getInventoryItem("marijuana").count > 0 or xPlayer.getInventoryItem("coke").count > 0 or xPlayer.getInventoryItem("gold_t").count > 0 or xPlayer.getInventoryItem("weed4g").count > 0) and CheckSellAmount(xPlayer.getIdentifier()) < 150
+		local sell = (xPlayer.getInventoryItem("coke1g").count > 0 or xPlayer.getInventoryItem("meth1g").count > 0 or xPlayer.getInventoryItem("methbag").count > 0 or xPlayer.getInventoryItem("lsd").count > 0 or xPlayer.getInventoryItem("lsd_pooch").count > 0 or xPlayer.getInventoryItem("spice").count > 0 or xPlayer.getInventoryItem("marijuana").count > 0 or xPlayer.getInventoryItem("coke").count > 0 or xPlayer.getInventoryItem("bagofdope").count > 0 or xPlayer.getInventoryItem("weed4g").count > 0) and CheckSellAmount(xPlayer.getIdentifier()) < 150
 		TriggerClientEvent("esx_drugSale:canSellDrugs",source,sell)
 	end
 end)

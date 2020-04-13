@@ -4,6 +4,20 @@ All notable updates and changes to the Midnight RP server resources.
 
 # [Released]
 
+
+## [1.47] - 2020-04-13
+### Added
+
+### Changed
+- drugs can no longer be sold at the pawn shop.
+- home grown weed can be sold on the streets now.
+- nerfed profit of home grown weed. should pay between 690 to 805 $ per bag.
+- gold bars cant be sold at pawn shop. 
+
+### Fixed
+
+### Removed
+
 ## [1.46] - 2020-04-11
 ### Added
 - TokoVoip Check guides on the forums.

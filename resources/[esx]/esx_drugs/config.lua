@@ -22,8 +22,8 @@ Config.DrugDealerItems = {  -- add any item here to be sold
 	gold = 2500,
 	diamond = 3000,
 	rolex = 450,
-	bagofdope = 1500,
-	weed4g = 55,
+	--[[ bagofdope = 1500, ]]
+--[[ 	weed4g = 55,
 	meth1g = 90,
 	coke1g = 70,
 	spice = 60,
@@ -32,7 +32,7 @@ Config.DrugDealerItems = {  -- add any item here to be sold
 	opium1g = 120,
 	mdma1g = 100,
 	hashish4g = 60,
-	goldbar = 600,
+	goldbar = 600, ]]
 	
 	
 	
