@@ -193,7 +193,7 @@ AddEventHandler('dragme:putInVehicle', function()
         if DoesEntityExist(vehicle) then
             --SetEntityVisible(GetPlayerPed(-1), false)
             dragStatus.isDragged = false
-            SetCarBootOpen(vehicle)
+            --[[ SetCarBootOpen(vehicle) ]]
             isInVehicle = true
             InVehicle = vehicle
         end
@@ -206,7 +206,7 @@ AddEventHandler('dragme:OutVehicle', function()
     SetEntityCollision(GetPlayerPed(-1), true, true)
     SetPlayerInvincible(GetPlayerPed(-1), false)
     isInVehicle = false
-    SetCarBootOpen(vehicle)
+    --[[ SetCarBootOpen(vehicle) ]]
     vehicle = nil
 end)
 
