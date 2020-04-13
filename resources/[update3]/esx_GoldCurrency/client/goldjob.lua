@@ -489,7 +489,8 @@ function LockpickVanDoor()
 	end
 	
 	if Config.PoliceNotfiyEnabled == true then
-		TriggerServerEvent('esx_goldCurrency:GoldJobInProgress',GetEntityCoords(PlayerPedId()),streetName)
+		PoliceRobberyAlert()
+		ESX.ShowNotification("Someone saw you lockpicking the van ~b~Police~s~ were notified")
 	end
 	
 	SetCurrentPedWeapon(playerPed, GetHashKey("WEAPON_UNARMED"),true)
@@ -606,3 +607,13 @@ Citizen.CreateThread(function()
     end
   end
 end)
+
+function PoliceRobberyAlert()
+    local playerPed = PlayerPedId()
+    PedPosition	= GetEntityCoords(playerPed)
+    robbery_alert = 'I just saw a shootout and a van was being lockpicked'
+    local PlayerCoords = { x = PedPosition.x, y = PedPosition.y, z = PedPosition.z }
+    TriggerServerEvent('esx_addons_gcphone:startCall', 'police', robbery_alert, PlayerCoords, {
+    PlayerCoords = { x = PedPosition.x, y = PedPosition.y, z = PedPosition.z },
+    })
+end

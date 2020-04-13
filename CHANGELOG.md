@@ -15,7 +15,7 @@ All notable updates and changes to the Midnight RP server resources.
 - gold bars cant be sold at pawn shop. 
 
 ### Fixed
-
+- drug sales/ gold hiest now properly send police alerts
 ### Removed
 
 ## [1.46] - 2020-04-11

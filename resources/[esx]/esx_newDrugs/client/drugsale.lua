@@ -69,8 +69,8 @@ Citizen.CreateThread(function()
 						else
 							chance = math.random(1,2)
 							if chance == 1 then
-								TriggerServerEvent('esx_outlawalert:drugsaleInProgress',pos,streetName)
-								ESX.ShowNotification("The person ~r~rejected~s~ your offer")
+								PoliceRobberyAlert()
+								ESX.ShowNotification("Your offer was ~r~rejected~s~ and ~b~Police~s~ were notified")
 							else
 								ESX.ShowNotification("The person ~r~rejected~s~ your offer")	
 							end
@@ -114,3 +114,13 @@ RegisterNetEvent("esx_newDrugs:canSellDrugs")
 AddEventHandler("esx_newDrugs:canSellDrugs", function(soldAmount)
 	canSellDrugs = soldAmount
 end)
+
+function PoliceRobberyAlert()
+    local playerPed = PlayerPedId()
+    PedPosition	= GetEntityCoords(playerPed)
+    robbery_alert = 'drug sale in progress'
+    local PlayerCoords = { x = PedPosition.x, y = PedPosition.y, z = PedPosition.z }
+    TriggerServerEvent('esx_addons_gcphone:startCall', 'police', robbery_alert, PlayerCoords, {
+    PlayerCoords = { x = PedPosition.x, y = PedPosition.y, z = PedPosition.z },
+    })
+end
